@@ -1,0 +1,2392 @@
+
+DIA-NN 2.3.1 Academia  (Data-Independent Acquisition by Neural Networks)
+Compiled on Dec  5 2025 05:02:42
+Current date and time: Fri Jul 24 17:04:33 2026
+Logical CPU cores: 256
+/home/lerost/tools/diann-2.3.1/diann-linux --f /home/lerost/DIA_tools_manuscript/input_files/PXD026600/RD139_Wide_UPS1_10fmol_inj1r.mzML --f /home/lerost/DIA_tools_manuscript/input_files/PXD026600/RD139_Wide_UPS1_1fmol_inj1.mzML --f /home/lerost/DIA_tools_manuscript/input_files/PXD026600/RD139_Wide_UPS1_1fmol_inj2.mzML --f /home/lerost/DIA_tools_manuscript/input_files/PXD026600/RD139_Wide_UPS1_10fmol_inj2.mzML --f /home/lerost/DIA_tools_manuscript/input_files/PXD026600/RD139_Wide_UPS1_10fmol_inj3.mzML --f /home/lerost/DIA_tools_manuscript/input_files/PXD026600/RD139_Wide_UPS1_1fmol_inj3.mzML --threads 20 --verbose 5 --out ./search_results/diann231_ups_ecoli_triqler/10fmol_vs_1fmol/report.tsv --qvalue 0.01 --matrices --temp /home/lerost/DIA_tools_manuscript/search_results/tmp --out-lib ./search_results/diann231_ups_ecoli_triqler/10fmol_vs_1fmol/lib.tsv --fasta /home/lerost/DIA_tools_manuscript/fasta/sprot_ecoli_ups_15072026_shuffled.fasta --met-excision --cut K*,R* --relaxed-prot-inf --smart-profiling --lib ./search_results/diann231_ups_ecoli_triqler/lib.predicted.speclib --report-decoys 
+
+Thread number set to 20
+Output will be filtered at 0.01 FDR
+Precursor/protein x samples expression level matrices will be saved along with the main report
+N-terminal methionine excision enabled
+In silico digest will involve cuts at K*,R*
+Heuristic protein grouping will be used, to reduce the number of protein groups obtained; this mode is recommended for benchmarking protein ID numbers, GO/pathway and system-scale analyses
+When generating an empirical library, empirical spectra will be added to it only if they are high quality
+DIA-NN will report decoy PSMs in its main report
+DIA-NN will automatically optimise the mass accuracy for the first run of the experiment, use this mode for preliminary analyses only
+
+6 files will be processed
+[0:00] Loading spectral library ./search_results/diann231_ups_ecoli_triqler/lib.predicted.speclib
+[0:00] Library annotated with sequence database(s): /home/lerost/DIA_tools_manuscript/fasta/sprot_ecoli_ups_15072026_shuffled.fasta
+[0:01] Spectral library loaded: 8947 protein isoforms, 9078 protein groups and 1043264 precursors in 325396 elution groups.
+[0:01] Loading protein annotations from FASTA /home/lerost/DIA_tools_manuscript/fasta/sprot_ecoli_ups_15072026_shuffled.fasta
+[0:01] Annotating library proteins with information from the FASTA database
+[0:01] Gene names missing for some isoforms
+[0:01] Library contains 5732 proteins, and 5729 genes
+[0:02] Initialising library
+[0:04] Library RAM: 111MB (core), 141MB (fragments), 14MB (names), 4MB (protein_ids), 3MB (proteins)
+WARNING: it is strongly recommended to enable MBR when analysing with a large library, if this is a quantitative analysis
+
+[0:04] File #1/6
+[0:04] Loading run /home/lerost/DIA_tools_manuscript/input_files/PXD026600/RD139_Wide_UPS1_10fmol_inj1r.mzML
+[0:10] Detected MS/MS range: 199.999 - 1499.99
+[0:10] Run loaded: 1913 MS1 scans and 143475 MS2 scans in 1913 cycles
+[0:10] Pre-processing...
+[0:11] 1913 MS1 and 143475 MS2 scans in 1913 (inferred) and 1913 (encoded) cycles, 901719 precursors in range
+[0:11] Calibrating with mass accuracies 25 (MS1), 23 (MS2)
+[0:11] Processing batch #1 out of 200 
+[0:11] Precursor search
+[0:13] Optimising weights
+Averages: 
+[#0]: 0.0422664, 0.00132121, 0.0294164, 0.0355256, 0.0590485, 0.413411, 0.427167, 0.024341, 
+Weights: 
+[#0]: 1.52282e-07, 0, 0.529081, 0, 0.240946, 0.186744, 0.00707476, 1, 
+[0:13] Calculating q-values
+[0:13] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 158, 62, 32, 29
+[0:13] Processing batch #2 out of 200 
+[0:13] Precursor search
+[0:14] Optimising weights
+Averages: 
+[#0]: 0.0698991, 0.0280211, 0.035836, 0.0795541, 0.0923695, 0.662045, 0.777955, 0.0457505, 
+Weights: 
+[#0]: 7.53713e-08, 0, 0.320299, 0.00469611, 0.104084, 0.0554032, 0.0497661, 1, 
+[0:14] Calculating q-values
+[0:14] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 320, 109, 100, 85
+[0:14] Processing batch #3 out of 200 
+[0:14] Precursor search
+[0:15] Optimising weights
+Averages: 
+[#0]: 0.0857408, -0.00225154, 0.0262676, 0.110811, 0.129874, 0.817438, 0.999019, 0.0569336, 
+Weights: 
+[#0]: 0.208914, 0, 0.184394, 0.224771, 0.24988, 0, 0.0546993, 1, 
+[0:15] Calculating q-values
+[0:15] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 449, 155, 113, 94
+[0:15] Processing batch #4 out of 200 
+[0:15] Precursor search
+[0:17] Optimising weights
+Averages: 
+[#0]: 0.102125, -0.000780409, 0.0643891, 0.145922, 0.158082, 0.925918, 1.15527, 0.0667276, 
+Weights: 
+[#0]: 7.22971e-08, 0, 0.307513, 0.535704, 0.185494, 0.0157414, 0.0252938, 1, 
+[0:17] Calculating q-values
+[0:17] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 552, 199, 170, 105
+[0:17] Processing batch #5 out of 200 
+[0:17] Precursor search
+[0:18] Optimising weights
+Averages: 
+[#0]: 0.109432, -0.0933581, 0.0821771, 0.151113, 0.18666, 0.971485, 1.18927, 0.0745303, 
+Weights: 
+[#0]: 5.1157e-08, 0, 0.362904, 0.470402, 0.164467, 0.0558309, 0, 1, 
+[0:18] Calculating q-values
+[0:18] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 738, 251, 158, 130
+[0:18] Processing batches #6-7 out of 200 
+[0:18] Precursor search
+[0:20] Optimising weights
+Averages: 
+[#0]: 0.106526, -0.022149, 0.0657504, 0.150169, 0.177519, 0.969994, 1.18979, 0.0718077, 
+Weights: 
+[#0]: 5.9865e-08, 0, 0.325098, 0.476224, 0.180418, 0.0485884, 0, 1, 
+[0:20] Calculating q-values
+[0:20] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 1037, 365, 249, 182
+[0:20] Processing batches #8-9 out of 200 
+[0:20] Precursor search
+[0:23] Optimising weights
+Averages: 
+[#0]: 0.108114, 0.0272711, 0.0886448, 0.144207, 0.183984, 0.951021, 1.17309, 0.0704851, 
+Weights: 
+[#0]: 5.72536e-08, 0, 0.405958, 0.414047, 0.201115, 0.0585055, 0.0109726, 1, 
+[0:23] Calculating q-values
+[0:23] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 1360, 450, 329, 230
+[0:23] Processing batches #10-11 out of 200 
+[0:23] Precursor search
+[0:25] Optimising weights
+Averages: 
+[#0]: 0.113654, 0.0326769, 0.0876304, 0.154754, 0.185628, 1.01352, 1.24988, 0.0735211, 
+Weights: 
+[#0]: 5.84221e-08, 0, 0.41218, 0.447845, 0.183387, 0.0585585, 0.0102671, 1, 
+[0:25] Calculating q-values
+[0:25] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 1582, 554, 347, 141
+[0:25] Processing batches #12-14 out of 200 
+[0:25] Precursor search
+[0:29] Optimising weights
+Averages: 
+[#0]: 0.114321, 0.082115, 0.0964687, 0.153905, 0.182276, 1.01443, 1.25807, 0.0688385, 
+Weights: 
+[#0]: 8.19473e-08, 0, 0.531294, 0.644739, 0.259796, 0.0524796, 0.0145214, 1, 
+[0:29] Calculating q-values
+[0:29] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 2013, 716, 412, 212
+[0:29] Processing batches #15-17 out of 200 
+[0:29] Precursor search
+[0:32] Optimising weights
+Averages: 
+[#0]: 0.117915, 0.0936552, 0.0880787, 0.155274, 0.187558, 1.05955, 1.31112, 0.0721878, 
+Weights: 
+[#0]: 8.53101e-08, 0, 0.471762, 0.617022, 0.275943, 0.0305795, 0.0182095, 1, 
+[0:32] Calculating q-values
+[0:32] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 2462, 941, 515, 264
+[0:32] Processing batches #18-21 out of 200 
+[0:32] Precursor search
+[0:36] Optimising weights
+Averages: 
+[#0]: 0.119738, 0.104632, 0.0852418, 0.160812, 0.187723, 1.08101, 1.33793, 0.0738877, 
+Weights: 
+[#0]: 8.25438e-08, 0, 0.443614, 0.713931, 0.268773, 0.0200822, 0.0162313, 1, 
+[0:36] Calculating q-values
+[0:37] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 2964, 1157, 657, 329
+[0:37] Processing batches #22-26 out of 200 
+[0:37] Precursor search
+[0:42] Optimising weights
+Averages: 
+[#0]: 0.120823, 0.0965583, 0.0837968, 0.157664, 0.190719, 1.0957, 1.34673, 0.0739704, 
+Weights: 
+[#0]: 8.94232e-08, 0, 0.431275, 0.726156, 0.302825, 0.0233624, 0.00562875, 1, 
+[0:42] Calculating q-values
+[0:42] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 3547, 1406, 809, 389
+[0:42] Processing batches #27-32 out of 200 
+[0:42] Precursor search
+[0:48] Optimising weights
+Averages: 
+[#0]: 0.119964, 0.103477, 0.07883, 0.159221, 0.187031, 1.11033, 1.34888, 0.0720543, 
+Weights: 
+[#0]: 8.88689e-08, 0, 0.441318, 0.780788, 0.298358, 0.0411934, 0, 1, 
+[0:48] Calculating q-values
+[0:49] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 4322, 1730, 951, 453
+[0:49] Processing batches #33-39 out of 200 
+[0:49] Precursor search
+[0:56] Optimising weights
+Averages: 
+[#0]: 0.120224, 0.0813625, 0.0786774, 0.158571, 0.182519, 1.10975, 1.35882, 0.0726693, 
+Weights: 
+[#0]: 8.83154e-08, 0, 0.40367, 0.732987, 0.259266, 0.0308977, 0, 1, 
+[0:56] Calculating q-values
+[0:56] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 5148, 2092, 1135, 568
+[0:56] Precursor search
+[0:56] Optimising weights
+Averages: 
+[#0]: 0.12056, 0.0751258, 0.0795234, 0.15815, 0.183997, 1.11294, 1.36112, 0.0725334, 
+Weights: 
+[#0]: 9.08896e-08, 0, 0.415878, 0.758381, 0.274869, 0.0292671, 0, 1, 
+[0:56] Calculating q-values
+[0:57] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 5184, 2081, 1161, 576
+[0:57] Precursor search
+[0:57] Optimising weights
+Averages: 
+[#0]: 0.120859, 0.0754225, 0.0793679, 0.15842, 0.184189, 1.11653, 1.3642, 0.0726457, 
+Weights: 
+[#0]: 9.10674e-08, 0, 0.41537, 0.763226, 0.276951, 0.0284833, 0, 1, 
+[0:57] Calculating q-values
+[0:57] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 5162, 2080, 1157, 575
+[0:57] Precursor search
+[0:57] Optimising weights
+Averages: 
+[#0]: 0.120885, 0.074164, 0.0794868, 0.158571, 0.184532, 1.1164, 1.36414, 0.0727247, 
+Weights: 
+[#0]: 9.00027e-08, 0, 0.416858, 0.76697, 0.274102, 0.0292895, 0, 1, 
+[0:57] Calculating q-values
+[0:58] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 5167, 2081, 1158, 574
+[0:58] Calibrating retention times
+[0:58] 1792 precursors used for iRT estimation.
+[0:58] RT window set to 6.7412
+[0:58] Peak width: 3.892
+[0:58] Scan window radius set to 8
+[0:58] M/z SD: 4.22858 ppm
+[0:58] Top 70% mass accuracy: 3.68495 ppm
+[0:58] Top 70% mass accuracy without correction: 7.5002 ppm
+[0:58] Top 70% MS1 mass accuracy: 1.51051 ppm
+[0:58] Top 70% MS1 mass accuracy without correction: 1.60219ppm
+[0:58] Recommended MS1 mass accuracy setting: 8 ppm
+[0:58] Processing batch #1 out of 200 
+[0:58] Precursor search
+[0:58] Optimising weights
+[0:58] Too few training precursors, classifier will not be used
+[0:58] Calculating q-values
+[0:58] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 77, 46, 25, 20
+[0:58] Calibrating retention times
+[0:58] 77 precursors used for iRT estimation.
+[0:58] Processing batch #2 out of 200 
+[0:58] Precursor search
+[0:58] Optimising weights
+[0:58] Too few training precursors, classifier will not be used
+[0:58] Calculating q-values
+[0:58] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 155, 105, 62, 49
+[0:58] Calibrating retention times
+[0:58] 133 precursors used for iRT estimation.
+[0:58] Processing batch #3 out of 200 
+[0:58] Precursor search
+[0:58] Optimising weights
+[0:58] Too few training precursors, classifier will not be used
+[0:58] Calculating q-values
+[0:58] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 229, 143, 73, 50
+[0:58] Calibrating retention times
+[0:58] 150 precursors used for iRT estimation.
+[0:58] Processing batch #4 out of 200 
+[0:58] Precursor search
+[0:59] Optimising weights
+[0:59] Too few training precursors, classifier will not be used
+[0:59] Calculating q-values
+[0:59] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 314, 163, 68, 40
+[0:59] Calibrating retention times
+[0:59] 150 precursors used for iRT estimation.
+[0:59] Processing batch #5 out of 200 
+[0:59] Precursor search
+[0:59] Optimising weights
+Averages: 
+[#0]: 0.163456, 0.299239, 0.292008, 0.101636, 0.181224, 1.01779, 0.981289, 0.0998771, 
+Weights: 
+[#0]: 5.17128e-08, 0.0200939, 0.573616, 0, 0.160465, 0, 0, 1, 
+[0:59] Calculating q-values
+[0:59] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 390, 280, 208, 0
+[0:59] Calibrating retention times
+[0:59] 239 precursors used for iRT estimation.
+[0:59] Processing batches #6-7 out of 200 
+[0:59] Precursor search
+[0:59] Optimising weights
+Averages: 
+[#0]: 0.157455, 0.383171, 0.326636, 0.0875674, 0.190487, 0.94175, 0.880323, 0.0867652, 
+Weights: 
+[#0]: 6.90519e-08, 0.0468387, 0.822246, 0, 0.300823, 0, 0, 1, 
+[0:59] Calculating q-values
+[0:59] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 554, 409, 302, 0
+[0:59] Calibrating retention times
+[0:59] 375 precursors used for iRT estimation.
+[0:59] Processing batches #8-9 out of 200 
+[0:59] Precursor search
+[1:00] Optimising weights
+Averages: 
+[#0]: 0.164118, 0.445714, 0.350325, 0.0960489, 0.193827, 0.973937, 0.949678, 0.0894856, 
+Weights: 
+[#0]: 6.42085e-08, 0.0410942, 0.819925, 0, 0.265788, 0, 0, 1, 
+[1:00] Calculating q-values
+[1:00] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 699, 544, 344, 0
+[1:00] Calibrating retention times
+[1:00] 480 precursors used for iRT estimation.
+[1:00] Processing batches #10-11 out of 200 
+[1:00] Precursor search
+[1:00] Optimising weights
+Averages: 
+[#0]: 0.175408, 0.410433, 0.332454, 0.115119, 0.208329, 1.15165, 1.11204, 0.0981269, 
+Weights: 
+[#0]: 6.94645e-08, 0.016096, 0.799317, 0, 0.312061, 0, 0, 1, 
+[1:00] Calculating q-values
+[1:00] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 853, 617, 440, 0
+[1:00] Calibrating retention times
+[1:00] 569 precursors used for iRT estimation.
+[1:00] Processing batches #12-14 out of 200 
+[1:00] Precursor search
+[1:00] Optimising weights
+Averages: 
+[#0]: 0.177735, 0.481681, 0.3652, 0.108625, 0.202062, 1.13365, 1.05967, 0.0935549, 
+Weights: 
+[#0]: 7.67546e-08, 0.0382419, 0.945793, 0, 0.315548, 0, 0, 1, 
+[1:01] Calculating q-values
+[1:01] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 1081, 784, 540, 0
+[1:01] Calibrating retention times
+[1:01] 725 precursors used for iRT estimation.
+[1:01] Processing batches #15-17 out of 200 
+[1:01] Precursor search
+[1:01] Optimising weights
+Averages: 
+[#0]: 0.180276, 0.494668, 0.363339, 0.112903, 0.206913, 1.16798, 1.10278, 0.0955663, 
+Weights: 
+[#0]: 8.12674e-08, 0.0417918, 1, 0, 0.383215, 0, 0, 0.96118, 
+[1:01] Calculating q-values
+[1:01] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 1322, 997, 654, 0
+[1:01] Calibrating retention times
+[1:01] 874 precursors used for iRT estimation.
+[1:01] Processing batches #18-21 out of 200 
+[1:01] Precursor search
+[1:02] Optimising weights
+Averages: 
+[#0]: 0.189986, 0.463101, 0.361897, 0.123186, 0.212319, 1.25146, 1.1871, 0.106094, 
+Weights: 
+[#0]: 6.73589e-08, 0.0203016, 0.825172, 0, 0.308635, 0, 0, 1, 
+[1:02] Calculating q-values
+[1:02] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 1613, 1191, 832, 0
+[1:02] Calibrating retention times
+[1:02] 1051 precursors used for iRT estimation.
+[1:02] Processing batches #22-26 out of 200 
+[1:02] Precursor search
+[1:03] Optimising weights
+Averages: 
+[#0]: 0.188104, 0.421711, 0.34918, 0.120755, 0.213194, 1.25935, 1.21018, 0.103998, 
+Weights: 
+[#0]: 7.93349e-08, 0.0204422, 0.923009, 0, 0.375975, 0, 0, 1, 
+[1:03] Calculating q-values
+[1:03] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 1986, 1432, 1035, 0
+[1:03] Calibrating retention times
+[1:03] 1255 precursors used for iRT estimation.
+[1:03] Processing batches #27-32 out of 200 
+[1:03] Precursor search
+[1:04] Optimising weights
+Averages: 
+[#0]: 0.194087, 0.400923, 0.342506, 0.129364, 0.230209, 1.32234, 1.2697, 0.10952, 
+Weights: 
+[#0]: 7.51579e-08, 0.0109534, 0.854731, 0, 0.419983, 0, 0, 1, 
+[1:04] Calculating q-values
+[1:04] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 2431, 1787, 1259, 0
+[1:04] Calibrating retention times
+[1:04] 1553 precursors used for iRT estimation.
+[1:04] Processing batches #33-39 out of 200 
+[1:04] Precursor search
+[1:05] Optimising weights
+Averages: 
+[#0]: 0.195348, 0.406386, 0.339275, 0.132476, 0.227518, 1.35389, 1.27951, 0.109366, 
+Weights: 
+[#0]: 7.35453e-08, 0.0114261, 0.823607, 0, 0.405314, 0, 0, 1, 
+[1:05] Calculating q-values
+[1:05] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 2947, 2153, 1484, 0
+[1:05] Calibrating retention times
+[1:05] 1869 precursors used for iRT estimation.
+[1:05] Precursor search
+[1:11] Optimising weights
+Averages: 
+[#0]: 0.198454, 0.408453, 0.337662, 0.13846, 0.222945, 1.39961, 1.32213, 0.108986, 0, 0.142177, [#10]: 0.777579, 0.237704, 0.0972243, 0.156614, 1.56049, 0.205905, 0.449643, 0.140401, 0.115192, 0.181504, [#20]: 0.117677, 0.874865, 0.139272, 0, 0, 0.32845, 0.264666, 0, 0.0945194, 0.0618385, [#30]: 0, 0.017871, 0.0127739, 0.145829, 0.257597, 1.1278, 1.27103, 9.47227, 0.0990823, 0.789964, [#40]: 0.133906, 0.126935, 0.116098, 0.101372, 0.308264, 0.347117, 0.783023, 0.784224, 0.598867, 0.46072, [#50]: 0.435078, -0.647746, -1.14219, -1.36722, -1.43784, 0, 0, 0, 0, 
+Weights: 
+[#0]: 2.79526e-08, 0.00970641, 0.134419, 0, 0, 0, 0, 0, 0, 0, [#10]: 0, 0, 0, 1, 0, 0, 0, 0.219464, 0.11978, 0.10542, [#20]: 0.0224006, 0.0181832, 0.101851, 0, 0, 0.0519727, 0, 0, 0, 0, [#30]: 0, 0, 0, 0, 0.00414654, 0, 0, 0.000370656, 0, 0.0140203, [#40]: 0, 0, 0, 0, 0, 0.0572252, 0.0409525, 0.0387283, 0.00258123, 0.187384, [#50]: 0.0116565, -0.0571807, 0, 0, 0, 0, 0, 0, 0, 
+[1:11] Calculating q-values
+[1:11] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 2949, 2447, 1720, 1048
+[1:11] Trying mass accuracy 7 ppm
+[1:11] Precursor search
+[1:17] Optimising weights
+Averages: 
+[#0]: 0.201722, 0.371579, 0.312498, 0.154188, 0.224819, 1.49963, 1.45329, 0.114265, 0, 0.149639, [#10]: 0.844752, 0.232705, 0.1083, 0.159851, 1.64603, 0.205426, 0.581549, 0.141796, 0.112913, 0.188902, [#20]: 0.12421, 0.932885, 0.150046, 0, 0, 0.302131, 0.248329, 0, 0.108122, 0.0746303, [#30]: 0, 0.0246154, 0.0145857, 0.150696, 0.23348, 1.24011, 1.02575, 10.0445, 0.087431, 0.808259, [#40]: 0.143688, 0.137532, 0.127142, 0.112155, 0.283193, 0.321492, 0.71625, 0.725434, 0.556054, 0.430585, [#50]: 0.40654, -0.638865, -1.12472, -1.3388, -1.40566, 0, 0, 0, 0, 
+Weights: 
+[#0]: 3.25478e-08, 0.00415043, 0.19298, 0.013663, 0, 0, 0, 0.235009, 0, 0, [#10]: 0, 0, 0, 1, 0, 0, 0, 0.182607, 0.0257928, 0.142751, [#20]: 0, 0.0100067, 0.0967193, 0, 0, 0.0618834, 0, 0, 0, 0, [#30]: 0, 0.0260802, 0, 0, 0.0121589, 0, 0, 0.000525115, 0, 0.0192544, [#40]: 0, 0, 0, 0, 0, 0.0323734, 0.0200246, 0.0397784, 0.0118912, 0.182032, [#50]: 0.0078523, -0.0579796, 0, 0, 0, 0, 0, 0, 0, 
+[1:17] Calculating q-values
+[1:17] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 3292, 2562, 1675, 1124
+[1:17] Trying mass accuracy 8 ppm
+[1:17] Precursor search
+[1:23] Optimising weights
+Averages: 
+[#0]: 0.200747, 0.361641, 0.285436, 0.160778, 0.231565, 1.52268, 1.529, 0.114466, 0, 0.153174, [#10]: 0.901086, 0.263576, 0.11369, 0.158465, 1.65196, 0.202201, 0.618564, 0.145773, 0.110771, 0.172562, [#20]: 0.134711, 0.950619, 0.155697, 0, 0, 0.274763, 0.241302, 0, 0.116461, 0.0884865, [#30]: 0, 0.0236982, 0.0131066, 0.149451, 0.255146, 1.24325, 1.25498, 9.57858, 0.101085, 0.786477, [#40]: 0.147891, 0.142306, 0.132564, 0.118019, 0.255947, 0.296393, 0.666173, 0.67013, 0.517393, 0.397295, [#50]: 0.379018, -0.61179, -1.07359, -1.27549, -1.33748, 0, 0, 0, 0, 
+Weights: 
+[#0]: 4.48791e-08, 0, 0.240321, 0, 0, 0, 0, 0.254177, 0, 0, [#10]: 0, 0.00252514, 0, 1, 0, 0.170705, 0, 0.276807, 0.0824933, 0.0666336, [#20]: 0, 0.0225449, 0.0752429, 0, 0, 0.0384108, 0, 0, 0, 0, [#30]: 0, 0, 0, 0, 0.017012, 0, 0, 0, 0, 0.0287494, [#40]: 0, 0, 0, 0, 0, 0.0309943, 0.0250477, 0.0274592, 0.0336292, 0.207093, [#50]: 0.0189727, -0.0624057, 0, 0, 0, 0, 0, 0, 0, 
+[1:24] Calculating q-values
+[1:24] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 3621, 2666, 1781, 1169
+[1:24] Trying mass accuracy 10 ppm
+[1:24] Precursor search
+[1:30] Optimising weights
+Averages: 
+[#0]: 0.187251, 0.329888, 0.221984, 0.162071, 0.220243, 1.48955, 1.54864, 0.112601, 0, 0.150254, [#10]: 0.925777, 0.264453, 0.120937, 0.149798, 1.62139, 0.183421, 0.634806, 0.135332, 0.102225, 0.160626, [#20]: 0.137255, 0.894404, 0.149738, 0, 0, 0.213238, 0.188876, 0, 0.124324, 0.0977537, [#30]: 0, 0.0296722, 0.013248, 0.140588, 0.26668, 1.19193, 1.26843, 8.80475, 0.105713, 0.725487, [#40]: 0.144714, 0.139309, 0.130018, 0.116144, 0.193691, 0.232876, 0.562122, 0.570097, 0.432806, 0.332344, [#50]: 0.318988, -0.561442, -0.995013, -1.19078, -1.25335, 0, 0, 0, 0, 
+Weights: 
+[#0]: 6.98213e-08, 0, 0.205513, 0.00684486, 0.204758, 0, 0, 0.64128, 0, 0, [#10]: 0.01184, 0.0234947, 0, 1, 0.0304115, 0, 0, 0, 0.0640883, 0.0964944, [#20]: 0, 0.00569683, 0, 0, 0, 0.125855, 0, 0, 0.0300579, 0, [#30]: 0, 0, 0, 0, 0.0230908, 0, 0, 0, 0, 0.0323411, [#40]: 0, 0, 0, 0, 0, 0.0544301, 0.0348541, 0.0539644, 0.0161955, 0.22712, [#50]: 0.0287863, -0.0683254, 0, 0, 0, 0, 0, 0, 0, 
+[1:30] Calculating q-values
+[1:30] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 4426, 2714, 1872, 1235
+[1:30] Trying mass accuracy 12 ppm
+[1:30] Precursor search
+[1:36] Optimising weights
+Averages: 
+[#0]: 0.170821, 0.266286, 0.185822, 0.156091, 0.197966, 1.38818, 1.46947, 0.105267, 0, 0.13985, [#10]: 0.888269, 0.256605, 0.117273, 0.136625, 1.52863, 0.165563, 0.620135, 0.119751, 0.0923672, 0.137899, [#20]: 0.130055, 0.830396, 0.139581, 0, 0, 0.178714, 0.162525, 0, 0.120692, 0.101253, [#30]: 0, 0.0283004, 0.0111653, 0.126866, 0.245807, 1.10569, 1.22101, 7.84008, 0.095502, 0.634104, [#40]: 0.134917, 0.130162, 0.12189, 0.10934, 0.161785, 0.203299, 0.47623, 0.483342, 0.366934, 0.276155, [#50]: 0.269942, -0.51673, -0.915936, -1.0932, -1.14618, 0, 0, 0, 0, 
+Weights: 
+[#0]: 1.0135e-07, 0, 0.21936, 0, 0.225706, 0, 0, 1, 0, 0, [#10]: 0.0198276, 0.0503067, 0, 0.810976, 0.0581163, 0.255381, 0, 0, 0.200551, 0.0212955, [#20]: 0, 0, 0, 0, 0, 0.0957466, 0, 0, 0.0135044, 0, [#30]: 0, 0, 0, 0, 0.0135497, 0, 0, 0, 0, 0.0101887, [#40]: 0, 0, 0, 0, 0, 0.125338, 0.0335995, 0.0730178, 0.0309349, 0.185266, [#50]: 0.0714519, -0.0781544, 0, 0, 0, 0, 0, 0, 0, 
+[1:36] Calculating q-values
+[1:36] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 5338, 2775, 1892, 1236
+[1:36] Trying mass accuracy 14 ppm
+[1:36] Precursor search
+[1:43] Optimising weights
+Averages: 
+[#0]: 0.162804, 0.222241, 0.192274, 0.154498, 0.196504, 1.28653, 1.40258, 0.0996014, 0, 0.130758, [#10]: 0.863299, 0.253224, 0.111902, 0.124852, 1.4271, 0.155344, 0.552916, 0.119139, 0.088291, 0.134609, [#20]: 0.12635, 0.809207, 0.134017, 0, 0, 0.18734, 0.176494, 0, 0.119936, 0.104161, [#30]: 0, 0.0207854, 0.0061214, 0.116021, 0.191811, 1.06157, 0.998213, 7.4712, 0.0736636, 0.598026, [#40]: 0.125908, 0.121334, 0.113465, 0.101634, 0.167548, 0.211677, 0.453622, 0.457304, 0.34364, 0.275726, [#50]: 0.262186, -0.509031, -0.901158, -1.07306, -1.12418, 0, 0, 0, 0, 
+Weights: 
+[#0]: 1.80254e-07, 0, 0.255361, 0.0444705, 0.400698, 0, 0, 0.982954, 0, 0, [#10]: 0.0185576, 0.11237, 0, 1, 0.0758941, 0.481433, 0, 0, 0.287054, 0.120292, [#20]: 0, 0.0473321, 0, 0, 0, 0.187689, 0, 0, 0.149898, 0, [#30]: 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, [#40]: 0, 0, 0, 0, 0, 0.249011, 0.0375494, 0.107618, 0.0089691, 0.390267, [#50]: 0.0889713, -0.146934, 0, 0, 0, 0, 0, 0, 0, 
+[1:43] Calculating q-values
+[1:43] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 5892, 2820, 2103, 1208
+[1:43] Trying mass accuracy 17 ppm
+[1:43] Precursor search
+[1:50] Optimising weights
+Averages: 
+[#0]: 0.160934, 0.207333, 0.191456, 0.160799, 0.198685, 1.26071, 1.42062, 0.0995322, 0, 0.129025, [#10]: 0.910152, 0.248898, 0.114249, 0.120246, 1.43614, 0.151216, 0.550205, 0.121377, 0.088267, 0.13391, [#20]: 0.124787, 0.820911, 0.131934, 0, 0, 0.184837, 0.183564, 0, 0.130741, 0.116662, [#30]: 0, 0.0210443, 0.0055201, 0.111528, 0.177485, 1.05304, 0.876712, 7.36506, 0.0652549, 0.578812, [#40]: 0.124838, 0.120698, 0.11335, 0.102014, 0.166531, 0.212454, 0.467248, 0.468227, 0.352523, 0.273857, [#50]: 0.26591, -0.530318, -0.933654, -1.11448, -1.17369, 0, 0, 0, 0, 
+Weights: 
+[#0]: 1.0448e-07, 0, 0.368524, 0.124222, 0.217735, 0, 0, 0.177911, 0, 0, [#10]: 0.0450835, 0.079394, 0, 1, 0.0235881, 0.289914, 0, 0, 0.0501595, 0.164193, [#20]: 0, 0.0295259, 0, 0, 0, 0.0208985, 0, 0, 0.162627, 0, [#30]: 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, [#40]: 0, 0, 0, 0, 0, 0.0671785, 0.0490192, 0.0465962, 0.014397, 0.175374, [#50]: 0.0816009, -0.091135, 0, 0, 0, 0, 0, 0, 0, 
+[1:50] Calculating q-values
+[1:50] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 6161, 2826, 2108, 1207
+[1:50] Trying mass accuracy 20 ppm
+[1:50] Precursor search
+[1:57] Optimising weights
+Averages: 
+[#0]: 0.151636, 0.207073, 0.190403, 0.160305, 0.194899, 1.17235, 1.36783, 0.0942003, 0, 0.119902, [#10]: 0.884799, 0.24468, 0.114783, 0.108327, 1.37391, 0.139808, 0.518167, 0.117432, 0.0841031, 0.123313, [#20]: 0.119487, 0.746508, 0.121548, 0, 0, 0.184883, 0.181731, 0, 0.133016, 0.123649, [#30]: 0, 0.0219318, 0.0065595, 0.101286, 0.133556, 1.00261, 0.483027, 6.82734, 0.0434041, 0.570916, [#40]: 0.117653, 0.114678, 0.10873, 0.0988035, 0.165108, 0.216434, 0.461712, 0.470532, 0.354938, 0.264516, [#50]: 0.25698, -0.509229, -0.898936, -1.07208, -1.12743, 0, 0, 0, 0, 
+Weights: 
+[#0]: 1.45372e-07, 0.000139647, 0.365386, 0.15113, 0.259237, 0, 0, 1, 0, 0, [#10]: 0, 0.141144, 0, 0, 0.0660397, 0.647725, 0, 0, 0.070759, 0.288364, [#20]: 0, 0, 0, 0, 0, 0.046704, 0, 0, 0.390382, 0, [#30]: 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.0107533, [#40]: 0, 0, 0, 0, 0, 0.0668473, 0.0320756, 0.145584, 0.0444508, 0.202661, [#50]: 0.0447836, -0.10588, 0, 0, 0, 0, 0, 0, 0, 
+[1:57] Calculating q-values
+[1:57] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 6428, 2833, 2173, 1383
+[1:57] Optimised mass accuracy: 20 ppm
+[1:57] Precursor search
+[2:04] Optimising weights
+Averages: 
+[#0]: 0.151636, 0.207073, 0.190403, 0.160305, 0.194899, 1.17235, 1.36783, 0.0942003, 0, 0.119902, [#10]: 0.884799, 0.24468, 0.114783, 0.108327, 1.37391, 0.139808, 0.518167, 0.117432, 0.0841031, 0.123313, [#20]: 0.119487, 0.746508, 0.121548, 0, 0, 0.184883, 0.181731, 0.000565012, 0.133016, 0.123649, [#30]: 0.0310039, 0.0219318, 0.0065595, 0.101286, 0.133556, 1.00261, 0.483027, 6.82734, 0.0434041, 0.570916, [#40]: 0.117653, 0.114678, 0.10873, 0.0988035, 0.165108, 0.216434, 0.461712, 0.470532, 0.354938, 0.264516, [#50]: 0.25698, -0.509229, -0.898936, -1.07208, -1.12743, 0, 0, 0, 0, 
+Weights: 
+[#0]: 1.48865e-07, 0.00194085, 0.376065, 0.151902, 0.270157, 0, 0, 1, 0, 0, [#10]: 0, 0.142181, 0, 0, 0.067037, 0.664438, 0, 0, 0.0808687, 0.291649, [#20]: 0, 0, 0, 0, 0, 0.0467431, 0, 0, 0.400603, 0, [#30]: 0.151894, 0, 0, 0, 0, 0, 0, 0, 0, 0.00888028, [#40]: 0, 0, 0, 0, 0, 0.0684979, 0.0321102, 0.148559, 0.0461819, 0.207237, [#50]: 0.0475574, -0.108327, 0, 0, 0, 0, 0, 0, 0, 
+[2:04] Calculating q-values
+[2:04] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 6437, 2839, 2167, 1364
+[2:04] Calibrating retention times
+[2:04] 2491 precursors used for iRT estimation.
+[2:04] Precursor search
+[2:04] Optimising weights
+Averages: 
+[#0]: 0.158445, 0.230537, 0.194869, 0.162452, 0.192743, 1.2385, 1.4381, 0.096745, 0, 0.125967, [#10]: 0.925066, 0.236541, 0.119319, 0.114423, 1.41923, 0.145722, 0.537213, 0.113965, 0.0856171, 0.123561, [#20]: 0.120977, 0.765683, 0.12608, 0, 0, 0.190357, 0.189801, 0.00294544, 0.136671, 0.128065, [#30]: 0.0326571, 0.0296259, 0.0109301, 0.105346, 0.169406, 1.03647, 0.686086, 7.10627, 0.0563239, 0.58366, [#40]: 0.12378, 0.120679, 0.114414, 0.103916, 0.169771, 0.220046, 0.474736, 0.488575, 0.370075, 0.270828, [#50]: 0.264341, -0.490083, -0.904633, -1.09527, -1.15452, 0, 0, 0, 0, 
+Weights: 
+[#0]: 1.24462e-07, 0.00618274, 0.4318, 0.174649, 0.248336, 0, 0, 0.71051, 0, 0, [#10]: 0.0437585, 0.100368, 0, 1, 0.0625201, 0, 0, 0, 0.0302086, 0.232178, [#20]: 0, 0.00823347, 0, 0, 0, 0.149301, 0, 0, 0.310911, 0, [#30]: 0.23571, 0.122187, 0, 0, 0, 0, 0, 0, 0, 0, [#40]: 0, 0, 0, 0, 0, 0.0922754, 0, 0.139739, 0.0367128, 0.176479, [#50]: 0.0253182, 0, -0.051728, 0, 0, 0, 0, 0, 0, 
+[2:04] Calculating q-values
+[2:04] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 6440, 2813, 2066, 1277
+[2:04] Precursor search
+[2:11] Optimising weights
+Averages: 
+[#0]: 0.151782, 0.209882, 0.184565, 0.156147, 0.187787, 1.18796, 1.37048, 0.0940049, 0, 0.121021, [#10]: 0.882201, 0.235836, 0.114681, 0.110143, 1.35245, 0.140394, 0.509618, 0.111618, 0.08309, 0.122485, [#20]: 0.116602, 0.74094, 0.122425, 0, 0, 0.179698, 0.176676, 0.00637999, 0.131921, 0.122675, [#30]: 0.0309037, 0.0237728, 0.0084119, 0.10168, 0.154872, 1.00022, 0.616664, 6.81729, 0.0507686, 0.562048, [#40]: 0.118237, 0.114936, 0.108605, 0.0983198, 0.160583, 0.206388, 0.453334, 0.46732, 0.350818, 0.26021, [#50]: 0.249964, -0.49114, -0.889222, -1.06976, -1.12551, 0, 0, 0, 0, 
+Weights: 
+[#0]: 1.37201e-07, 0.00306829, 0.331984, 0.196842, 0.25006, 0, 0, 1, 0, 0, [#10]: 0.0162942, 0.126283, 0, 0, 0.0764708, 0.566237, 0, 0, 0.0389052, 0.287748, [#20]: 0, 0, 0, 0, 0, 0.119651, 0, 0, 0.345076, 0, [#30]: 0.190855, 0, 0, 0, 0, 0, 0, 0, 0, 0, [#40]: 0, 0, 0, 0, 0, 0.0793961, 0, 0.178837, 0.0135144, 0.219202, [#50]: 0, -0.0282155, -0.0395784, 0, 0, 0, 0, 0, 0, 
+[2:11] Calculating q-values
+[2:11] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 6767, 2855, 2147, 1335
+[2:11] Precursor search
+[2:11] Optimising weights
+Averages: 
+[#0]: 0.152948, 0.221625, 0.186989, 0.154706, 0.183831, 1.20324, 1.38377, 0.0932707, 0, 0.121783, [#10]: 0.884524, 0.227837, 0.114349, 0.111302, 1.36496, 0.141474, 0.498838, 0.108353, 0.0821527, 0.117595, [#20]: 0.115907, 0.733042, 0.120894, 0, 0, 0.182097, 0.17841, 0.0081916, 0.131585, 0.122614, [#30]: 0.0304131, 0.0275846, 0.00996099, 0.101774, 0.178137, 0.992145, 0.760186, 6.75945, 0.0597882, 0.554501, [#40]: 0.118747, 0.115307, 0.10884, 0.0984637, 0.163182, 0.208667, 0.458499, 0.469387, 0.353195, 0.261296, [#50]: 0.253142, -0.485611, -0.886406, -1.06773, -1.12181, 0, 0, 0, 0, 
+Weights: 
+[#0]: 1.36357e-07, 0.00430468, 0.488702, 0.167475, 0.268016, 0, 0, 0.808308, 0, 0, [#10]: 0.0498875, 0.112606, 0, 1, 0.0761278, 0, 0, 0, 0.0314958, 0.233899, [#20]: 0, 0, 0, 0, 0, 0.142236, 0, 0, 0.364658, 0, [#30]: 0.178702, 0.0637446, 0, 0, 0.000413345, 0, 0, 0, 0, 0, [#40]: 0, 0, 0, 0, 0, 0.0870745, 0, 0.17012, 0.0197228, 0.209382, [#50]: 0.00961613, -0.00481823, -0.0523817, 0, 0, 0, 0, 0, 0, 
+[2:12] Calculating q-values
+[2:12] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 6723, 2828, 2068, 1274
+[2:12] Precursor search
+[2:12] Optimising weights
+Averages: 
+[#0]: 0.151782, 0.209882, 0.184565, 0.156147, 0.187787, 1.18796, 1.37048, 0.0940049, 0, 0.121021, [#10]: 0.882201, 0.235836, 0.114681, 0.110143, 1.35245, 0.140394, 0.509618, 0.111618, 0.08309, 0.122485, [#20]: 0.116602, 0.74094, 0.122425, 0, 0, 0.179698, 0.176676, 0.00637999, 0.131921, 0.122675, [#30]: 0.0309037, 0.0237728, 0.0084119, 0.10168, 0.154872, 1.00022, 0.616664, 6.81729, 0.0507686, 0.562048, [#40]: 0.118237, 0.114936, 0.108605, 0.0983198, 0.160583, 0.206388, 0.453334, 0.46732, 0.350818, 0.26021, [#50]: 0.249964, -0.49114, -0.889222, -1.06976, -1.12551, 0, 0, 0, 0, 
+Weights: 
+[#0]: 1.37201e-07, 0.00306829, 0.331984, 0.196842, 0.25006, 0, 0, 1, 0, 0, [#10]: 0.0162942, 0.126283, 0, 0, 0.0764708, 0.566237, 0, 0, 0.0389052, 0.287748, [#20]: 0, 0, 0, 0, 0, 0.119651, 0, 0, 0.345076, 0, [#30]: 0.190855, 0, 0, 0, 0, 0, 0, 0, 0, 0, [#40]: 0, 0, 0, 0, 0, 0.0793961, 0, 0.178837, 0.0135144, 0.219202, [#50]: 0, -0.0282155, -0.0395784, 0, 0, 0, 0, 0, 0, 
+[2:12] Calculating q-values
+[2:12] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 6767, 2855, 2147, 1335
+[2:12] Calibrating retention times
+[2:12] 2494 precursors used for iRT estimation.
+[2:12] M/z SD: 4.27162 ppm
+[2:12] Top 70% mass accuracy: 4.87433 ppm
+[2:12] Top 70% mass accuracy without correction: 7.82201 ppm
+[2:12] Top 70% MS1 mass accuracy: 1.46682 ppm
+[2:12] Top 70% MS1 mass accuracy without correction: 1.56178ppm
+[2:13] Main search
+[2:13] Precursor search
+[2:46] Optimising weights
+Averages: 
+[#0]: 0.152141, 0.176971, 0.0987198, 0.169974, 0.189882, 1.37831, 1.55833, 0.096913, 0, 0.135688, [#10]: 0.944978, 0.217537, 0.121717, 0.123631, 1.5483, 0.13931, 0.573738, 0.111631, 0.0791614, 0.108303, [#20]: 0.130693, 0.77817, 0.136711, 0, 0, 0.0927553, 0.112197, -0.000229128, 0.138379, 0.130638, [#30]: 0.0315921, 0.0335408, 0.0126976, 0.113318, 0.232806, 1.11248, 1.2328, 7.50667, 0.0825724, 0.539416, [#40]: 0.132878, 0.129175, 0.121912, 0.109992, 0.0730177, 0.122503, 0.365843, 0.38133, 0.28433, 0.18756, [#50]: 0.203867, -0.47185, -0.843302, -1.00556, -1.0592, 0, 0, 0, 0, 
+Weights: 
+[#0]: 1.62534e-07, 0, 0, 0.15256, 0.572241, 0, 0, 0.776146, 0, 0, [#10]: 0.0250656, 0, 0, 0, 0.133728, 0.370035, 0, 0, 0, 0.181287, [#20]: 0, 0, 0.153387, 0, 0, 0.112086, 0, 0, 1, 0, [#30]: 0.222234, 0.181173, 0, 0, 0, 0, 0, 0, 0, 0, [#40]: 0, 0, 0, 0, 0, 0.244529, 0.0452209, 0.0492829, 0, 0.227278, [#50]: 0.0697409, -0.115659, -0.00701227, 0, -0.0085369, 0, 0, 0, 0, 
+[2:46] Calculating q-values
+[2:47] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 37951, 16428, 13423, 10497
+[2:47] Removing low confidence identifications
+[2:47] Calibrating retention times
+[2:47] 15344 precursors used for iRT estimation.
+[2:48] M/z SD: 4.29863 ppm
+[2:48] Top 70% mass accuracy: 5.12545 ppm
+[2:48] Top 70% mass accuracy without correction: 8.14989 ppm
+[2:48] Top 70% MS1 mass accuracy: 1.40569 ppm
+[2:48] Top 70% MS1 mass accuracy without correction: 1.59893ppm
+[2:49] Calculating q-values
+[2:50] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 37917, 16416, 13446, 10388
+[2:50] Removing interfering precursors
+[2:50] Calculating q-values
+[2:51] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 33949, 16137, 13365, 10392
+[2:51] Optimising weights
+Averages: 
+[#0]: 0.161811, 0.182907, 0.106279, 0.183567, 0.194247, 1.47032, 1.6595, 0.101252, 0, 0.144098, [#10]: 0.993717, 0.2286, 0.125502, 0.13137, 1.65778, 0.148831, 0.583314, 0.113258, 0.0832835, 0.112237, [#20]: 0.140453, 0.82468, 0.146351, 0, 0, 0.101254, 0.120879, -0.00108441, 0.142978, 0.134119, [#30]: 0.0339642, 0.0331658, 0.0125601, 0.120529, 0.243471, 1.19222, 1.29917, 8.21856, 0.0836726, 0.58199, [#40]: 0.140695, 0.136491, 0.128431, 0.115415, 0.0796484, 0.131856, 0.386283, 0.403766, 0.315567, 0.196501, [#50]: 0.215961, -0.478609, -0.867785, -1.03535, -1.0859, 0, 0, 0, 0, 
+Weights: 
+[#0]: 1.51657e-07, 0, 0, 0.260258, 0.536364, 0, 0, 0.737121, 0, 0, [#10]: 0, 0.010092, 0, 0, 0.123147, 0.815998, 0, 0, 0, 0.254863, [#20]: 0, 0, 0.0887726, 0, 0, 0.126503, 0, 0, 1, 0, [#30]: 0.274532, 0.0784618, 0, 0, 0, 0, 0, 0, 0, 0, [#40]: 0, 0, 0, 0, 0, 0.21734, 0.0445867, 0.0341448, 0, 0.252606, [#50]: 0.056747, -0.120847, -0.0203923, 0, 0, 0, 0, 0, 0, 
+[2:52] Training neural networks on 32091 target and 20911 decoy PSMs
+[3:02] Calculating q-values
+[3:03] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 35594, 18624, 16296, 13008
+[3:03] Calibrating retention times
+[3:03] 13513 precursors used for iRT estimation.
+[3:03] Number of IDs at 0.01 FDR: 16928
+[3:03] Calculating protein q-values
+[3:03] Number of genes identified at 1% FDR: 1948 (precursor-level), 1866 (protein-level) (inference performed using proteotypic peptides only)
+[3:03] Quantification
+[3:04] Quantification information saved to /home/lerost/DIA_tools_manuscript/search_results/tmp/_home_lerost_DIA_tools_manuscript_input_files_PXD026600_RD139_Wide_UPS1_10fmol_inj1r_mzML.quant
+
+[3:04] File #2/6
+[3:04] Loading run /home/lerost/DIA_tools_manuscript/input_files/PXD026600/RD139_Wide_UPS1_1fmol_inj1.mzML
+[3:10] Detected MS/MS range: 199.999 - 1499.96
+[3:10] Run loaded: 1917 MS1 scans and 143775 MS2 scans in 1917 cycles
+[3:10] Pre-processing...
+[3:11] 1917 MS1 and 143775 MS2 scans in 1917 (inferred) and 1917 (encoded) cycles, 901719 precursors in range
+[3:11] Calibrating with mass accuracies 25 (MS1), 23 (MS2)
+[3:11] Processing batch #1 out of 200 
+[3:11] Precursor search
+[3:13] Optimising weights
+Averages: 
+[#0]: 0.0461416, -0.0149494, 0.0142628, 0.0443437, 0.074981, 0.431018, 0.453957, 0.0312649, 
+Weights: 
+[#0]: 1, 0, 0.0253783, 0, 0.19773, 0, 0, 0.363287, 
+[3:13] Calculating q-values
+[3:13] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 186, 61, 47, 38
+[3:13] Processing batch #2 out of 200 
+[3:13] Precursor search
+[3:14] Optimising weights
+Averages: 
+[#0]: 0.0752126, -0.0169638, 0.0725986, 0.0780842, 0.113515, 0.637183, 0.740284, 0.0468785, 
+Weights: 
+[#0]: 9.74495e-08, 0, 0.357986, 0, 0.264924, 0.060288, 0, 1, 
+[3:14] Calculating q-values
+[3:14] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 384, 119, 107, 80
+[3:14] Processing batch #3 out of 200 
+[3:14] Precursor search
+[3:16] Optimising weights
+Averages: 
+[#0]: 0.0956077, -0.0956669, 0.0444441, 0.124751, 0.152032, 0.877729, 1.05419, 0.0645717, 
+Weights: 
+[#0]: 0.188321, 0, 0.247063, 0.394643, 0.321716, 0.0110227, 0, 1, 
+[3:16] Calculating q-values
+[3:16] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 511, 196, 166, 123
+[3:16] Processing batch #4 out of 200 
+[3:16] Precursor search
+[3:17] Optimising weights
+Averages: 
+[#0]: 0.118962, 0.0619779, 0.0758098, 0.164342, 0.197653, 1.03039, 1.34398, 0.0795973, 
+Weights: 
+[#0]: 5.78716e-08, 0, 0.382156, 0.618162, 0.225853, 0, 0.0462992, 1, 
+[3:17] Calculating q-values
+[3:17] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 639, 245, 211, 137
+[3:17] Processing batch #5 out of 200 
+[3:17] Precursor search
+[3:18] Optimising weights
+Averages: 
+[#0]: 0.116894, 0.0747699, 0.0662344, 0.16219, 0.188327, 1.04668, 1.3212, 0.076911, 
+Weights: 
+[#0]: 7.57866e-08, 0, 0.393867, 0.948526, 0.244882, 0, 0.0225688, 1, 
+[3:18] Calculating q-values
+[3:18] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 779, 295, 236, 168
+[3:18] Processing batches #6-7 out of 200 
+[3:18] Precursor search
+[3:21] Optimising weights
+Averages: 
+[#0]: 0.11789, 0.151828, 0.0788226, 0.146827, 0.187275, 1.07045, 1.32222, 0.0750586, 
+Weights: 
+[#0]: 6.76323e-08, 0.00546435, 0.385371, 0.472823, 0.238467, 0.00365073, 0.0537301, 1, 
+[3:21] Calculating q-values
+[3:21] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 1117, 430, 338, 246
+[3:21] Processing batches #8-9 out of 200 
+[3:21] Precursor search
+[3:23] Optimising weights
+Averages: 
+[#0]: 0.114312, 0.201179, 0.0762739, 0.141854, 0.185556, 1.04977, 1.28537, 0.071448, 
+Weights: 
+[#0]: 7.87085e-08, 0.0112537, 0.409034, 0.331584, 0.281329, 0.0244799, 0.0495276, 1, 
+[3:23] Calculating q-values
+[3:23] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 1373, 535, 431, 284
+[3:23] Processing batches #10-11 out of 200 
+[3:23] Precursor search
+[3:26] Optimising weights
+Averages: 
+[#0]: 0.118866, 0.195565, 0.0773073, 0.154983, 0.188458, 1.08989, 1.3664, 0.0740492, 
+Weights: 
+[#0]: 7.72332e-08, 0.00721193, 0.415245, 0.382519, 0.258424, 0, 0.0721975, 1, 
+[3:26] Calculating q-values
+[3:26] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 1644, 655, 420, 165
+[3:26] Processing batches #12-14 out of 200 
+[3:26] Precursor search
+[3:29] Optimising weights
+Averages: 
+[#0]: 0.122876, 0.273492, 0.0849355, 0.159118, 0.193829, 1.1318, 1.39833, 0.0740538, 
+Weights: 
+[#0]: 8.75776e-08, 0.022181, 0.481417, 0.567159, 0.31584, 0.0136925, 0.0606868, 1, 
+[3:29] Calculating q-values
+[3:29] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 2028, 847, 523, 247
+[3:29] Processing batches #15-17 out of 200 
+[3:29] Precursor search
+[3:33] Optimising weights
+Averages: 
+[#0]: 0.121438, 0.272727, 0.0742503, 0.159223, 0.186699, 1.13011, 1.38007, 0.0759133, 
+Weights: 
+[#0]: 7.90283e-08, 0.017243, 0.393198, 0.571989, 0.247203, 0.0343268, 0.0214339, 1, 
+[3:33] Calculating q-values
+[3:33] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 2584, 1058, 675, 287
+[3:33] Processing batches #18-21 out of 200 
+[3:33] Precursor search
+[3:38] Optimising weights
+Averages: 
+[#0]: 0.116668, 0.215316, 0.0735085, 0.148827, 0.174028, 1.082, 1.30764, 0.0734463, 
+Weights: 
+[#0]: 7.32076e-08, 0.00839149, 0.35317, 0.463821, 0.211606, 0.0490509, 0.00646542, 1, 
+[3:38] Calculating q-values
+[3:38] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 3194, 1285, 890, 333
+[3:38] Processing batches #22-26 out of 200 
+[3:38] Precursor search
+[3:43] Optimising weights
+Averages: 
+[#0]: 0.118381, 0.197842, 0.0809015, 0.153654, 0.182797, 1.0866, 1.31783, 0.0727984, 
+Weights: 
+[#0]: 8.61621e-08, 0.00630874, 0.431274, 0.628134, 0.292157, 0.0608286, 0, 1, 
+[3:44] Calculating q-values
+[3:44] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 3942, 1605, 1117, 407
+[3:44] Processing batches #27-32 out of 200 
+[3:44] Precursor search
+[3:50] Optimising weights
+Averages: 
+[#0]: 0.120442, 0.178855, 0.0814812, 0.156738, 0.186826, 1.11218, 1.33497, 0.0735394, 
+Weights: 
+[#0]: 9.09061e-08, 0.00442114, 0.468273, 0.729487, 0.327418, 0.0655157, 0, 1, 
+[3:50] Calculating q-values
+[3:50] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 4840, 1951, 1358, 501
+[3:50] Processing batches #33-39 out of 200 
+[3:50] Precursor search
+[3:57] Optimising weights
+Averages: 
+[#0]: 0.120199, 0.175944, 0.0796153, 0.156586, 0.185228, 1.10932, 1.33224, 0.0744077, 
+Weights: 
+[#0]: 8.69679e-08, 0.00470345, 0.449506, 0.729836, 0.302944, 0.0595975, 0, 1, 
+[3:57] Calculating q-values
+[3:57] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 5876, 2362, 1621, 606
+[3:57] Precursor search
+[3:57] Optimising weights
+Averages: 
+[#0]: 0.120141, 0.17787, 0.0791284, 0.156104, 0.185185, 1.1084, 1.33101, 0.0744986, 
+Weights: 
+[#0]: 8.83152e-08, 0.00500281, 0.441163, 0.736633, 0.305527, 0.0548746, 0, 1, 
+[3:58] Calculating q-values
+[3:58] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 5857, 2375, 1627, 605
+[3:58] Precursor search
+[3:58] Optimising weights
+Averages: 
+[#0]: 0.120267, 0.177934, 0.0796575, 0.156054, 0.184365, 1.11182, 1.33238, 0.074307, 
+Weights: 
+[#0]: 8.67448e-08, 0.00504229, 0.448697, 0.740393, 0.296536, 0.0587787, 0, 1, 
+[3:58] Calculating q-values
+[3:58] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 5863, 2367, 1622, 606
+[3:58] Precursor search
+[3:58] Optimising weights
+Averages: 
+[#0]: 0.120216, 0.176632, 0.0798513, 0.155907, 0.184959, 1.10895, 1.33125, 0.074379, 
+Weights: 
+[#0]: 8.8178e-08, 0.00467311, 0.446903, 0.737291, 0.302865, 0.056257, 0, 1, 
+[3:59] Calculating q-values
+[3:59] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 5851, 2370, 1626, 607
+[3:59] Calibrating retention times
+[3:59] 2082 precursors used for iRT estimation.
+[3:59] RT window set to 6.0925
+[3:59] M/z SD: 4.17289 ppm
+[3:59] Top 70% mass accuracy: 3.91454 ppm
+[3:59] Top 70% mass accuracy without correction: 7.09834 ppm
+[3:59] Top 70% MS1 mass accuracy: 1.36125 ppm
+[3:59] Top 70% MS1 mass accuracy without correction: 1.35442ppm
+[3:59] No MS1 mass correction required
+[3:59] Recommended MS1 mass accuracy setting: 7 ppm
+[3:59] Using mass accuracy 2e-05, 8e-06 (MS2, MS1)
+[3:59] Processing batch #1 out of 200 
+[3:59] Precursor search
+[3:59] Optimising weights
+Averages: 
+[#0]: 0.0975063, 0.232778, 0.0688642, 0.103962, 0.137152, 0.845633, 0.924344, 0.0620507, 
+Weights: 
+[#0]: 1, 0.0786574, 0.153698, 0.259683, 0.602542, 0, 0, 0.682785, 
+[3:59] Calculating q-values
+[3:59] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 193, 72, 48, 46
+[3:59] Resetting weights
+[3:59] Precursor search
+[3:59] Optimising weights
+Averages: 
+[#0]: 0.0962016, 0.211127, 0.0774617, 0.108011, 0.136451, 0.812862, 0.898265, 0.0623431, 
+Weights: 
+[#0]: 0.613511, 0.0886775, 0.285574, 0.607095, 0.697537, 0, 0, 1, 
+[3:59] Calculating q-values
+[3:59] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 205, 75, 51, 42
+[3:59] Calibrating retention times
+[3:59] 103 precursors used for iRT estimation.
+[3:59] Processing batch #2 out of 200 
+[3:59] Precursor search
+[3:59] Optimising weights
+Averages: 
+[#0]: 0.0984325, 0.208818, 0.0877011, 0.103878, 0.122908, 0.83698, 0.906364, 0.064071, 
+Weights: 
+[#0]: 1.14829e-07, 0.0437891, 0.305508, 0.218269, 0.280507, 0.0525509, 0, 1, 
+[3:59] Calculating q-values
+[3:59] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 440, 169, 130, 106
+[3:59] Calibrating retention times
+[3:59] 154 precursors used for iRT estimation.
+[3:59] Processing batch #3 out of 200 
+[3:59] Precursor search
+[4:00] Optimising weights
+Averages: 
+[#0]: 0.0982389, 0.172686, 0.104605, 0.104429, 0.12595, 0.778288, 0.87998, 0.0634172, 
+Weights: 
+[#0]: 0.210936, 0.0414929, 0.351065, 0.413277, 0.369143, 0, 0, 1, 
+[4:00] Calculating q-values
+[4:00] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 650, 262, 225, 157
+[4:00] Calibrating retention times
+[4:00] 247 precursors used for iRT estimation.
+[4:00] Processing batch #4 out of 200 
+[4:00] Precursor search
+[4:00] Optimising weights
+Averages: 
+[#0]: 0.0970456, 0.154102, 0.103405, 0.101521, 0.122217, 0.766398, 0.857526, 0.0624741, 
+Weights: 
+[#0]: 0.485409, 0.0313439, 0.365407, 0.382857, 0.381003, 0, 0, 1, 
+[4:00] Calculating q-values
+[4:00] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 840, 333, 273, 186
+[4:00] Calibrating retention times
+[4:00] 324 precursors used for iRT estimation.
+[4:00] Processing batch #5 out of 200 
+[4:00] Precursor search
+[4:00] Optimising weights
+Averages: 
+[#0]: 0.0951875, 0.158615, 0.104543, 0.0993882, 0.12841, 0.739172, 0.823434, 0.0617939, 
+Weights: 
+[#0]: 0.347616, 0.0352445, 0.378792, 0.40445, 0.4303, 0, 0, 1, 
+[4:00] Calculating q-values
+[4:00] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 1056, 411, 329, 181
+[4:00] Calibrating retention times
+[4:00] 387 precursors used for iRT estimation.
+[4:00] Processing batches #6-7 out of 200 
+[4:00] Precursor search
+[4:00] Optimising weights
+Averages: 
+[#0]: 0.0971562, 0.187716, 0.104926, 0.101502, 0.131509, 0.772054, 0.846319, 0.0620703, 
+Weights: 
+[#0]: 0.453934, 0.0615745, 0.434059, 0.489388, 0.535933, 0, 0, 1, 
+[4:00] Calculating q-values
+[4:00] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 1516, 571, 449, 276
+[4:00] Calibrating retention times
+[4:00] 517 precursors used for iRT estimation.
+[4:00] Processing batches #8-9 out of 200 
+[4:00] Precursor search
+[4:01] Optimising weights
+Averages: 
+[#0]: 0.0971048, 0.17734, 0.106742, 0.0994017, 0.130953, 0.768207, 0.843777, 0.0614913, 
+Weights: 
+[#0]: 0.802337, 0.0428544, 0.455429, 0.422331, 0.583003, 0, 0, 1, 
+[4:01] Calculating q-values
+[4:01] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 1835, 711, 554, 325
+[4:01] Calibrating retention times
+[4:01] 642 precursors used for iRT estimation.
+[4:01] Processing batches #10-11 out of 200 
+[4:01] Precursor search
+[4:01] Optimising weights
+Averages: 
+[#0]: 0.0966333, 0.169161, 0.105447, 0.101646, 0.123838, 0.763196, 0.850853, 0.0613247, 
+Weights: 
+[#0]: 0.54689, 0.0297834, 0.446981, 0.596459, 0.47622, 0, 0, 1, 
+[4:01] Calculating q-values
+[4:01] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 2187, 884, 636, 387
+[4:01] Calibrating retention times
+[4:01] 750 precursors used for iRT estimation.
+[4:01] Processing batches #12-14 out of 200 
+[4:01] Precursor search
+[4:02] Optimising weights
+Averages: 
+[#0]: 0.111604, 0.211977, 0.131124, 0.116893, 0.142352, 0.866346, 0.958034, 0.0724624, 
+Weights: 
+[#0]: 1.14916e-07, 0.0243295, 0.378105, 0.428863, 0.283434, 0, 0, 1, 
+[4:02] Calculating q-values
+[4:02] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 2781, 1146, 851, 428
+[4:02] Calibrating retention times
+[4:02] 1034 precursors used for iRT estimation.
+[4:02] Processing batches #15-17 out of 200 
+[4:02] Precursor search
+[4:02] Optimising weights
+Averages: 
+[#0]: 0.135044, 0.268883, 0.156334, 0.141027, 0.173053, 1.06873, 1.20391, 0.0844163, 
+Weights: 
+[#0]: 0.00154545, 0.0282648, 0.461367, 0.53509, 0.397317, 0, 0, 1, 
+[4:02] Calculating q-values
+[4:02] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 3341, 1399, 1027, 511
+[4:02] Calibrating retention times
+[4:03] 1254 precursors used for iRT estimation.
+[4:03] Processing batches #18-21 out of 200 
+[4:03] Precursor search
+[4:03] Optimising weights
+Averages: 
+[#0]: 0.149717, 0.292076, 0.170908, 0.154397, 0.189094, 1.18596, 1.3471, 0.0941119, 
+Weights: 
+[#0]: 1.04348e-07, 0.0183538, 0.422767, 0.475772, 0.34639, 0, 0, 1, 
+[4:03] Calculating q-values
+[4:03] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 4037, 1709, 1259, 635
+[4:03] Calibrating retention times
+[4:03] 1526 precursors used for iRT estimation.
+[4:03] Processing batches #22-26 out of 200 
+[4:03] Precursor search
+[4:04] Optimising weights
+Averages: 
+[#0]: 0.162539, 0.315137, 0.18405, 0.168167, 0.210364, 1.29391, 1.46556, 0.102918, 
+Weights: 
+[#0]: 9.09158e-08, 0.0135654, 0.409737, 0.440332, 0.340663, 0, 0, 1, 
+[4:04] Calculating q-values
+[4:04] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 4956, 2092, 1515, 1047
+[4:04] Calibrating retention times
+[4:04] 1849 precursors used for iRT estimation.
+[4:04] Precursor search
+[4:04] Optimising weights
+Averages: 
+[#0]: 0.161476, 0.302153, 0.18843, 0.165948, 0.206617, 1.27788, 1.44565, 0.101032, 0, 0.130071, [#10]: 0.91703, 0.240817, 0.119004, 0.121307, 1.43832, 0.151762, 0.561399, 0.124816, 0.0929817, 0.133782, [#20]: 0.122013, 0.805012, 0.132627, 0, 0, 0.186058, 0.182355, 0.0253721, 0.142185, 0.132626, [#30]: 0.0341858, 0.0282296, 0.0100321, 0.112387, 0.206937, 1.04538, 0.900424, 6.94915, 0.0859611, 0.617925, [#40]: 0.125678, 0.121546, 0.114424, 0.103619, 0.164769, 0.209831, 0.474249, 0.480421, 0.362954, 0.287848, [#50]: 0.288776, -0.46512, -0.889183, -1.09287, -1.16752, 0, 0, 0, 0, 
+Weights: 
+[#0]: 1.4342e-07, 0.0254802, 0, 0.354246, 0.442149, 0, 0, 0.550291, 0, 0, [#10]: 0.0062594, 0.0383822, 0, 1, 0.0423652, 0.871098, 0, 0, 0.111333, 0.212708, [#20]: 0, 0.00387498, 0.0718887, 0, 0, 0.288819, 0, 0.00894155, 0.573106, 0, [#30]: 0.297056, 0.185573, 0, 0, 0.00747925, 0, 0, 0, 0, 0.0518273, [#40]: 0, 0, 0, 0, 0, 0.170718, 0.0912106, 0.0880136, 0.022163, 0.255169, [#50]: 0.224503, -0.120598, 0, 0, -0.00192657, 0, 0, 0, 0, 
+[4:04] Calculating q-values
+[4:05] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 5135, 2169, 1628, 1220
+[4:05] Precursor search
+[4:08] Optimising weights
+Averages: 
+[#0]: 0.156996, 0.282103, 0.191342, 0.164219, 0.196169, 1.22573, 1.4018, 0.0993097, 0, 0.125105, [#10]: 0.901661, 0.22911, 0.118848, 0.115271, 1.39626, 0.146503, 0.563188, 0.116995, 0.089008, 0.124007, [#20]: 0.121479, 0.780422, 0.127096, 0, 0, 0.186408, 0.182218, 0.0242121, 0.139102, 0.129353, [#30]: 0.0323369, 0.0237397, 0.00834376, 0.108131, 0.185249, 1.0167, 0.7723, 6.62726, 0.0777109, 0.598997, [#40]: 0.121664, 0.118167, 0.111855, 0.101892, 0.169216, 0.214475, 0.464441, 0.469902, 0.354802, 0.277886, [#50]: 0.280804, -0.46864, -0.884412, -1.07951, -1.1491, 0, 0, 0, 0, 
+Weights: 
+[#0]: 1.24354e-07, 0.0216668, 0, 0.280703, 0.319405, 0, 0, 0.992295, 0, 0, [#10]: 0.00739635, 0.0196007, 0, 0.657424, 0.0490567, 1, 0, 0, 0, 0.154272, [#20]: 0, 0, 0, 0, 0, 0.114965, 0, 0, 0.459029, 0, [#30]: 0.165391, 0.166891, 0, 0, 8.27081e-05, 0, 0, 0, 0, 0.038137, [#40]: 0, 0, 0, 0, 0.0509884, 0.233783, 0.0784636, 0.0809461, 0.00851848, 0.194897, [#50]: 0.205513, -0.116636, 0, 0, 0, 0, 0, 0, 0, 
+[4:09] Calculating q-values
+[4:09] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 5331, 2150, 1611, 1123
+[4:09] Precursor search
+[4:09] Optimising weights
+Averages: 
+[#0]: 0.156702, 0.285201, 0.191706, 0.163842, 0.196745, 1.22429, 1.40252, 0.0982323, 0, 0.124751, [#10]: 0.899307, 0.230556, 0.118057, 0.114714, 1.38965, 0.146154, 0.559777, 0.11742, 0.0885983, 0.123784, [#20]: 0.120736, 0.777377, 0.127476, 0, 0, 0.187113, 0.181059, 0.024275, 0.138743, 0.129134, [#30]: 0.0322695, 0.0239314, 0.00871964, 0.107461, 0.185768, 1.01171, 0.761904, 6.61346, 0.0777703, 0.597406, [#40]: 0.121463, 0.11803, 0.111774, 0.101851, 0.169791, 0.211349, 0.462594, 0.46637, 0.353476, 0.278699, [#50]: 0.281976, -0.473069, -0.892227, -1.08937, -1.15957, 0, 0, 0, 0, 
+Weights: 
+[#0]: 1.05135e-07, 0.0204536, 0, 0.227784, 0.26028, 0, 0, 0.688107, 0, 0, [#10]: 0.0140835, 0.0238343, 0, 0.449082, 0.0405931, 1, 0, 0, 0.0352054, 0.131739, [#20]: 0, 0, 0, 0, 0, 0.0905705, 0, 0.000871954, 0.406281, 0, [#30]: 0.145151, 0.160182, 0, 0, 0, 0, 0, 0, 0, 0.0318029, [#40]: 0, 0, 0, 0, 0.058563, 0.161353, 0.0783906, 0.0440219, 0.0142907, 0.167613, [#50]: 0.182502, -0.102617, 0, 0, 0, 0, 0, 0, 0, 
+[4:09] Calculating q-values
+[4:10] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 5387, 2137, 1605, 1114
+[4:10] Precursor search
+[4:10] Optimising weights
+Averages: 
+[#0]: 0.156996, 0.282103, 0.191342, 0.164219, 0.196169, 1.22573, 1.4018, 0.0993097, 0, 0.125105, [#10]: 0.901661, 0.22911, 0.118848, 0.115271, 1.39626, 0.146503, 0.563188, 0.116995, 0.089008, 0.124007, [#20]: 0.121479, 0.780422, 0.127096, 0, 0, 0.186408, 0.182218, 0.0242121, 0.139102, 0.129353, [#30]: 0.0323369, 0.0237397, 0.00834376, 0.108131, 0.185249, 1.0167, 0.7723, 6.62726, 0.0777109, 0.598997, [#40]: 0.121664, 0.118167, 0.111855, 0.101892, 0.169216, 0.214475, 0.464441, 0.469902, 0.354802, 0.277886, [#50]: 0.280804, -0.46864, -0.884412, -1.07951, -1.1491, 0, 0, 0, 0, 
+Weights: 
+[#0]: 1.24354e-07, 0.0216668, 0, 0.280703, 0.319405, 0, 0, 0.992295, 0, 0, [#10]: 0.00739635, 0.0196007, 0, 0.657424, 0.0490567, 1, 0, 0, 0, 0.154272, [#20]: 0, 0, 0, 0, 0, 0.114965, 0, 0, 0.459029, 0, [#30]: 0.165391, 0.166891, 0, 0, 8.27081e-05, 0, 0, 0, 0, 0.038137, [#40]: 0, 0, 0, 0, 0.0509884, 0.233783, 0.0784636, 0.0809461, 0.00851848, 0.194897, [#50]: 0.205513, -0.116636, 0, 0, 0, 0, 0, 0, 0, 
+[4:10] Calculating q-values
+[4:10] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 5331, 2150, 1611, 1123
+[4:10] Calibrating retention times
+[4:10] 1874 precursors used for iRT estimation.
+[4:10] M/z SD: 4.08456 ppm
+[4:10] Top 70% mass accuracy: 4.54044 ppm
+[4:11] Top 70% mass accuracy without correction: 7.42643 ppm
+[4:11] Top 70% MS1 mass accuracy: 1.24586 ppm
+[4:11] Top 70% MS1 mass accuracy without correction: 1.31667ppm
+[4:11] Main search
+[4:11] Precursor search
+[4:41] Optimising weights
+Averages: 
+[#0]: 0.147767, 0.190806, 0.117546, 0.164988, 0.183941, 1.28375, 1.4533, 0.0968233, 0, 0.128176, [#10]: 0.909052, 0.224728, 0.118212, 0.11629, 1.43096, 0.1348, 0.558241, 0.110314, 0.0801197, 0.113475, [#20]: 0.123583, 0.76443, 0.130209, 0, 0, 0.112674, 0.120385, 0.00681835, 0.135911, 0.127593, [#30]: 0.0309615, 0.0294044, 0.0114202, 0.108461, 0.246558, 1.00526, 1.27238, 6.38213, 0.0954184, 0.482259, [#40]: 0.124924, 0.121373, 0.114689, 0.103856, 0.0944033, 0.131538, 0.347465, 0.367061, 0.286751, 0.19731, [#50]: 0.205047, -0.409261, -0.774393, -0.938747, -0.989081, 0, 0, 0, 0, 
+Weights: 
+[#0]: 1.61817e-07, 0, 0.0998998, 0.400387, 0.47347, 0, 0, 0.996565, 0, 0, [#10]: 0, 0, 0, 0, 0.114835, 0.292856, 0, 0, 0, 0.170019, [#20]: 0, 0, 0, 0, 0, 0.0205143, 0, 0, 1, 0, [#30]: 0.165524, 0.132384, 0, 0, 0, 0, 0, 0, 0, 0, [#40]: 0, 0, 0, 0, 0, 0.172171, 0.0400723, 0.0503471, 0, 0.269118, [#50]: 0.0488098, -0.0903423, -0.0307639, 0, 0, 0, 0, 0, 0, 
+[4:42] Calculating q-values
+[4:43] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 44192, 19095, 15817, 12044
+[4:43] Removing low confidence identifications
+[4:43] Calibrating retention times
+[4:43] 17820 precursors used for iRT estimation.
+[4:44] M/z SD: 4.26606 ppm
+[4:44] Top 70% mass accuracy: 5.00692 ppm
+[4:44] Top 70% mass accuracy without correction: 7.56711 ppm
+[4:44] Top 70% MS1 mass accuracy: 1.29806 ppm
+[4:44] Top 70% MS1 mass accuracy without correction: 1.3907ppm
+[4:45] Calculating q-values
+[4:46] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 44112, 19066, 15765, 11697
+[4:46] Removing interfering precursors
+[4:46] Calculating q-values
+[4:47] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 38636, 18681, 15643, 11671
+[4:47] Optimising weights
+Averages: 
+[#0]: 0.164242, 0.211955, 0.131052, 0.187951, 0.199725, 1.43401, 1.62671, 0.106025, 0, 0.1424, [#10]: 1.00433, 0.24475, 0.128064, 0.128982, 1.61934, 0.149688, 0.590499, 0.119411, 0.0881465, 0.122703, [#20]: 0.13873, 0.856061, 0.146513, 0, 0, 0.126383, 0.133148, 0.0082163, 0.147748, 0.138751, [#30]: 0.0349787, 0.0318788, 0.0125625, 0.120166, 0.278783, 1.12021, 1.48051, 7.2925, 0.106279, 0.543377, [#40]: 0.138496, 0.134388, 0.126742, 0.114445, 0.105758, 0.145371, 0.382256, 0.407358, 0.320504, 0.216119, [#50]: 0.229406, -0.453545, -0.871952, -1.06364, -1.12467, 0, 0, 0, 0, 
+Weights: 
+[#0]: 1.44728e-07, 0, 0.325016, 0.469053, 0.402249, 0, 0, 0.834207, 0, 0, [#10]: 0, 0, 0, 1, 0.0968314, 0, 0, 0.102232, 0, 0.224706, [#20]: 0, 0, 0, 0, 0, 0, 0, 0, 0.979367, 0, [#30]: 0.258135, 0.122257, 0, 0, 0, 0, 0, 0, 0, 0, [#40]: 0, 0, 0, 0, 0, 0.147997, 0, 0.0574657, 0, 0.248203, [#50]: 0.0651598, -0.12757, -0.0240152, 0, 0, 0, 0, 0, 0, 
+[4:48] Training neural networks on 36688 target and 24951 decoy PSMs
+[5:01] Calculating q-values
+[5:01] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 40762, 21902, 18979, 15233
+[5:01] Calibrating retention times
+[5:01] 15285 precursors used for iRT estimation.
+[5:02] Number of IDs at 0.01 FDR: 19701
+[5:02] Calculating protein q-values
+[5:02] Number of genes identified at 1% FDR: 2011 (precursor-level), 1878 (protein-level) (inference performed using proteotypic peptides only)
+[5:02] Quantification
+[5:03] Quantification information saved to /home/lerost/DIA_tools_manuscript/search_results/tmp/_home_lerost_DIA_tools_manuscript_input_files_PXD026600_RD139_Wide_UPS1_1fmol_inj1_mzML.quant
+
+[5:03] File #3/6
+[5:03] Loading run /home/lerost/DIA_tools_manuscript/input_files/PXD026600/RD139_Wide_UPS1_1fmol_inj2.mzML
+[5:08] Detected MS/MS range: 199.999 - 1499.98
+[5:09] Run loaded: 1916 MS1 scans and 143700 MS2 scans in 1916 cycles
+[5:09] Pre-processing...
+[5:10] 1916 MS1 and 143700 MS2 scans in 1916 (inferred) and 1916 (encoded) cycles, 901719 precursors in range
+[5:10] Calibrating with mass accuracies 25 (MS1), 23 (MS2)
+[5:10] Processing batch #1 out of 200 
+[5:10] Precursor search
+[5:11] Optimising weights
+Averages: 
+[#0]: 0.046122, 0.0432265, -0.00215731, 0.0590361, 0.0560636, 0.483071, 0.485891, 0.0316347, 
+Weights: 
+[#0]: 1, 0, 0.110571, 0.430136, 0.152315, 0.0769293, 0, 0.843942, 
+[5:11] Calculating q-values
+[5:11] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 156, 66, 47, 41
+[5:11] Processing batch #2 out of 200 
+[5:11] Precursor search
+[5:12] Optimising weights
+Averages: 
+[#0]: 0.0784415, 0.0538576, 0.0267694, 0.0980521, 0.094301, 0.744503, 0.828083, 0.0552042, 
+Weights: 
+[#0]: 0.149571, 0, 0.130551, 0.122467, 0.0294659, 0.0328474, 0, 1, 
+[5:12] Calculating q-values
+[5:12] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 336, 131, 103, 69
+[5:12] Processing batch #3 out of 200 
+[5:12] Precursor search
+[5:14] Optimising weights
+Averages: 
+[#0]: 0.0990623, 0.110229, 0.0655273, 0.135654, 0.142551, 0.884553, 1.05762, 0.063246, 
+Weights: 
+[#0]: 6.75623e-08, 0.00149378, 0.238065, 0.3378, 0.12574, 0.024351, 0, 1, 
+[5:14] Calculating q-values
+[5:14] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 550, 200, 161, 118
+[5:14] Processing batch #4 out of 200 
+[5:14] Precursor search
+[5:15] Optimising weights
+Averages: 
+[#0]: 0.118373, 0.128383, 0.09834, 0.1629, 0.191103, 0.978719, 1.23907, 0.0760771, 
+Weights: 
+[#0]: 6.65523e-08, 0.00421378, 0.325321, 0.610635, 0.198104, 0, 0, 1, 
+[5:15] Calculating q-values
+[5:15] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 633, 261, 205, 137
+[5:15] Processing batch #5 out of 200 
+[5:15] Precursor search
+[5:16] Optimising weights
+Averages: 
+[#0]: 0.118229, 0.104415, 0.0935085, 0.155247, 0.185673, 0.992563, 1.22716, 0.0780608, 
+Weights: 
+[#0]: 5.49467e-08, 0, 0.266026, 0.521824, 0.12385, 0, 0, 1, 
+[5:16] Calculating q-values
+[5:16] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 817, 314, 236, 145
+[5:16] Processing batches #6-7 out of 200 
+[5:16] Precursor search
+[5:18] Optimising weights
+Averages: 
+[#0]: 0.122279, 0.150414, 0.0820472, 0.164315, 0.194212, 1.06824, 1.31788, 0.0825339, 
+Weights: 
+[#0]: 5.00953e-08, 0.00187525, 0.237442, 0.53447, 0.114246, 0, 0, 1, 
+[5:18] Calculating q-values
+[5:18] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 1171, 452, 331, 212
+[5:18] Processing batches #8-9 out of 200 
+[5:18] Precursor search
+[5:21] Optimising weights
+Averages: 
+[#0]: 0.125778, 0.195726, 0.0833917, 0.162437, 0.199557, 1.11078, 1.37065, 0.0847902, 
+Weights: 
+[#0]: 5.14007e-08, 0.00333715, 0.216922, 0.433106, 0.123675, 0, 0, 1, 
+[5:21] Calculating q-values
+[5:21] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 1444, 559, 419, 240
+[5:21] Processing batches #10-11 out of 200 
+[5:21] Precursor search
+[5:23] Optimising weights
+Averages: 
+[#0]: 0.128173, 0.193083, 0.0892851, 0.171696, 0.198102, 1.13456, 1.42228, 0.0835271, 
+Weights: 
+[#0]: 5.81734e-08, 0.00076649, 0.276541, 0.610264, 0.144873, 0, 0, 1, 
+[5:23] Calculating q-values
+[5:23] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 1757, 650, 379, 194
+[5:23] Processing batches #12-14 out of 200 
+[5:23] Precursor search
+[5:26] Optimising weights
+Averages: 
+[#0]: 0.131751, 0.22826, 0.0942691, 0.169298, 0.205546, 1.17328, 1.44083, 0.0848269, 
+Weights: 
+[#0]: 6.06685e-08, 0.00587048, 0.281025, 0.560718, 0.180081, 0, 0, 1, 
+[5:26] Calculating q-values
+[5:26] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 2234, 845, 522, 288
+[5:26] Processing batches #15-17 out of 200 
+[5:26] Precursor search
+[5:29] Optimising weights
+Averages: 
+[#0]: 0.133953, 0.193488, 0.0956002, 0.168316, 0.205799, 1.19602, 1.46512, 0.0860796, 
+Weights: 
+[#0]: 0.00156682, 0.000356484, 0.262825, 0.461902, 0.17564, 0, 0, 1, 
+[5:29] Calculating q-values
+[5:30] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 2724, 1075, 655, 349
+[5:30] Processing batches #18-21 out of 200 
+[5:30] Precursor search
+[5:34] Optimising weights
+Averages: 
+[#0]: 0.132016, 0.190696, 0.0944647, 0.166005, 0.199568, 1.18186, 1.44615, 0.0829602, 
+Weights: 
+[#0]: 0.0524798, 0.00136124, 0.28295, 0.496381, 0.207574, 0, 0, 1, 
+[5:34] Calculating q-values
+[5:34] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 3300, 1343, 835, 429
+[5:34] Processing batches #22-26 out of 200 
+[5:34] Precursor search
+[5:39] Optimising weights
+Averages: 
+[#0]: 0.12222, 0.178026, 0.0845803, 0.155218, 0.186672, 1.09881, 1.3402, 0.0763545, 
+Weights: 
+[#0]: 0.170347, 0.000730617, 0.32441, 0.588584, 0.278488, 0, 0, 1, 
+[5:39] Calculating q-values
+[5:39] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 4050, 1642, 978, 327
+[5:39] Processing batches #27-32 out of 200 
+[5:39] Precursor search
+[5:45] Optimising weights
+Averages: 
+[#0]: 0.121688, 0.161371, 0.0818682, 0.15811, 0.185376, 1.10446, 1.34481, 0.0746741, 
+Weights: 
+[#0]: 0.229359, 0, 0.366992, 0.763796, 0.332365, 0, 0, 1, 
+[5:46] Calculating q-values
+[5:46] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 4859, 2005, 1250, 420
+[5:46] Precursor search
+[5:46] Optimising weights
+Averages: 
+[#0]: 0.122067, 0.156007, 0.0832412, 0.15767, 0.187289, 1.10376, 1.34507, 0.07517, 
+Weights: 
+[#0]: 0.217736, 0, 0.370775, 0.765411, 0.335413, 0, 0, 1, 
+[5:46] Calculating q-values
+[5:46] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 4839, 2002, 1245, 417
+[5:46] Precursor search
+[5:46] Optimising weights
+Averages: 
+[#0]: 0.121306, 0.159654, 0.0828058, 0.156617, 0.184945, 1.09701, 1.33466, 0.0744275, 
+Weights: 
+[#0]: 0.233215, 0, 0.385642, 0.803549, 0.345848, 0, 0, 1, 
+[5:47] Calculating q-values
+[5:47] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 4800, 2003, 1251, 420
+[5:47] Precursor search
+[5:47] Optimising weights
+Averages: 
+[#0]: 0.122151, 0.152724, 0.0834256, 0.15767, 0.187071, 1.10386, 1.34556, 0.0752428, 
+Weights: 
+[#0]: 0.205023, 0, 0.377342, 0.783637, 0.336269, 0, 0, 1, 
+[5:47] Calculating q-values
+[5:47] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 4842, 2000, 1244, 415
+[5:47] Calibrating retention times
+[5:47] 1699 precursors used for iRT estimation.
+[5:47] RT window set to 6.12722
+[5:47] M/z SD: 3.96661 ppm
+[5:47] Top 70% mass accuracy: 3.95536 ppm
+[5:47] Top 70% mass accuracy without correction: 7.02976 ppm
+[5:47] Top 70% MS1 mass accuracy: 1.20601 ppm
+[5:47] Top 70% MS1 mass accuracy without correction: 1.27316ppm
+[5:47] Recommended MS1 mass accuracy setting: 6 ppm
+[5:47] Using mass accuracy 2e-05, 8e-06 (MS2, MS1)
+[5:47] Processing batch #1 out of 200 
+[5:47] Precursor search
+[5:48] Optimising weights
+Averages: 
+[#0]: 0.0952062, 0.0739406, 0.166236, 0.1063, 0.113411, 0.617269, 0.726479, 0.0579517, 
+Weights: 
+[#0]: 1.0291e-07, 0, 0.536259, 0.869122, 0.183103, 0, 0, 1, 
+[5:48] Calculating q-values
+[5:48] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 226, 85, 60, 45
+[5:48] Calibrating retention times
+[5:48] 102 precursors used for iRT estimation.
+[5:48] Processing batch #2 out of 200 
+[5:48] Precursor search
+[5:48] Optimising weights
+Averages: 
+[#0]: 0.0984571, 0.0776153, 0.114544, 0.111946, 0.119931, 0.728961, 0.831149, 0.0686297, 
+Weights: 
+[#0]: 8.30102e-08, 0, 0.305434, 0.522114, 0.110987, 0, 0, 1, 
+[5:48] Calculating q-values
+[5:48] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 523, 168, 143, 110
+[5:48] Calibrating retention times
+[5:48] 159 precursors used for iRT estimation.
+[5:48] Processing batch #3 out of 200 
+[5:48] Precursor search
+[5:48] Optimising weights
+Averages: 
+[#0]: 0.0977118, 0.111115, 0.112133, 0.107518, 0.116484, 0.744291, 0.84132, 0.0659913, 
+Weights: 
+[#0]: 9.05208e-08, 0, 0.30061, 0.489502, 0.125117, 0, 0, 1, 
+[5:48] Calculating q-values
+[5:48] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 705, 241, 213, 154
+[5:48] Calibrating retention times
+[5:48] 230 precursors used for iRT estimation.
+[5:48] Processing batch #4 out of 200 
+[5:48] Precursor search
+[5:48] Optimising weights
+Averages: 
+[#0]: 0.0941631, 0.123234, 0.114007, 0.100369, 0.111945, 0.726974, 0.819479, 0.0627842, 
+Weights: 
+[#0]: 7.63762e-08, 0.00357384, 0.345233, 0.296331, 0.118877, 0.0328064, 0.011285, 1, 
+[5:48] Calculating q-values
+[5:48] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 889, 306, 254, 180
+[5:48] Calibrating retention times
+[5:48] 288 precursors used for iRT estimation.
+[5:48] Processing batch #5 out of 200 
+[5:48] Precursor search
+[5:49] Optimising weights
+Averages: 
+[#0]: 0.0917322, 0.139665, 0.12003, 0.0982243, 0.109516, 0.6905, 0.7705, 0.0603789, 
+Weights: 
+[#0]: 8.58552e-08, 0.0111464, 0.374024, 0.353505, 0.132023, 0.0365435, 0, 1, 
+[5:49] Calculating q-values
+[5:49] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 1096, 387, 311, 141
+[5:49] Calibrating retention times
+[5:49] 354 precursors used for iRT estimation.
+[5:49] Processing batches #6-7 out of 200 
+[5:49] Precursor search
+[5:49] Optimising weights
+Averages: 
+[#0]: 0.0923284, 0.144897, 0.113189, 0.0952945, 0.112044, 0.705656, 0.788177, 0.0601604, 
+Weights: 
+[#0]: 0.0454028, 0.0160053, 0.344983, 0.299205, 0.175827, 0.0114798, 0, 1, 
+[5:49] Calculating q-values
+[5:49] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 1441, 553, 452, 225
+[5:49] Calibrating retention times
+[5:49] 524 precursors used for iRT estimation.
+[5:49] Processing batches #8-9 out of 200 
+[5:49] Precursor search
+[5:49] Optimising weights
+Averages: 
+[#0]: 0.0922407, 0.136185, 0.103912, 0.0982343, 0.114208, 0.725268, 0.80536, 0.0600704, 
+Weights: 
+[#0]: 0.244543, 0.0014575, 0.368544, 0.474506, 0.250107, 0.0089702, 0, 1, 
+[5:49] Calculating q-values
+[5:49] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 1771, 709, 493, 250
+[5:49] Calibrating retention times
+[5:49] 622 precursors used for iRT estimation.
+[5:49] Processing batches #10-11 out of 200 
+[5:49] Precursor search
+[5:50] Optimising weights
+Averages: 
+[#0]: 0.0918546, 0.135584, 0.10162, 0.0986458, 0.112765, 0.724774, 0.811659, 0.0602199, 
+Weights: 
+[#0]: 0.171904, 0.000108836, 0.353322, 0.504649, 0.240012, 0.00482736, 0.00125664, 1, 
+[5:50] Calculating q-values
+[5:50] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 2058, 853, 594, 211
+[5:50] Calibrating retention times
+[5:50] 770 precursors used for iRT estimation.
+[5:50] Processing batches #12-14 out of 200 
+[5:50] Precursor search
+[5:50] Optimising weights
+Averages: 
+[#0]: 0.115363, 0.204362, 0.138563, 0.120403, 0.141798, 0.909648, 1.03009, 0.0710624, 
+Weights: 
+[#0]: 0.22558, 0.0148122, 0.519335, 0.6994, 0.398755, 0.00373214, 0, 1, 
+[5:50] Calculating q-values
+[5:50] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 2685, 1089, 749, 332
+[5:50] Calibrating retention times
+[5:50] 973 precursors used for iRT estimation.
+[5:50] Processing batches #15-17 out of 200 
+[5:50] Precursor search
+[5:51] Optimising weights
+Averages: 
+[#0]: 0.135789, 0.250386, 0.163693, 0.139661, 0.162502, 1.08139, 1.22219, 0.0833798, 
+Weights: 
+[#0]: 1.07689e-07, 0.0119702, 0.481607, 0.464486, 0.299693, 0.0304388, 0, 1, 
+[5:51] Calculating q-values
+[5:51] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 3311, 1356, 934, 415
+[5:51] Calibrating retention times
+[5:51] 1189 precursors used for iRT estimation.
+[5:51] Processing batches #18-21 out of 200 
+[5:51] Precursor search
+[5:52] Optimising weights
+Averages: 
+[#0]: 0.152991, 0.29776, 0.189615, 0.155042, 0.183973, 1.20085, 1.38428, 0.0925813, 
+Weights: 
+[#0]: 0.102651, 0.0103167, 0.458305, 0.373545, 0.303644, 0, 0, 1, 
+[5:52] Calculating q-values
+[5:52] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 3969, 1656, 1215, 610
+[5:52] Calibrating retention times
+[5:52] 1446 precursors used for iRT estimation.
+[5:52] Processing batches #22-26 out of 200 
+[5:52] Precursor search
+[5:53] Optimising weights
+Averages: 
+[#0]: 0.1529, 0.276698, 0.18435, 0.159456, 0.185158, 1.21545, 1.39059, 0.0926488, 
+Weights: 
+[#0]: 0.0462028, 0.00357937, 0.478153, 0.508528, 0.323381, 0, 0, 1, 
+[5:53] Calculating q-values
+[5:53] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 4860, 2072, 1499, 721
+[5:53] Calibrating retention times
+[5:53] 1776 precursors used for iRT estimation.
+[5:53] Precursor search
+[5:53] Optimising weights
+Averages: 
+[#0]: 0.159679, 0.29558, 0.194422, 0.165117, 0.196697, 1.2548, 1.44297, 0.0975695, 0, 0.127275, [#10]: 0.924623, 0.250554, 0.118266, 0.117599, 1.43955, 0.147937, 0.525459, 0.114926, 0.089623, 0.123034, [#20]: 0.122047, 0.739219, 0.12422, 0, 0, 0.191065, 0.184673, 0.0157681, 0.141619, 0.131656, [#30]: 0.029608, 0.0314028, 0.0100951, 0.107466, 0.230631, 0.987826, 1.03067, 6.25973, 0.103235, 0.580427, [#40]: 0.123175, 0.119708, 0.11364, 0.104015, 0.16956, 0.218207, 0.481721, 0.502941, 0.396152, 0.291242, [#50]: 0.292559, -0.492071, -0.924409, -1.12469, -1.19143, 0, 0, 0, 0, 
+Weights: 
+[#0]: 5.17884e-08, 0.00145031, 0.249411, 0.158106, 0.104199, 0, 0.00736031, 0.0615608, 0, 0, [#10]: 0.0249983, 0.0528724, 0, 1, 0.016339, 0, 0, 0, 0.0641192, 0.0691837, [#20]: 0.0173767, 0, 0, 0, 0, 0.0284011, 0, 0, 0.25391, 0, [#30]: 0.00234212, 0.0811665, 0, 0, 0.00327639, 0, 0, 0, 0, 0.0076002, [#40]: 0, 0, 0, 0, 0, 0.0587592, 0.0196045, 0.0333326, 0.0233787, 0.0793076, [#50]: 0.0552854, -0.0441533, 0, 0, -0.00203984, 0, 0, 0, 0, 
+[5:53] Calculating q-values
+[5:53] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 5100, 2064, 1466, 884
+[5:53] Precursor search
+[5:58] Optimising weights
+Averages: 
+[#0]: 0.154152, 0.287492, 0.19811, 0.16247, 0.193024, 1.19207, 1.38718, 0.0942884, 0, 0.121134, [#10]: 0.891412, 0.232607, 0.114471, 0.110265, 1.39154, 0.141892, 0.503224, 0.111934, 0.0864559, 0.11742, [#20]: 0.119099, 0.731208, 0.120725, 0, 0, 0.193693, 0.191801, 0.0111538, 0.137518, 0.127779, [#30]: 0.0289289, 0.0233686, 0.0065131, 0.101254, 0.223438, 0.932993, 1.01344, 5.70414, 0.10837, 0.551094, [#40]: 0.117499, 0.114347, 0.108724, 0.0996623, 0.174403, 0.221733, 0.470438, 0.48766, 0.3843, 0.282019, [#50]: 0.281735, -0.471191, -0.878206, -1.06487, -1.12733, 0, 0, 0, 0, 
+Weights: 
+[#0]: 9.1099e-08, 0.00173432, 0.302386, 0.109199, 0.191347, 0, 0, 0.21159, 0, 0, [#10]: 0.0248307, 0.0610277, 0, 1, 0.0462744, 0, 0, 0, 0.193989, 0.0920234, [#20]: 0, 0, 0, 0, 0, 0.0214987, 0, 0, 0.501524, 0, [#30]: 0.043481, 0.00971175, 0, 0, 0.00323797, 0, 0, 0, 0.00714898, 0.0129764, [#40]: 0, 0, 0, 0, 0, 0.103651, 0.035451, 0.0570719, 0.036162, 0.142001, [#50]: 0.0930651, -0.0757674, 0, 0, -0.00142248, 0, 0, 0, 0, 
+[5:58] Calculating q-values
+[5:58] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 5146, 2176, 1563, 1078
+[5:58] Precursor search
+[5:58] Optimising weights
+Averages: 
+[#0]: 0.156572, 0.291403, 0.201424, 0.163534, 0.19383, 1.20987, 1.40832, 0.0948726, 0, 0.123002, [#10]: 0.901833, 0.234421, 0.115239, 0.11237, 1.40639, 0.143967, 0.503037, 0.112087, 0.0870304, 0.117527, [#20]: 0.119824, 0.727864, 0.121711, 0, 0, 0.196315, 0.194633, 0.0128339, 0.13861, 0.129255, [#30]: 0.0293913, 0.0270579, 0.0085595, 0.102739, 0.227609, 0.949871, 1.03601, 5.86184, 0.108825, 0.561227, [#40]: 0.119276, 0.116041, 0.110289, 0.101069, 0.177743, 0.224844, 0.479635, 0.496972, 0.391513, 0.285813, [#50]: 0.287191, -0.469828, -0.881659, -1.07148, -1.13546, 0, 0, 0, 0, 
+Weights: 
+[#0]: 7.36015e-08, 0.00124563, 0.279431, 0.101578, 0.158516, 0, 0, 0.166845, 0, 0, [#10]: 0.0258306, 0.0602662, 0, 1, 0.0400021, 0, 0, 0, 0.117742, 0.089076, [#20]: 0, 0, 0, 0, 0, 0.000199545, 0, 0, 0.410106, 0, [#30]: 0.0442012, 0.050837, 0, 0, 0.00214515, 0, 0, 0, 0.00542954, 0.0109044, [#40]: 0, 0, 0, 0, 0, 0.107189, 0.033591, 0.0425548, 0.0273232, 0.120505, [#50]: 0.0842744, -0.0577875, 0, 0, -0.00283818, 0, 0, 0, 0, 
+[5:58] Calculating q-values
+[5:58] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 5115, 2122, 1514, 1027
+[5:58] Precursor search
+[5:58] Optimising weights
+Averages: 
+[#0]: 0.154152, 0.287492, 0.19811, 0.16247, 0.193024, 1.19207, 1.38718, 0.0942884, 0, 0.121134, [#10]: 0.891412, 0.232607, 0.114471, 0.110265, 1.39154, 0.141892, 0.503224, 0.111934, 0.0864559, 0.11742, [#20]: 0.119099, 0.731208, 0.120725, 0, 0, 0.193693, 0.191801, 0.0111538, 0.137518, 0.127779, [#30]: 0.0289289, 0.0233686, 0.0065131, 0.101254, 0.223438, 0.932993, 1.01344, 5.70414, 0.10837, 0.551094, [#40]: 0.117499, 0.114347, 0.108724, 0.0996623, 0.174403, 0.221733, 0.470438, 0.48766, 0.3843, 0.282019, [#50]: 0.281735, -0.471191, -0.878206, -1.06487, -1.12733, 0, 0, 0, 0, 
+Weights: 
+[#0]: 9.1099e-08, 0.00173432, 0.302386, 0.109199, 0.191347, 0, 0, 0.21159, 0, 0, [#10]: 0.0248307, 0.0610277, 0, 1, 0.0462744, 0, 0, 0, 0.193989, 0.0920234, [#20]: 0, 0, 0, 0, 0, 0.0214987, 0, 0, 0.501524, 0, [#30]: 0.043481, 0.00971175, 0, 0, 0.00323797, 0, 0, 0, 0.00714898, 0.0129764, [#40]: 0, 0, 0, 0, 0, 0.103651, 0.035451, 0.0570719, 0.036162, 0.142001, [#50]: 0.0930651, -0.0757674, 0, 0, -0.00142248, 0, 0, 0, 0, 
+[5:58] Calculating q-values
+[5:58] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 5146, 2176, 1563, 1078
+[5:58] Calibrating retention times
+[5:58] 1839 precursors used for iRT estimation.
+[5:59] M/z SD: 4.07569 ppm
+[5:59] Top 70% mass accuracy: 4.73192 ppm
+[5:59] Top 70% mass accuracy without correction: 7.42625 ppm
+[5:59] Top 70% MS1 mass accuracy: 1.24922 ppm
+[5:59] Top 70% MS1 mass accuracy without correction: 1.28003ppm
+[5:59] Main search
+[5:59] Precursor search
+[6:31] Optimising weights
+Averages: 
+[#0]: 0.146362, 0.191073, 0.112914, 0.170979, 0.186931, 1.27652, 1.47423, 0.0956361, 0, 0.127543, [#10]: 0.924472, 0.222427, 0.1191, 0.114507, 1.46749, 0.132734, 0.561429, 0.111346, 0.0788759, 0.110119, [#20]: 0.124112, 0.766282, 0.129987, 0, 0, 0.109722, 0.120261, 0.00764302, 0.136277, 0.127505, [#30]: 0.0309076, 0.0320363, 0.0118858, 0.105894, 0.233841, 1.01048, 1.21197, 6.41993, 0.0904433, 0.487623, [#40]: 0.125286, 0.122371, 0.116448, 0.106313, 0.0886919, 0.13286, 0.352431, 0.374336, 0.293035, 0.199948, [#50]: 0.215753, -0.447838, -0.830308, -0.994443, -1.04442, 0, 0, 0, 0, 
+Weights: 
+[#0]: 1.37828e-07, 0, 0.095038, 0.357669, 0.421778, 0, 0.00782972, 0.475987, 0, 0, [#10]: 0.0191562, 0.0135854, 0, 0.677905, 0.0862984, 0.115431, 0, 0, 0, 0.128789, [#20]: 0, 0, 0, 0, 0, 0.0932629, 0, 0, 1, 0, [#30]: 0.161835, 0.147107, 0, 0, 0, 0, 0, 0, 0, 0, [#40]: 0, 0, 0, 0, 0, 0.180496, 0.0303812, 0.02138, 0, 0.182396, [#50]: 0.105914, -0.133283, -0.00627254, 0, 0, 0, 0, 0, 0, 
+[6:32] Calculating q-values
+[6:32] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 44115, 18800, 15547, 11648
+[6:32] Removing low confidence identifications
+[6:33] Calibrating retention times
+[6:33] 17512 precursors used for iRT estimation.
+[6:33] M/z SD: 4.22967 ppm
+[6:33] Top 70% mass accuracy: 5.06737 ppm
+[6:33] Top 70% mass accuracy without correction: 7.61199 ppm
+[6:33] Top 70% MS1 mass accuracy: 1.28211 ppm
+[6:33] Top 70% MS1 mass accuracy without correction: 1.33311ppm
+[6:35] Calculating q-values
+[6:35] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 43826, 18699, 15543, 11789
+[6:35] Removing interfering precursors
+[6:36] Calculating q-values
+[6:36] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 38660, 18377, 15429, 11760
+[6:36] Optimising weights
+Averages: 
+[#0]: 0.161136, 0.206865, 0.122483, 0.194001, 0.201333, 1.41745, 1.6385, 0.104155, 0, 0.140723, [#10]: 1.01709, 0.241887, 0.128557, 0.125581, 1.64839, 0.145362, 0.59992, 0.119153, 0.0853188, 0.116947, [#20]: 0.138334, 0.8595, 0.14554, 0, 0, 0.120063, 0.13286, 0.00676624, 0.146846, 0.137825, [#30]: 0.0343798, 0.0331551, 0.0123418, 0.116913, 0.257158, 1.12315, 1.37942, 7.2824, 0.0983754, 0.543603, [#40]: 0.138469, 0.135253, 0.1286, 0.117167, 0.0954833, 0.142662, 0.387555, 0.412354, 0.323426, 0.216906, [#50]: 0.234819, -0.482465, -0.915816, -1.10866, -1.16601, 0, 0, 0, 0, 
+Weights: 
+[#0]: 1.35484e-07, 0, 0.142685, 0.431491, 0.425081, 0, 0, 0.560353, 0, 0, [#10]: 0.00547859, 0.00866866, 0, 0.999053, 0.0845945, 0, 0, 0.035193, 0, 0.169465, [#20]: 0, 0, 0, 0, 0, 0.107346, 0, 0, 1, 0, [#30]: 0.220223, 0.076803, 0, 0, 0, 0, 0, 0, 0, 0, [#40]: 0, 0, 0, 0, 0, 0.14021, 0.0110676, 0.0283265, 0, 0.229113, [#50]: 0.0985504, -0.144551, -0.0154799, 0, 0, 0, 0, 0, 0, 
+[6:38] Training neural networks on 35976 target and 24320 decoy PSMs
+[6:50] Calculating q-values
+[6:50] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 40507, 21584, 18892, 15722
+[6:50] Calibrating retention times
+[6:50] 14881 precursors used for iRT estimation.
+[6:51] Number of IDs at 0.01 FDR: 19502
+[6:51] Calculating protein q-values
+[6:51] Number of genes identified at 1% FDR: 1968 (precursor-level), 1865 (protein-level) (inference performed using proteotypic peptides only)
+[6:51] Quantification
+[6:52] Quantification information saved to /home/lerost/DIA_tools_manuscript/search_results/tmp/_home_lerost_DIA_tools_manuscript_input_files_PXD026600_RD139_Wide_UPS1_1fmol_inj2_mzML.quant
+
+[6:52] File #4/6
+[6:52] Loading run /home/lerost/DIA_tools_manuscript/input_files/PXD026600/RD139_Wide_UPS1_10fmol_inj2.mzML
+[6:57] Detected MS/MS range: 199.998 - 1499.97
+[6:58] Run loaded: 1918 MS1 scans and 143850 MS2 scans in 1918 cycles
+[6:58] Pre-processing...
+[6:59] 1918 MS1 and 143850 MS2 scans in 1918 (inferred) and 1918 (encoded) cycles, 901719 precursors in range
+[6:59] Calibrating with mass accuracies 25 (MS1), 23 (MS2)
+[6:59] Processing batch #1 out of 200 
+[6:59] Precursor search
+[7:00] Optimising weights
+Averages: 
+[#0]: 0.0480987, 0.0414668, -0.0145541, 0.070652, 0.0709158, 0.51611, 0.599175, 0.0337789, 
+Weights: 
+[#0]: 0.279531, 0, 0.0974748, 0.599848, 0.32339, 0.0173649, 0.114267, 1, 
+[7:00] Calculating q-values
+[7:00] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 170, 65, 51, 42
+[7:00] Processing batch #2 out of 200 
+[7:00] Precursor search
+[7:01] Optimising weights
+Averages: 
+[#0]: 0.0809708, -0.000365318, 0.0364105, 0.110705, 0.103374, 0.770709, 0.904975, 0.0517672, 
+Weights: 
+[#0]: 1.16241e-07, 0, 0.287382, 0.582413, 0.189166, 0.0660035, 0.00606956, 1, 
+[7:01] Calculating q-values
+[7:01] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 315, 121, 104, 92
+[7:01] Processing batch #3 out of 200 
+[7:01] Precursor search
+[7:03] Optimising weights
+Averages: 
+[#0]: 0.0991838, 0.0184245, 0.0547941, 0.135275, 0.155087, 0.910489, 1.10256, 0.0659132, 
+Weights: 
+[#0]: 6.72858e-08, 0, 0.356414, 0.455953, 0.180839, 0.0607744, 0.0161983, 1, 
+[7:03] Calculating q-values
+[7:03] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 473, 177, 146, 123
+[7:03] Processing batch #4 out of 200 
+[7:03] Precursor search
+[7:04] Optimising weights
+Averages: 
+[#0]: 0.115541, 0.0431695, 0.0735923, 0.149288, 0.17577, 1.01544, 1.23849, 0.0769818, 
+Weights: 
+[#0]: 0.357529, 0, 0.239245, 0.263758, 0.170501, 0, 0, 1, 
+[7:04] Calculating q-values
+[7:04] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 563, 268, 214, 143
+[7:04] Processing batch #5 out of 200 
+[7:04] Precursor search
+[7:05] Optimising weights
+Averages: 
+[#0]: 0.122224, 0.0637616, 0.0919967, 0.158025, 0.187138, 1.08305, 1.31024, 0.0808674, 
+Weights: 
+[#0]: 4.31249e-08, 0, 0.318064, 0.289808, 0.117263, 0.0543485, 0, 1, 
+[7:05] Calculating q-values
+[7:05] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 685, 298, 202, 159
+[7:05] Processing batches #6-7 out of 200 
+[7:05] Precursor search
+[7:07] Optimising weights
+Averages: 
+[#0]: 0.123516, 0.114026, 0.0924135, 0.158976, 0.194373, 1.09508, 1.33561, 0.084342, 
+Weights: 
+[#0]: 3.45351e-08, 0, 0.298316, 0.205017, 0.0896978, 0.062518, 0.000257608, 1, 
+[7:07] Calculating q-values
+[7:07] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 979, 418, 285, 237
+[7:07] Processing batches #8-9 out of 200 
+[7:07] Precursor search
+[7:10] Optimising weights
+Averages: 
+[#0]: 0.122209, 0.148355, 0.0917751, 0.157015, 0.19814, 1.09591, 1.32223, 0.0805167, 
+Weights: 
+[#0]: 3.87154e-08, 0, 0.33047, 0.176915, 0.124439, 0.0779388, 0, 1, 
+[7:10] Calculating q-values
+[7:10] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 1252, 521, 370, 293
+[7:10] Processing batches #10-11 out of 200 
+[7:10] Precursor search
+[7:12] Optimising weights
+Averages: 
+[#0]: 0.123294, 0.158928, 0.0832113, 0.16145, 0.203349, 1.11786, 1.36149, 0.0813224, 
+Weights: 
+[#0]: 4.25773e-08, 0, 0.312451, 0.17742, 0.156418, 0.0691387, 0, 1, 
+[7:12] Calculating q-values
+[7:12] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 1537, 625, 435, 159
+[7:12] Processing batches #12-14 out of 200 
+[7:12] Precursor search
+[7:15] Optimising weights
+Averages: 
+[#0]: 0.125854, 0.20585, 0.0932952, 0.164697, 0.201041, 1.13856, 1.38914, 0.0797009, 
+Weights: 
+[#0]: 4.59501e-08, 0.00304056, 0.338037, 0.204154, 0.168724, 0.0708072, 0, 1, 
+[7:15] Calculating q-values
+[7:15] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 1877, 814, 569, 222
+[7:15] Processing batches #15-17 out of 200 
+[7:15] Precursor search
+[7:19] Optimising weights
+Averages: 
+[#0]: 0.124949, 0.197852, 0.0845377, 0.165907, 0.198646, 1.12875, 1.37669, 0.0822176, 
+Weights: 
+[#0]: 4.50582e-08, 0.00153815, 0.300316, 0.204043, 0.150011, 0.0595498, 0, 1, 
+[7:19] Calculating q-values
+[7:19] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 2447, 1017, 714, 262
+[7:19] Processing batches #18-21 out of 200 
+[7:19] Precursor search
+[7:23] Optimising weights
+Averages: 
+[#0]: 0.124135, 0.174282, 0.085944, 0.164382, 0.195629, 1.11088, 1.35893, 0.0810234, 
+Weights: 
+[#0]: 5.36905e-08, 0.000222029, 0.283534, 0.25666, 0.178675, 0.0387187, 0, 1, 
+[7:23] Calculating q-values
+[7:23] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 3157, 1331, 837, 337
+[7:23] Processing batches #22-26 out of 200 
+[7:23] Precursor search
+[7:28] Optimising weights
+Averages: 
+[#0]: 0.122069, 0.16463, 0.0862915, 0.159965, 0.189034, 1.08923, 1.33282, 0.0783954, 
+Weights: 
+[#0]: 0.0584518, 0, 0.281655, 0.32749, 0.208776, 0.015636, 0, 1, 
+[7:29] Calculating q-values
+[7:29] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 4030, 1639, 963, 467
+[7:29] Processing batches #27-32 out of 200 
+[7:29] Precursor search
+[7:35] Optimising weights
+Averages: 
+[#0]: 0.120926, 0.156255, 0.0777628, 0.159898, 0.183048, 1.10103, 1.3308, 0.0768927, 
+Weights: 
+[#0]: 0.225081, 0, 0.257567, 0.387437, 0.213693, 0.00548271, 0, 1, 
+[7:35] Calculating q-values
+[7:35] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 4914, 2040, 1364, 555
+[7:35] Precursor search
+[7:35] Optimising weights
+Averages: 
+[#0]: 0.121622, 0.156776, 0.0801347, 0.160038, 0.186352, 1.10472, 1.33618, 0.0769882, 
+Weights: 
+[#0]: 0.305907, 0, 0.263457, 0.418867, 0.234754, 0.000282879, 0, 1, 
+[7:36] Calculating q-values
+[7:36] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 4921, 2029, 1370, 555
+[7:36] Precursor search
+[7:36] Optimising weights
+Averages: 
+[#0]: 0.12182, 0.153009, 0.0801779, 0.160336, 0.186705, 1.10663, 1.33813, 0.0771116, 
+Weights: 
+[#0]: 0.306479, 0, 0.266571, 0.432703, 0.238096, 0, 0, 1, 
+[7:36] Calculating q-values
+[7:36] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 4932, 2034, 1369, 554
+[7:36] Precursor search
+[7:36] Optimising weights
+Averages: 
+[#0]: 0.121946, 0.153234, 0.0801639, 0.160736, 0.186825, 1.10862, 1.34113, 0.0771565, 
+Weights: 
+[#0]: 0.296764, 0, 0.268516, 0.44588, 0.23921, 0, 0, 1, 
+[7:36] Calculating q-values
+[7:37] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 4913, 2047, 1368, 551
+[7:37] Calibrating retention times
+[7:37] 1734 precursors used for iRT estimation.
+[7:37] RT window set to 6.31012
+[7:37] M/z SD: 4.1028 ppm
+[7:37] Top 70% mass accuracy: 3.84687 ppm
+[7:37] Top 70% mass accuracy without correction: 7.65711 ppm
+[7:37] Top 70% MS1 mass accuracy: 1.18025 ppm
+[7:37] Top 70% MS1 mass accuracy without correction: 1.68161ppm
+[7:37] Recommended MS1 mass accuracy setting: 6 ppm
+[7:37] Using mass accuracy 2e-05, 8e-06 (MS2, MS1)
+[7:37] Processing batch #1 out of 200 
+[7:37] Precursor search
+[7:37] Optimising weights
+Averages: 
+[#0]: 0.0832769, 0.110079, 0.0892577, 0.0853138, 0.0929799, 0.689183, 0.770949, 0.0546659, 
+Weights: 
+[#0]: 7.66462e-08, 0, 0.343287, 0.106338, 0.0805981, 0.0458887, 0.0490342, 1, 
+[7:37] Calculating q-values
+[7:37] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 192, 92, 62, 50
+[7:37] Calibrating retention times
+[7:37] 95 precursors used for iRT estimation.
+[7:37] Processing batch #2 out of 200 
+[7:37] Precursor search
+[7:37] Optimising weights
+Averages: 
+[#0]: 0.0825816, 0.0958988, 0.109383, 0.0860595, 0.111991, 0.590886, 0.678949, 0.0538011, 
+Weights: 
+[#0]: 0.151014, 0, 0.418999, 0.419823, 0.336729, 0, 0, 1, 
+[7:37] Calculating q-values
+[7:37] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 534, 175, 147, 94
+[7:37] Calibrating retention times
+[7:37] 168 precursors used for iRT estimation.
+[7:37] Processing batch #3 out of 200 
+[7:37] Precursor search
+[7:37] Optimising weights
+Averages: 
+[#0]: 0.0858824, 0.103019, 0.0975837, 0.0890207, 0.117073, 0.657929, 0.754114, 0.0577296, 
+Weights: 
+[#0]: 1.23929e-07, 0, 0.352284, 0.27815, 0.294069, 0, 0.0265923, 1, 
+[7:37] Calculating q-values
+[7:37] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 717, 245, 206, 140
+[7:37] Calibrating retention times
+[7:37] 236 precursors used for iRT estimation.
+[7:37] Processing batch #4 out of 200 
+[7:37] Precursor search
+[7:38] Optimising weights
+Averages: 
+[#0]: 0.085359, 0.107285, 0.0924043, 0.0883882, 0.118423, 0.644765, 0.742112, 0.0604376, 
+Weights: 
+[#0]: 9.81946e-08, 0.00308257, 0.27688, 0.193064, 0.228401, 0, 0.0146471, 1, 
+[7:38] Calculating q-values
+[7:38] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 968, 324, 241, 170
+[7:38] Calibrating retention times
+[7:38] 309 precursors used for iRT estimation.
+[7:38] Processing batch #5 out of 200 
+[7:38] Precursor search
+[7:38] Optimising weights
+Averages: 
+[#0]: 0.0849075, 0.125184, 0.0973718, 0.0847909, 0.118068, 0.637828, 0.721434, 0.0581518, 
+Weights: 
+[#0]: 0.333221, 0.0146154, 0.283509, 0.108666, 0.280908, 0, 0, 1, 
+[7:38] Calculating q-values
+[7:38] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 1213, 405, 301, 175
+[7:38] Calibrating retention times
+[7:38] 372 precursors used for iRT estimation.
+[7:38] Processing batches #6-7 out of 200 
+[7:38] Precursor search
+[7:38] Optimising weights
+Averages: 
+[#0]: 0.0885938, 0.143378, 0.100046, 0.093263, 0.116722, 0.688822, 0.763104, 0.058522, 
+Weights: 
+[#0]: 0.377028, 0.0179408, 0.34296, 0.324771, 0.308086, 0, 0, 1, 
+[7:38] Calculating q-values
+[7:38] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 1613, 570, 423, 269
+[7:38] Calibrating retention times
+[7:38] 492 precursors used for iRT estimation.
+[7:38] Processing batches #8-9 out of 200 
+[7:38] Precursor search
+[7:39] Optimising weights
+Averages: 
+[#0]: 0.0885004, 0.139146, 0.10386, 0.0899289, 0.117958, 0.677909, 0.751665, 0.0574689, 
+Weights: 
+[#0]: 0.592229, 0.00882887, 0.376982, 0.294239, 0.366663, 0, 0, 1, 
+[7:39] Calculating q-values
+[7:39] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 2001, 706, 535, 250
+[7:39] Calibrating retention times
+[7:39] 635 precursors used for iRT estimation.
+[7:39] Processing batches #10-11 out of 200 
+[7:39] Precursor search
+[7:39] Optimising weights
+Averages: 
+[#0]: 0.0957665, 0.159747, 0.115905, 0.0993973, 0.125381, 0.734896, 0.828084, 0.0603175, 
+Weights: 
+[#0]: 0.479091, 0.0147399, 0.456232, 0.463286, 0.429055, 0, 0, 1, 
+[7:39] Calculating q-values
+[7:39] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 2309, 858, 644, 307
+[7:39] Calibrating retention times
+[7:39] 748 precursors used for iRT estimation.
+[7:39] Processing batches #12-14 out of 200 
+[7:39] Precursor search
+[7:40] Optimising weights
+Averages: 
+[#0]: 0.11459, 0.205566, 0.132557, 0.120105, 0.146195, 0.902164, 1.01955, 0.0725801, 
+Weights: 
+[#0]: 0.265881, 0.0160929, 0.415225, 0.391605, 0.358284, 0, 0, 1, 
+[7:40] Calculating q-values
+[7:40] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 2850, 1089, 736, 365
+[7:40] Calibrating retention times
+[7:40] 958 precursors used for iRT estimation.
+[7:40] Processing batches #15-17 out of 200 
+[7:40] Precursor search
+[7:41] Optimising weights
+Averages: 
+[#0]: 0.134384, 0.261736, 0.160488, 0.142213, 0.171858, 1.04036, 1.19753, 0.0839021, 
+Weights: 
+[#0]: 0.0352883, 0.0195651, 0.44093, 0.433852, 0.357656, 0, 0, 1, 
+[7:41] Calculating q-values
+[7:41] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 3473, 1339, 990, 457
+[7:41] Calibrating retention times
+[7:41] 1236 precursors used for iRT estimation.
+[7:41] Processing batches #18-21 out of 200 
+[7:41] Precursor search
+[7:41] Optimising weights
+Averages: 
+[#0]: 0.15506, 0.296507, 0.185725, 0.164512, 0.201886, 1.19438, 1.38043, 0.0958089, 
+Weights: 
+[#0]: 9.58837e-08, 0.0161198, 0.475142, 0.527739, 0.38765, 0, 0, 1, 
+[7:42] Calculating q-values
+[7:42] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 4195, 1662, 1338, 550
+[7:42] Calibrating retention times
+[7:42] 1519 precursors used for iRT estimation.
+[7:42] Processing batches #22-26 out of 200 
+[7:42] Precursor search
+[7:43] Optimising weights
+Averages: 
+[#0]: 0.158644, 0.311997, 0.185285, 0.167105, 0.206274, 1.23294, 1.42069, 0.0988586, 
+Weights: 
+[#0]: 8.96285e-08, 0.0149246, 0.433511, 0.465793, 0.367445, 0, 0, 1, 
+[7:43] Calculating q-values
+[7:43] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 5130, 2053, 1531, 692
+[7:43] Calibrating retention times
+[7:43] 1867 precursors used for iRT estimation.
+[7:43] Precursor search
+[7:43] Optimising weights
+Averages: 
+[#0]: 0.159097, 0.313949, 0.18687, 0.169611, 0.205707, 1.234, 1.42711, 0.0983329, 0, 0.127952, [#10]: 0.922899, 0.262182, 0.11457, 0.117928, 1.44994, 0.148286, 0.528056, 0.121598, 0.0921146, 0.122093, [#20]: 0.122537, 0.753773, 0.126129, 0, 0, 0.183685, 0.178914, 0.0378184, 0.139662, 0.130319, [#30]: 0.0302391, 0.0220047, 0.00645339, 0.10901, 0.252624, 0.954252, 1.21362, 5.81732, 0.122976, 0.573057, [#40]: 0.124454, 0.121131, 0.115086, 0.105366, 0.161263, 0.209012, 0.476914, 0.490354, 0.384639, 0.281396, [#50]: 0.306409, -0.510942, -0.956008, -1.16416, -1.23334, 0, 0, 0, 0, 
+Weights: 
+[#0]: 1.01783e-07, 0.00947451, 0.142543, 0.351447, 0.282349, 0, 0, 0.526897, 0, 0, [#10]: 0, 0.103593, 0, 0, 0.0503528, 1, 0, 0, 0.135837, 0.114195, [#20]: 0, 0, 0, 0, 0, 0.0344522, 0, 0.0433008, 0.302445, 0, [#30]: 0.0240963, 0, 0, 0, 0.0062135, 0, 0, 0, 0, 0.00991471, [#40]: 0, 0, 0, 0, 0, 0.0768201, 0.0937883, 0.0241496, 0.00749591, 0.0624245, [#50]: 0.293777, -0.102727, 0, -0.000188035, 0, 0, 0, 0, 0, 
+[7:43] Calculating q-values
+[7:43] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 5397, 2166, 1676, 1242
+[7:43] Precursor search
+[7:48] Optimising weights
+Averages: 
+[#0]: 0.154938, 0.294716, 0.193539, 0.169438, 0.201323, 1.17485, 1.37769, 0.0952885, 0, 0.122682, [#10]: 0.898545, 0.243233, 0.112344, 0.111424, 1.40153, 0.143047, 0.520608, 0.119851, 0.0881259, 0.117764, [#20]: 0.121599, 0.758664, 0.126787, 0, 0, 0.19019, 0.187163, 0.0385689, 0.135888, 0.127115, [#30]: 0.0285927, 0.020717, 0.00584513, 0.105337, 0.237548, 0.917953, 1.11503, 5.35169, 0.115372, 0.549282, [#40]: 0.119758, 0.116747, 0.11111, 0.1019, 0.168256, 0.214913, 0.468778, 0.476182, 0.373716, 0.277731, [#50]: 0.293225, -0.478379, -0.890946, -1.08351, -1.14618, 0, 0, 0, 0, 
+Weights: 
+[#0]: 9.11507e-08, 0.000615646, 0.129782, 0.401982, 0.246357, 0, 0, 0.572901, 0, 0, [#10]: 0, 0.0730387, 0, 0, 0.0476369, 1, 0, 0, 0.103459, 0.113368, [#20]: 0, 0, 0, 0, 0, 0.0287499, 0, 0.0511478, 0.269074, 0, [#30]: 0, 0, 0, 0, 0.00920685, 0, 0, 0, 0, 0.00678601, [#40]: 0, 0, 0, 0, 0, 0.0767497, 0.107635, 0, 0.00205311, 0.103811, [#50]: 0.217055, -0.0825183, 0, 0, 0, 0, 0, 0, 0, 
+[7:48] Calculating q-values
+[7:48] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 5505, 2142, 1633, 1228
+[7:48] Precursor search
+[7:48] Optimising weights
+Averages: 
+[#0]: 0.154672, 0.293066, 0.192251, 0.169702, 0.203285, 1.17539, 1.37818, 0.0949571, 0, 0.12263, [#10]: 0.897179, 0.24762, 0.111592, 0.111509, 1.40276, 0.143121, 0.517704, 0.121032, 0.0883968, 0.11835, [#20]: 0.121732, 0.758417, 0.127387, 0, 0, 0.189535, 0.186313, 0.0373871, 0.13511, 0.126527, [#30]: 0.0286041, 0.0196054, 0.00561199, 0.105348, 0.235501, 0.91844, 1.13012, 5.34654, 0.116468, 0.548804, [#40]: 0.11972, 0.116705, 0.111058, 0.101837, 0.16734, 0.214035, 0.468468, 0.477193, 0.373296, 0.275424, [#50]: 0.29427, -0.483948, -0.900709, -1.09494, -1.15763, 0, 0, 0, 0, 
+Weights: 
+[#0]: 8.47111e-08, 0, 0.104774, 0.365042, 0.231852, 0, 0, 0.453333, 0, 0, [#10]: 0.00434976, 0.0783332, 0, 0, 0.0443791, 1, 0, 0, 0.0961455, 0.110833, [#20]: 0, 0, 0.0698214, 0, 0, 0.0430572, 0, 0.046315, 0.232943, 0, [#30]: 0, 0, 0, 0, 0.00638151, 0, 0, 0, 0.00353505, 0.00518469, [#40]: 0, 0, 0, 0, 0, 0.08204, 0.101586, 0, 0.00214819, 0.0764037, [#50]: 0.218807, -0.0761024, 0, 0, 0, 0, 0, 0, 0, 
+[7:48] Calculating q-values
+[7:48] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 5550, 2133, 1636, 1209
+[7:48] Precursor search
+[7:48] Optimising weights
+Averages: 
+[#0]: 0.154938, 0.294716, 0.193539, 0.169438, 0.201323, 1.17485, 1.37769, 0.0952885, 0, 0.122682, [#10]: 0.898545, 0.243233, 0.112344, 0.111424, 1.40153, 0.143047, 0.520608, 0.119851, 0.0881259, 0.117764, [#20]: 0.121599, 0.758664, 0.126787, 0, 0, 0.19019, 0.187163, 0.0385689, 0.135888, 0.127115, [#30]: 0.0285927, 0.020717, 0.00584513, 0.105337, 0.237548, 0.917953, 1.11503, 5.35169, 0.115372, 0.549282, [#40]: 0.119758, 0.116747, 0.11111, 0.1019, 0.168256, 0.214913, 0.468778, 0.476182, 0.373716, 0.277731, [#50]: 0.293225, -0.478379, -0.890946, -1.08351, -1.14618, 0, 0, 0, 0, 
+Weights: 
+[#0]: 9.11507e-08, 0.000615646, 0.129782, 0.401982, 0.246357, 0, 0, 0.572901, 0, 0, [#10]: 0, 0.0730387, 0, 0, 0.0476369, 1, 0, 0, 0.103459, 0.113368, [#20]: 0, 0, 0, 0, 0, 0.0287499, 0, 0.0511478, 0.269074, 0, [#30]: 0, 0, 0, 0, 0.00920685, 0, 0, 0, 0, 0.00678601, [#40]: 0, 0, 0, 0, 0, 0.0767497, 0.107635, 0, 0.00205311, 0.103811, [#50]: 0.217055, -0.0825183, 0, 0, 0, 0, 0, 0, 0, 
+[7:49] Calculating q-values
+[7:49] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 5505, 2142, 1633, 1228
+[7:49] Calibrating retention times
+[7:49] 1905 precursors used for iRT estimation.
+[7:49] M/z SD: 4.18759 ppm
+[7:49] Top 70% mass accuracy: 4.52178 ppm
+[7:49] Top 70% mass accuracy without correction: 7.94102 ppm
+[7:49] Top 70% MS1 mass accuracy: 1.11536 ppm
+[7:49] Top 70% MS1 mass accuracy without correction: 1.57136ppm
+[7:49] Main search
+[7:49] Precursor search
+[8:24] Optimising weights
+Averages: 
+[#0]: 0.14446, 0.206616, 0.109314, 0.164688, 0.178809, 1.26556, 1.45144, 0.0938474, 0, 0.126241, [#10]: 0.909724, 0.209718, 0.117079, 0.113948, 1.44041, 0.130549, 0.551976, 0.1053, 0.0778084, 0.1048, [#20]: 0.121263, 0.737557, 0.126148, 0, 0, 0.104834, 0.117022, 0.0106391, 0.134567, 0.125571, [#30]: 0.0293553, 0.0323556, 0.0117344, 0.105001, 0.250393, 0.988834, 1.3477, 6.34496, 0.099991, 0.482101, [#40]: 0.124066, 0.121271, 0.115571, 0.105749, 0.0857447, 0.12883, 0.334379, 0.357778, 0.280896, 0.188339, [#50]: 0.199186, -0.415748, -0.774951, -0.938077, -0.990635, 0, 0, 0, 0, 
+Weights: 
+[#0]: 1.50033e-07, 0, 0.186639, 0.455049, 0.482677, 0, 0, 0.716462, 0, 0, [#10]: 0.0233011, 0, 0, 0.610747, 0.105118, 0, 0, 0, 0, 0.082805, [#20]: 0, 0, 0, 0, 0, 0.0194352, 0, 0, 1, 0, [#30]: 0.0691367, 0.036268, 0, 0, 0, 0, 0.000435982, 0, 0, 0, [#40]: 0, 0, 0, 0, 0, 0.177514, 0.0438987, 0.0184924, 0, 0.216591, [#50]: 0.0780678, -0.122576, 0, 0, -0.00798343, 0, 0, 0, 0, 
+[8:25] Calculating q-values
+[8:25] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 45865, 19395, 15982, 12154
+[8:25] Removing low confidence identifications
+[8:26] Calibrating retention times
+[8:26] 18196 precursors used for iRT estimation.
+[8:27] M/z SD: 4.28603 ppm
+[8:27] Top 70% mass accuracy: 5.0517 ppm
+[8:27] Top 70% mass accuracy without correction: 8.13369 ppm
+[8:27] Top 70% MS1 mass accuracy: 1.23981 ppm
+[8:27] Top 70% MS1 mass accuracy without correction: 1.70088ppm
+[8:28] Calculating q-values
+[8:29] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 46084, 19452, 15969, 12076
+[8:29] Removing interfering precursors
+[8:29] Calculating q-values
+[8:30] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 40688, 19086, 15834, 12041
+[8:30] Optimising weights
+Averages: 
+[#0]: 0.160069, 0.216125, 0.118742, 0.185755, 0.194775, 1.4169, 1.62545, 0.103045, 0, 0.140279, [#10]: 1.00807, 0.229694, 0.127457, 0.126415, 1.62658, 0.144612, 0.591661, 0.114021, 0.0852846, 0.114924, [#20]: 0.135766, 0.81631, 0.140392, 0, 0, 0.115431, 0.130423, 0.00828478, 0.146534, 0.137095, [#30]: 0.0337317, 0.0357012, 0.0130384, 0.116258, 0.270215, 1.11452, 1.4724, 7.35648, 0.103087, 0.544169, [#40]: 0.137831, 0.134639, 0.128124, 0.116927, 0.0927488, 0.141525, 0.369851, 0.39788, 0.311715, 0.203874, [#50]: 0.218629, -0.467028, -0.889185, -1.08043, -1.14173, 0, 0, 0, 0, 
+Weights: 
+[#0]: 1.40502e-07, 0, 0.14597, 0.401797, 0.490764, 0, 0, 0.935335, 0, 0, [#10]: 0, 0.00101421, 0, 0.704322, 0.116098, 0.233794, 0, 0, 0, 0.144009, [#20]: 0, 0, 0, 0, 0, 0.0926739, 0, 0, 1, 0, [#30]: 0.127679, 0.0595667, 0, 0, 0, 0, 0.000795447, 0.00062869, 0, 0, [#40]: 0, 0, 0, 0, 0, 0.187629, 0.00952753, 0.0474142, 0, 0.214333, [#50]: 0.0705703, -0.12306, -0.0275504, 0, 0, 0, 0, 0, 0, 
+[8:31] Training neural networks on 37772 target and 25323 decoy PSMs
+[8:44] Calculating q-values
+[8:44] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 42743, 22420, 19258, 15493
+[8:44] Calibrating retention times
+[8:44] 15421 precursors used for iRT estimation.
+[8:45] Number of IDs at 0.01 FDR: 20187
+[8:45] Calculating protein q-values
+[8:45] Number of genes identified at 1% FDR: 1987 (precursor-level), 1922 (protein-level) (inference performed using proteotypic peptides only)
+[8:45] Quantification
+[8:46] Quantification information saved to /home/lerost/DIA_tools_manuscript/search_results/tmp/_home_lerost_DIA_tools_manuscript_input_files_PXD026600_RD139_Wide_UPS1_10fmol_inj2_mzML.quant
+
+[8:46] File #5/6
+[8:46] Loading run /home/lerost/DIA_tools_manuscript/input_files/PXD026600/RD139_Wide_UPS1_10fmol_inj3.mzML
+[8:51] Detected MS/MS range: 199.999 - 1499.98
+[8:52] Run loaded: 1919 MS1 scans and 143925 MS2 scans in 1919 cycles
+[8:52] Pre-processing...
+[8:53] 1919 MS1 and 143925 MS2 scans in 1919 (inferred) and 1919 (encoded) cycles, 901719 precursors in range
+[8:53] Calibrating with mass accuracies 25 (MS1), 23 (MS2)
+[8:53] Processing batch #1 out of 200 
+[8:53] Precursor search
+[8:54] Optimising weights
+Averages: 
+[#0]: 0.0377269, 0.0242664, 0.0143957, 0.0355829, 0.058503, 0.363155, 0.431338, 0.0260025, 
+Weights: 
+[#0]: 1.07283e-07, 0, 0.33252, 0, 0.138556, 0.0447819, 0.0946542, 1, 
+[8:54] Calculating q-values
+[8:54] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 115, 55, 45, 40
+[8:54] Processing batch #2 out of 200 
+[8:54] Precursor search
+[8:55] Optimising weights
+Averages: 
+[#0]: 0.0727699, 0.086463, 0.0340279, 0.0874222, 0.102268, 0.664529, 0.851972, 0.0487695, 
+Weights: 
+[#0]: 7.30375e-08, 0.000347936, 0.284765, 0, 0.103015, 0, 0.105204, 1, 
+[8:55] Calculating q-values
+[8:55] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 282, 122, 105, 76
+[8:55] Processing batch #3 out of 200 
+[8:55] Precursor search
+[8:57] Optimising weights
+Averages: 
+[#0]: 0.0964926, 0.052083, 0.044583, 0.127391, 0.138259, 0.886127, 1.13756, 0.0640446, 
+Weights: 
+[#0]: 6.51113e-08, 0, 0.274932, 0.0789985, 0.114294, 0, 0.0860684, 1, 
+[8:57] Calculating q-values
+[8:57] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 424, 183, 137, 116
+[8:57] Processing batch #4 out of 200 
+[8:57] Precursor search
+[8:58] Optimising weights
+Averages: 
+[#0]: 0.112957, 0.0786052, 0.0671071, 0.146299, 0.181539, 0.985231, 1.26031, 0.0799477, 
+Weights: 
+[#0]: 4.95297e-08, 0, 0.239218, 0.123519, 0.130602, 0, 0.0436675, 1, 
+[8:58] Calculating q-values
+[8:58] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 595, 251, 191, 116
+[8:58] Processing batch #5 out of 200 
+[8:58] Precursor search
+[8:59] Optimising weights
+Averages: 
+[#0]: 0.122018, 0.0161569, 0.0649643, 0.162732, 0.207263, 1.07766, 1.3668, 0.0855199, 
+Weights: 
+[#0]: 0.108121, 0, 0.177751, 0.308962, 0.185983, 0, 0, 1, 
+[8:59] Calculating q-values
+[8:59] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 782, 325, 216, 129
+[8:59] Processing batches #6-7 out of 200 
+[8:59] Precursor search
+[9:01] Optimising weights
+Averages: 
+[#0]: 0.120084, 0.0359082, 0.0734783, 0.150239, 0.201813, 1.05915, 1.35379, 0.0820101, 
+Weights: 
+[#0]: 4.51888e-08, 0, 0.235597, 0.138745, 0.157702, 0, 0.0374632, 1, 
+[9:01] Calculating q-values
+[9:01] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 1076, 445, 317, 217
+[9:01] Processing batches #8-9 out of 200 
+[9:01] Precursor search
+[9:04] Optimising weights
+Averages: 
+[#0]: 0.122127, 0.070674, 0.0724062, 0.16274, 0.215273, 1.07118, 1.34688, 0.0834539, 
+Weights: 
+[#0]: 0.0756648, 0, 0.213439, 0.311152, 0.242755, 0, 0, 1, 
+[9:04] Calculating q-values
+[9:04] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 1407, 569, 353, 204
+[9:04] Processing batches #10-11 out of 200 
+[9:04] Precursor search
+[9:06] Optimising weights
+Averages: 
+[#0]: 0.124458, 0.0833072, 0.0772498, 0.168962, 0.213136, 1.09373, 1.37231, 0.0834621, 
+Weights: 
+[#0]: 6.30534e-08, 0, 0.274162, 0.514368, 0.258635, 0, 0, 1, 
+[9:06] Calculating q-values
+[9:06] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 1693, 681, 392, 222
+[9:06] Processing batches #12-14 out of 200 
+[9:06] Precursor search
+[9:09] Optimising weights
+Averages: 
+[#0]: 0.131917, 0.182149, 0.0887447, 0.174776, 0.223235, 1.16076, 1.45795, 0.0860359, 
+Weights: 
+[#0]: 7.11315e-08, 0, 0.327803, 0.620683, 0.316425, 0, 0, 1, 
+[9:09] Calculating q-values
+[9:09] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 2081, 872, 512, 300
+[9:09] Processing batches #15-17 out of 200 
+[9:09] Precursor search
+[9:12] Optimising weights
+Averages: 
+[#0]: 0.134493, 0.191262, 0.0810242, 0.178185, 0.224529, 1.20373, 1.48699, 0.0889317, 
+Weights: 
+[#0]: 6.59674e-08, 0, 0.280753, 0.531113, 0.302417, 0, 0, 1, 
+[9:12] Calculating q-values
+[9:12] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 2583, 1061, 636, 358
+[9:12] Processing batches #18-21 out of 200 
+[9:12] Precursor search
+[9:16] Optimising weights
+Averages: 
+[#0]: 0.125615, 0.192263, 0.0841664, 0.163022, 0.196232, 1.12716, 1.38198, 0.0800665, 
+Weights: 
+[#0]: 0.0717445, 0, 0.310048, 0.569714, 0.290523, 0, 0, 1, 
+[9:16] Calculating q-values
+[9:16] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 3177, 1343, 791, 450
+[9:16] Processing batches #22-26 out of 200 
+[9:16] Precursor search
+[9:21] Optimising weights
+Averages: 
+[#0]: 0.131403, 0.17821, 0.0868965, 0.174694, 0.21448, 1.17605, 1.46394, 0.0843587, 
+Weights: 
+[#0]: 7.45336e-08, 0, 0.32199, 0.648615, 0.320233, 0, 0, 1, 
+[9:21] Calculating q-values
+[9:22] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 3839, 1628, 930, 455
+[9:22] Processing batches #27-32 out of 200 
+[9:22] Precursor search
+[9:27] Optimising weights
+Averages: 
+[#0]: 0.122698, 0.179665, 0.078176, 0.160729, 0.187505, 1.1167, 1.36241, 0.0768679, 
+Weights: 
+[#0]: 0.149676, 0, 0.334489, 0.706091, 0.320074, 0, 0, 1, 
+[9:28] Calculating q-values
+[9:28] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 4722, 1982, 1192, 602
+[9:28] Processing batches #33-39 out of 200 
+[9:28] Precursor search
+[9:34] Optimising weights
+Averages: 
+[#0]: 0.120226, 0.135896, 0.0787272, 0.156578, 0.186197, 1.08469, 1.32702, 0.0762058, 
+Weights: 
+[#0]: 0.197135, 0, 0.314888, 0.623705, 0.314777, 0, 0, 1, 
+[9:35] Calculating q-values
+[9:35] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 5684, 2402, 1443, 579
+[9:35] Precursor search
+[9:35] Optimising weights
+Averages: 
+[#0]: 0.120488, 0.128411, 0.0792657, 0.158324, 0.187042, 1.08716, 1.33399, 0.0763623, 
+Weights: 
+[#0]: 0.179968, 0, 0.315444, 0.622462, 0.31194, 0, 0, 1, 
+[9:35] Calculating q-values
+[9:35] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 5689, 2405, 1453, 578
+[9:35] Precursor search
+[9:36] Optimising weights
+Averages: 
+[#0]: 0.120678, 0.131451, 0.079534, 0.158506, 0.18721, 1.08946, 1.33682, 0.0763296, 
+Weights: 
+[#0]: 0.182347, 0, 0.319625, 0.628026, 0.315286, 0, 0, 1, 
+[9:36] Calculating q-values
+[9:36] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 5674, 2400, 1449, 581
+[9:36] Precursor search
+[9:36] Optimising weights
+Averages: 
+[#0]: 0.120687, 0.132178, 0.0793329, 0.158641, 0.187324, 1.09025, 1.33696, 0.076382, 
+Weights: 
+[#0]: 0.178902, 0, 0.320115, 0.632348, 0.316196, 0, 0, 1, 
+[9:36] Calculating q-values
+[9:37] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 5669, 2397, 1451, 581
+[9:37] Calibrating retention times
+[9:37] 2068 precursors used for iRT estimation.
+[9:37] RT window set to 5.95862
+[9:37] M/z SD: 4.29728 ppm
+[9:37] Top 70% mass accuracy: 4.02129 ppm
+[9:37] Top 70% mass accuracy without correction: 7.90399 ppm
+[9:37] Top 70% MS1 mass accuracy: 1.14377 ppm
+[9:37] Top 70% MS1 mass accuracy without correction: 1.36819ppm
+[9:37] Recommended MS1 mass accuracy setting: 6 ppm
+[9:37] Using mass accuracy 2e-05, 8e-06 (MS2, MS1)
+[9:37] Processing batch #1 out of 200 
+[9:37] Precursor search
+[9:37] Optimising weights
+Averages: 
+[#0]: 0.0943717, 0.191524, 0.0994955, 0.100712, 0.100265, 0.77766, 0.884241, 0.0546366, 
+Weights: 
+[#0]: 0.0368366, 0.0463632, 0.447239, 0.474156, 0.207384, 0, 0.0603345, 1, 
+[9:37] Calculating q-values
+[9:37] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 179, 86, 63, 55
+[9:37] Calibrating retention times
+[9:37] 107 precursors used for iRT estimation.
+[9:37] Processing batch #2 out of 200 
+[9:37] Precursor search
+[9:37] Optimising weights
+Averages: 
+[#0]: 0.0981419, 0.107348, 0.126483, 0.0951726, 0.113261, 0.741398, 0.837198, 0.0607122, 
+Weights: 
+[#0]: 0.640976, 2.14037e-05, 0.372088, 0.1106, 0.20336, 0, 0.00757137, 1, 
+[9:37] Calculating q-values
+[9:37] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 479, 182, 139, 116
+[9:37] Calibrating retention times
+[9:37] 150 precursors used for iRT estimation.
+[9:37] Processing batch #3 out of 200 
+[9:37] Precursor search
+[9:38] Optimising weights
+Averages: 
+[#0]: 0.098055, 0.109541, 0.114318, 0.0980132, 0.122394, 0.764366, 0.855325, 0.064661, 
+Weights: 
+[#0]: 8.30926e-08, 0, 0.328112, 0.094905, 0.174089, 0.0413898, 0, 1, 
+[9:38] Calculating q-values
+[9:38] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 625, 270, 193, 167
+[9:38] Calibrating retention times
+[9:38] 229 precursors used for iRT estimation.
+[9:38] Processing batch #4 out of 200 
+[9:38] Precursor search
+[9:38] Optimising weights
+Averages: 
+[#0]: 0.0987037, 0.108665, 0.106113, 0.0974391, 0.124024, 0.776187, 0.862517, 0.0661783, 
+Weights: 
+[#0]: 0.281981, 0, 0.277775, 0.0529668, 0.204656, 0.0142689, 0, 1, 
+[9:38] Calculating q-values
+[9:38] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 891, 348, 256, 186
+[9:38] Calibrating retention times
+[9:38] 291 precursors used for iRT estimation.
+[9:38] Processing batch #5 out of 200 
+[9:38] Precursor search
+[9:38] Optimising weights
+Averages: 
+[#0]: 0.0959056, 0.120247, 0.114421, 0.0956821, 0.127008, 0.73204, 0.817414, 0.0642479, 
+Weights: 
+[#0]: 9.23749e-08, 0.00269082, 0.313324, 0.104185, 0.222049, 0.0230237, 0, 1, 
+[9:38] Calculating q-values
+[9:38] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 1121, 416, 303, 210
+[9:38] Calibrating retention times
+[9:38] 368 precursors used for iRT estimation.
+[9:38] Processing batches #6-7 out of 200 
+[9:38] Precursor search
+[9:38] Optimising weights
+Averages: 
+[#0]: 0.0990565, 0.135034, 0.109426, 0.0987747, 0.129771, 0.768716, 0.853479, 0.0664124, 
+Weights: 
+[#0]: 0.470855, 0.00758913, 0.275986, 0.0790569, 0.25131, 0, 0, 1, 
+[9:38] Calculating q-values
+[9:38] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 1546, 590, 401, 285
+[9:38] Calibrating retention times
+[9:38] 515 precursors used for iRT estimation.
+[9:38] Processing batches #8-9 out of 200 
+[9:38] Precursor search
+[9:39] Optimising weights
+Averages: 
+[#0]: 0.0980678, 0.129373, 0.107925, 0.100376, 0.132341, 0.758658, 0.844589, 0.0656407, 
+Weights: 
+[#0]: 0.462502, 0, 0.307629, 0.185169, 0.318157, 0, 0, 1, 
+[9:39] Calculating q-values
+[9:39] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 1895, 733, 511, 294
+[9:39] Calibrating retention times
+[9:39] 641 precursors used for iRT estimation.
+[9:39] Processing batches #10-11 out of 200 
+[9:39] Precursor search
+[9:39] Optimising weights
+Averages: 
+[#0]: 0.0958527, 0.136709, 0.0972338, 0.101714, 0.124352, 0.758827, 0.845855, 0.0642928, 
+Weights: 
+[#0]: 0.427789, 0.00168112, 0.296729, 0.316014, 0.300635, 0, 0, 1, 
+[9:39] Calculating q-values
+[9:39] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 2262, 883, 582, 343
+[9:39] Calibrating retention times
+[9:39] 746 precursors used for iRT estimation.
+[9:39] Processing batches #12-14 out of 200 
+[9:39] Precursor search
+[9:40] Optimising weights
+Averages: 
+[#0]: 0.115683, 0.206287, 0.131434, 0.121459, 0.145772, 0.911494, 1.02465, 0.0724851, 
+Weights: 
+[#0]: 0.466203, 0.0161479, 0.415895, 0.426245, 0.414615, 0, 0, 1, 
+[9:40] Calculating q-values
+[9:40] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 2835, 1111, 614, 398
+[9:40] Calibrating retention times
+[9:40] 972 precursors used for iRT estimation.
+[9:40] Processing batches #15-17 out of 200 
+[9:40] Precursor search
+[9:40] Optimising weights
+Averages: 
+[#0]: 0.133816, 0.24314, 0.160942, 0.142033, 0.170628, 1.04642, 1.19784, 0.0835305, 
+Weights: 
+[#0]: 1.14272e-07, 0.0126524, 0.447641, 0.464167, 0.368646, 0.00398887, 0, 1, 
+[9:40] Calculating q-values
+[9:40] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 3377, 1362, 951, 497
+[9:40] Calibrating retention times
+[9:40] 1234 precursors used for iRT estimation.
+[9:40] Processing batches #18-21 out of 200 
+[9:40] Precursor search
+[9:41] Optimising weights
+Averages: 
+[#0]: 0.155638, 0.30305, 0.194743, 0.16474, 0.189778, 1.19965, 1.3959, 0.0943822, 
+Weights: 
+[#0]: 1.0274e-07, 0.00782387, 0.524105, 0.637541, 0.352907, 0, 0, 1, 
+[9:41] Calculating q-values
+[9:41] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 3988, 1686, 1216, 611
+[9:41] Calibrating retention times
+[9:41] 1514 precursors used for iRT estimation.
+[9:41] Processing batches #22-26 out of 200 
+[9:41] Precursor search
+[9:42] Optimising weights
+Averages: 
+[#0]: 0.150219, 0.274965, 0.181935, 0.155813, 0.187188, 1.16812, 1.35271, 0.0927721, 
+Weights: 
+[#0]: 0.00611928, 0.00592878, 0.459094, 0.433002, 0.336128, 0, 0, 1, 
+[9:42] Calculating q-values
+[9:42] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 4899, 2070, 1548, 700
+[9:42] Calibrating retention times
+[9:42] 1858 precursors used for iRT estimation.
+[9:42] Precursor search
+[9:42] Optimising weights
+Averages: 
+[#0]: 0.152359, 0.27814, 0.186411, 0.159144, 0.187954, 1.18061, 1.37514, 0.0933998, 0, 0.12129, [#10]: 0.892752, 0.235999, 0.115079, 0.109595, 1.36586, 0.140094, 0.51757, 0.110111, 0.0844708, 0.105994, [#20]: 0.118367, 0.698987, 0.117504, 0, 0, 0.186427, 0.178696, 0.0278458, 0.133149, 0.124176, [#30]: 0.0283096, 0.0366471, 0.0135092, 0.100679, 0.198171, 0.950266, 0.819722, 5.89151, 0.0884705, 0.560876, [#40]: 0.119292, 0.116698, 0.11144, 0.102431, 0.165481, 0.212716, 0.441679, 0.460422, 0.3628, 0.279941, [#50]: 0.286201, -0.435506, -0.835593, -1.02574, -1.0817, 0, 0, 0, 0, 
+Weights: 
+[#0]: 9.31621e-08, 0.00286685, 0, 0.14001, 0.244086, 0, 0, 0.419498, 0, 1, [#10]: 0.0080906, 0.0353199, 0, 0.277507, 0.0376841, 0.36118, 0, 0, 0.171198, 0, [#20]: 0, 0, 0, 0, 0, 0.233202, 0, 0.00230976, 0.367138, 0, [#30]: 0.0183222, 0.2124, 0, 0, 0, 0, 0, 0, 0, 0, [#40]: 0, 0, 0, 0, 0.0204574, 0.170555, 0.00425856, 0.106003, 0, 0.16431, [#50]: 0.13912, -0.0758481, -0.000292462, 0, 0, 0, 0, 0, 0, 
+[9:43] Calculating q-values
+[9:43] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 5008, 2152, 1555, 1052
+[9:43] Precursor search
+[9:47] Optimising weights
+Averages: 
+[#0]: 0.155149, 0.284283, 0.211269, 0.168948, 0.196417, 1.15941, 1.3763, 0.0947232, 0, 0.119938, [#10]: 0.902305, 0.239136, 0.116775, 0.10639, 1.36373, 0.141865, 0.517947, 0.115929, 0.0861952, 0.109365, [#20]: 0.12105, 0.753206, 0.124753, 0, 0, 0.21051, 0.197379, 0.0264677, 0.135166, 0.127248, [#30]: 0.0292151, 0.0284646, 0.00972843, 0.10027, 0.204848, 0.924499, 0.874085, 5.6942, 0.0953599, 0.55369, [#40]: 0.118365, 0.116064, 0.111195, 0.102613, 0.189199, 0.236634, 0.463457, 0.478248, 0.378078, 0.299681, [#50]: 0.299506, -0.441815, -0.846263, -1.04111, -1.09991, 0, 0, 0, 0, 
+Weights: 
+[#0]: 1.01078e-07, 0.00293988, 0, 0.339826, 0.242716, 0, 0, 0.522728, 0, 1, [#10]: 0, 0.0665397, 0, 0.209161, 0.0309745, 0.705313, 0, 0, 0.205551, 0, [#20]: 0, 0.00368615, 0, 0, 0, 0.280414, 0, 0.0018778, 0.410123, 0, [#30]: 0.0323194, 0.218099, 0, 0, 0, 0, 0, 0, 0, 0.00667225, [#40]: 0, 0, 0, 0, 0, 0.212612, 0.00472441, 0.0888916, 0, 0.232351, [#50]: 0.125109, -0.071288, -0.00628685, 0, 0, 0, 0, 0, 0, 
+[9:47] Calculating q-values
+[9:48] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 5056, 2152, 1552, 909
+[9:48] Precursor search
+[9:48] Optimising weights
+Averages: 
+[#0]: 0.155679, 0.279649, 0.210492, 0.167699, 0.196446, 1.16643, 1.38205, 0.0950319, 0, 0.120597, [#10]: 0.905732, 0.237699, 0.117999, 0.107131, 1.36301, 0.142213, 0.515874, 0.115823, 0.0866569, 0.110057, [#20]: 0.121364, 0.748622, 0.123785, 0, 0, 0.209378, 0.198194, 0.0259639, 0.136271, 0.127966, [#30]: 0.0290773, 0.0301008, 0.0105815, 0.100633, 0.204415, 0.931444, 0.905777, 5.79767, 0.0959674, 0.55879, [#40]: 0.11891, 0.116511, 0.111515, 0.102808, 0.188291, 0.234347, 0.465483, 0.480121, 0.379768, 0.298868, [#50]: 0.299081, -0.447602, -0.854754, -1.04937, -1.10675, 0, 0, 0, 0, 
+Weights: 
+[#0]: 1.3295e-07, 0.00121663, 0, 0.436527, 0.308519, 0, 0, 0.596749, 0, 1, [#10]: 0, 0.0892941, 0, 0.490798, 0.0340746, 0.744805, 0, 0, 0.282069, 0, [#20]: 0, 0.00840961, 0, 0, 0, 0.363375, 0, 0, 0.582065, 0, [#30]: 0.0219901, 0.318678, 0, 0, 0, 0, 0, 0, 0, 0.00852498, [#40]: 0, 0, 0, 0, 0, 0.258341, 0.00488149, 0.12328, 0, 0.302598, [#50]: 0.1557, -0.0958389, -0.00839632, 0, 0, 0, 0, 0, 0, 
+[9:48] Calculating q-values
+[9:48] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 5132, 2187, 1554, 930
+[9:48] Precursor search
+[9:48] Optimising weights
+Averages: 
+[#0]: 0.15622, 0.280096, 0.209644, 0.168313, 0.196995, 1.17471, 1.3901, 0.095422, 0, 0.121279, [#10]: 0.909069, 0.236153, 0.118237, 0.107634, 1.3711, 0.142511, 0.521051, 0.116213, 0.0868361, 0.110532, [#20]: 0.12241, 0.752292, 0.124724, 0, 0, 0.208198, 0.196983, 0.0261709, 0.136087, 0.127848, [#30]: 0.0295891, 0.0293311, 0.0100787, 0.101321, 0.204421, 0.93995, 0.905046, 5.88039, 0.0957058, 0.562185, [#40]: 0.11969, 0.117311, 0.112296, 0.103512, 0.187117, 0.233104, 0.468109, 0.48255, 0.381658, 0.298392, [#50]: 0.299368, -0.448683, -0.858264, -1.05469, -1.1125, 0, 0, 0, 0, 
+Weights: 
+[#0]: 1.3427e-07, 0.000766773, 0, 0.438748, 0.318973, 0, 0, 0.744569, 0, 1, [#10]: 0, 0.0768497, 0, 0.373247, 0.0383248, 0.722068, 0, 0, 0.29489, 0, [#20]: 0, 0.00344028, 0, 0, 0, 0.354763, 0, 0.000215392, 0.522794, 0, [#30]: 0.0575177, 0.296271, 0, 0, 0, 0, 0, 0, 0, 0.00716621, [#40]: 0, 0, 0, 0, 0, 0.252916, 0.00542826, 0.126685, 0, 0.308027, [#50]: 0.157619, -0.0968649, -0.0100083, 0, 0, 0, 0, 0, 0, 
+[9:49] Calculating q-values
+[9:49] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 5143, 2185, 1575, 1033
+[9:49] Precursor search
+[9:49] Optimising weights
+Averages: 
+[#0]: 0.155679, 0.279649, 0.210492, 0.167699, 0.196446, 1.16643, 1.38205, 0.0950319, 0, 0.120597, [#10]: 0.905732, 0.237699, 0.117999, 0.107131, 1.36301, 0.142213, 0.515874, 0.115823, 0.0866569, 0.110057, [#20]: 0.121364, 0.748622, 0.123785, 0, 0, 0.209378, 0.198194, 0.0259639, 0.136271, 0.127966, [#30]: 0.0290773, 0.0301008, 0.0105815, 0.100633, 0.204415, 0.931444, 0.905777, 5.79767, 0.0959674, 0.55879, [#40]: 0.11891, 0.116511, 0.111515, 0.102808, 0.188291, 0.234347, 0.465483, 0.480121, 0.379768, 0.298868, [#50]: 0.299081, -0.447602, -0.854754, -1.04937, -1.10675, 0, 0, 0, 0, 
+Weights: 
+[#0]: 1.3295e-07, 0.00121663, 0, 0.436527, 0.308519, 0, 0, 0.596749, 0, 1, [#10]: 0, 0.0892941, 0, 0.490798, 0.0340746, 0.744805, 0, 0, 0.282069, 0, [#20]: 0, 0.00840961, 0, 0, 0, 0.363375, 0, 0, 0.582065, 0, [#30]: 0.0219901, 0.318678, 0, 0, 0, 0, 0, 0, 0, 0.00852498, [#40]: 0, 0, 0, 0, 0, 0.258341, 0.00488149, 0.12328, 0, 0.302598, [#50]: 0.1557, -0.0958389, -0.00839632, 0, 0, 0, 0, 0, 0, 
+[9:49] Calculating q-values
+[9:50] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 5132, 2187, 1554, 930
+[9:50] Calibrating retention times
+[9:50] 1861 precursors used for iRT estimation.
+[9:50] M/z SD: 4.03755 ppm
+[9:50] Top 70% mass accuracy: 4.62125 ppm
+[9:50] Top 70% mass accuracy without correction: 8.30432 ppm
+[9:50] Top 70% MS1 mass accuracy: 1.20854 ppm
+[9:50] Top 70% MS1 mass accuracy without correction: 1.35807ppm
+[9:50] Main search
+[9:50] Precursor search
+[10:22] Optimising weights
+Averages: 
+[#0]: 0.14664, 0.203947, 0.0995886, 0.169575, 0.189136, 1.29907, 1.47941, 0.0973831, 0, 0.130042, [#10]: 0.925439, 0.226279, 0.11988, 0.11831, 1.48109, 0.133339, 0.56593, 0.113542, 0.0803526, 0.117497, [#20]: 0.124967, 0.775355, 0.131511, 0, 0, 0.0949968, 0.107585, 0.0110007, 0.138266, 0.127863, [#30]: 0.0317921, 0.0275305, 0.00967886, 0.109596, 0.243446, 1.02806, 1.25766, 6.60905, 0.0954878, 0.507281, [#40]: 0.127117, 0.12377, 0.117307, 0.106602, 0.0739029, 0.113709, 0.341046, 0.361929, 0.287154, 0.18464, [#50]: 0.203709, -0.415539, -0.780134, -0.941346, -0.989642, 0, 0, 0, 0, 
+Weights: 
+[#0]: 1.31874e-07, 0, 0.0219993, 0.367411, 0.430057, 0, 0, 0.394045, 0, 0, [#10]: 0.00893342, 0.00562894, 0, 0.624752, 0.0723676, 0, 0, 0, 0, 0.0814464, [#20]: 0, 0, 0, 0, 0, 0.080736, 0, 0, 1, 0, [#30]: 0.198732, 0.0908094, 0, 0, 0, 0, 0, 0, 0, 0, [#40]: 0, 0, 0, 0, 0, 0.167835, 0.0311934, 0.0275156, 0, 0.166278, [#50]: 0.0927345, -0.116705, -0.00611522, 0, 0, 0, 0, 0, 0, 
+[10:23] Calculating q-values
+[10:23] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 44876, 19269, 15752, 11753
+[10:23] Removing low confidence identifications
+[10:24] Calibrating retention times
+[10:24] 17904 precursors used for iRT estimation.
+[10:24] M/z SD: 4.28123 ppm
+[10:24] Top 70% mass accuracy: 5.00579 ppm
+[10:24] Top 70% mass accuracy without correction: 8.52305 ppm
+[10:24] Top 70% MS1 mass accuracy: 1.22858 ppm
+[10:24] Top 70% MS1 mass accuracy without correction: 1.42634ppm
+[10:26] Calculating q-values
+[10:26] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 44833, 19291, 15786, 11770
+[10:26] Removing interfering precursors
+[10:27] Calculating q-values
+[10:27] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 39246, 18893, 15656, 11737
+[10:27] Optimising weights
+Averages: 
+[#0]: 0.159652, 0.214939, 0.111735, 0.187508, 0.201068, 1.41409, 1.61776, 0.10475, 0, 0.14103, [#10]: 1.00614, 0.241734, 0.128048, 0.127916, 1.63355, 0.144945, 0.594963, 0.119501, 0.0864568, 0.126508, [#20]: 0.137044, 0.848263, 0.143081, 0, 0, 0.108086, 0.121528, 0.010352, 0.147723, 0.136534, [#30]: 0.0352554, 0.0285653, 0.0100121, 0.118347, 0.254777, 1.13032, 1.30835, 7.45255, 0.0970366, 0.564525, [#40]: 0.13789, 0.134201, 0.127043, 0.115196, 0.0846815, 0.124001, 0.37187, 0.395243, 0.313706, 0.202876, [#50]: 0.22165, -0.445055, -0.855231, -1.04325, -1.10038, 0, 0, 0, 0, 
+Weights: 
+[#0]: 1.20912e-07, 0, 0.0496959, 0.34932, 0.414602, 0, 0, 0.391315, 0, 0, [#10]: 0.0051024, 0.00667595, 0, 0.968175, 0.0698442, 0, 0, 0, 0, 0.146176, [#20]: 0, 0, 0, 0, 0, 0.109557, 0, 0, 1, 0, [#30]: 0.267515, 0.0384639, 0, 0, 0, 0, 0, 0, 0, 0, [#40]: 0, 0, 0, 0, 0, 0.165697, 0.0122059, 0.0342938, 0, 0.205154, [#50]: 0.0652734, -0.128753, -0.00656431, 0, 0, 0, 0, 0, 0, 
+[10:29] Training neural networks on 37300 target and 25422 decoy PSMs
+[10:41] Calculating q-values
+[10:42] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 41224, 21897, 18952, 15423
+[10:42] Calibrating retention times
+[10:42] 15153 precursors used for iRT estimation.
+[10:42] Number of IDs at 0.01 FDR: 19655
+[10:42] Calculating protein q-values
+[10:42] Number of genes identified at 1% FDR: 1994 (precursor-level), 1869 (protein-level) (inference performed using proteotypic peptides only)
+[10:42] Quantification
+[10:43] Quantification information saved to /home/lerost/DIA_tools_manuscript/search_results/tmp/_home_lerost_DIA_tools_manuscript_input_files_PXD026600_RD139_Wide_UPS1_10fmol_inj3_mzML.quant
+
+[10:43] File #6/6
+[10:43] Loading run /home/lerost/DIA_tools_manuscript/input_files/PXD026600/RD139_Wide_UPS1_1fmol_inj3.mzML
+[10:48] Detected MS/MS range: 199.999 - 1499.97
+[10:49] Run loaded: 1918 MS1 scans and 143850 MS2 scans in 1918 cycles
+[10:49] Pre-processing...
+[10:50] 1918 MS1 and 143850 MS2 scans in 1918 (inferred) and 1918 (encoded) cycles, 901719 precursors in range
+[10:50] Calibrating with mass accuracies 25 (MS1), 23 (MS2)
+[10:50] Processing batch #1 out of 200 
+[10:50] Precursor search
+[10:51] Optimising weights
+Averages: 
+[#0]: 0.0462156, 0.0743981, -0.00810018, 0.0563738, 0.0740283, 0.472137, 0.501198, 0.0347039, 
+Weights: 
+[#0]: 1, 0, 0, 0.0239456, 0.181434, 0.0203888, 0, 0.519708, 
+[10:51] Calculating q-values
+[10:51] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 205, 64, 51, 44
+[10:51] Processing batch #2 out of 200 
+[10:51] Precursor search
+[10:53] Optimising weights
+Averages: 
+[#0]: 0.0719766, -0.00409331, 0.0350072, 0.102181, 0.121993, 0.66047, 0.785085, 0.0442542, 
+Weights: 
+[#0]: 1, 0, 0.165176, 0.746816, 0.576665, 0, 0, 0.306566, 
+[10:53] Calculating q-values
+[10:53] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 328, 145, 100, 78
+[10:53] Processing batch #3 out of 200 
+[10:53] Precursor search
+[10:54] Optimising weights
+Averages: 
+[#0]: 0.103165, 0.0216898, 0.0670986, 0.144141, 0.141973, 0.920669, 1.12164, 0.0632513, 
+Weights: 
+[#0]: 0.223642, 0, 0.364718, 1, 0.328694, 0, 0, 0.844584, 
+[10:54] Calculating q-values
+[10:54] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 476, 211, 176, 123
+[10:54] Processing batch #4 out of 200 
+[10:54] Precursor search
+[10:55] Optimising weights
+Averages: 
+[#0]: 0.123351, 0.00573308, 0.0958796, 0.15323, 0.182199, 1.04851, 1.27637, 0.0795065, 
+Weights: 
+[#0]: 6.61426e-08, 0, 0.311273, 0.514114, 0.176898, 0, 0, 1, 
+[10:55] Calculating q-values
+[10:55] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 601, 270, 229, 137
+[10:55] Processing batch #5 out of 200 
+[10:55] Precursor search
+[10:56] Optimising weights
+Averages: 
+[#0]: 0.11974, -0.0162322, 0.0878279, 0.152151, 0.186196, 1.03187, 1.27484, 0.0771631, 
+Weights: 
+[#0]: 7.01846e-08, 0, 0.305127, 0.527099, 0.231473, 0, 0, 1, 
+[10:56] Calculating q-values
+[10:56] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 771, 328, 250, 147
+[10:56] Processing batches #6-7 out of 200 
+[10:56] Precursor search
+[10:59] Optimising weights
+Averages: 
+[#0]: 0.126869, 0.0242975, 0.0796861, 0.16536, 0.19815, 1.1289, 1.39325, 0.0826381, 
+Weights: 
+[#0]: 6.50757e-08, 0, 0.301956, 0.648984, 0.216604, 0, 0, 1, 
+[10:59] Calculating q-values
+[10:59] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 1101, 469, 364, 225
+[10:59] Processing batches #8-9 out of 200 
+[10:59] Precursor search
+[11:01] Optimising weights
+Averages: 
+[#0]: 0.127356, 0.0896037, 0.0838079, 0.163208, 0.202643, 1.1387, 1.40801, 0.0813197, 
+Weights: 
+[#0]: 7.35288e-08, 0, 0.340917, 0.768977, 0.246558, 0, 0, 1, 
+[11:01] Calculating q-values
+[11:01] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 1413, 571, 412, 256
+[11:01] Processing batches #10-11 out of 200 
+[11:01] Precursor search
+[11:03] Optimising weights
+Averages: 
+[#0]: 0.120602, 0.139222, 0.0708584, 0.155603, 0.185261, 1.10976, 1.35182, 0.075915, 
+Weights: 
+[#0]: 9.24571e-08, 0, 0.349489, 0.829008, 0.27769, 0.00286178, 0.00035259, 1, 
+[11:03] Calculating q-values
+[11:03] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 1677, 678, 375, 102
+[11:03] Processing batches #12-14 out of 200 
+[11:03] Precursor search
+[11:06] Optimising weights
+Averages: 
+[#0]: 0.128899, 0.176951, 0.0915972, 0.160646, 0.197308, 1.17586, 1.42039, 0.0767748, 
+Weights: 
+[#0]: 0.0810302, 0, 0.460679, 0.978372, 0.407158, 0.00197801, 0, 1, 
+[11:06] Calculating q-values
+[11:06] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 2161, 819, 472, 162
+[11:06] Processing batches #15-17 out of 200 
+[11:06] Precursor search
+[11:10] Optimising weights
+Averages: 
+[#0]: 0.124151, 0.231075, 0.0756877, 0.155534, 0.176325, 1.14864, 1.38472, 0.0757297, 
+Weights: 
+[#0]: 0.322925, 0.0070955, 0.353636, 0.749151, 0.290374, 0, 0, 1, 
+[11:10] Calculating q-values
+[11:10] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 2566, 1046, 635, 209
+[11:10] Processing batches #18-21 out of 200 
+[11:10] Precursor search
+[11:14] Optimising weights
+Averages: 
+[#0]: 0.121513, 0.188632, 0.0719643, 0.158077, 0.171589, 1.13775, 1.37716, 0.0736257, 
+Weights: 
+[#0]: 9.92507e-08, 0, 0.34733, 0.749604, 0.251246, 0.0212608, 0, 1, 
+[11:14] Calculating q-values
+[11:14] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 3093, 1295, 752, 211
+[11:14] Processing batches #22-26 out of 200 
+[11:14] Precursor search
+[11:19] Optimising weights
+Averages: 
+[#0]: 0.12934, 0.176564, 0.0900608, 0.164319, 0.191476, 1.17696, 1.42428, 0.0790605, 
+Weights: 
+[#0]: 8.39443e-08, 0, 0.366413, 0.686459, 0.263895, 0.0184674, 0, 1, 
+[11:19] Calculating q-values
+[11:19] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 3780, 1630, 930, 294
+[11:19] Processing batches #27-32 out of 200 
+[11:19] Precursor search
+[11:25] Optimising weights
+Averages: 
+[#0]: 0.128319, 0.144626, 0.08279, 0.167123, 0.190803, 1.18525, 1.4309, 0.0787584, 
+Weights: 
+[#0]: 8.4644e-08, 0, 0.377094, 0.754273, 0.273907, 0.0286554, 0, 1, 
+[11:26] Calculating q-values
+[11:26] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 4668, 1997, 1207, 329
+[11:26] Processing batches #33-39 out of 200 
+[11:26] Precursor search
+[11:33] Optimising weights
+Averages: 
+[#0]: 0.122254, 0.111199, 0.0804214, 0.15865, 0.183724, 1.11345, 1.36461, 0.076069, 
+Weights: 
+[#0]: 0.18395, 0, 0.347871, 0.760637, 0.304284, 0.000870838, 0, 1, 
+[11:33] Calculating q-values
+[11:33] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 5707, 2411, 1464, 436
+[11:33] Precursor search
+[11:33] Optimising weights
+Averages: 
+[#0]: 0.123296, 0.114713, 0.07908, 0.159962, 0.184857, 1.13127, 1.37746, 0.0766211, 
+Weights: 
+[#0]: 0.0460793, 0, 0.360518, 0.803935, 0.308337, 0.00661228, 0, 1, 
+[11:33] Calculating q-values
+[11:34] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 5678, 2410, 1383, 433
+[11:34] Precursor search
+[11:34] Optimising weights
+Averages: 
+[#0]: 0.124077, 0.113555, 0.0806002, 0.159549, 0.185857, 1.13617, 1.38261, 0.076941, 
+Weights: 
+[#0]: 0.0512249, 0, 0.362881, 0.812487, 0.31071, 0.00572171, 0, 1, 
+[11:34] Calculating q-values
+[11:34] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 5670, 2412, 1387, 434
+[11:34] Precursor search
+[11:34] Optimising weights
+Averages: 
+[#0]: 0.124196, 0.113205, 0.0807803, 0.159937, 0.185659, 1.13666, 1.38335, 0.0770448, 
+Weights: 
+[#0]: 0.0428762, 0, 0.365678, 0.830404, 0.307585, 0.00472889, 0, 1, 
+[11:35] Calculating q-values
+[11:35] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 5657, 2416, 1391, 433
+[11:35] Calibrating retention times
+[11:35] 2022 precursors used for iRT estimation.
+[11:35] RT window set to 6.05194
+[11:35] M/z SD: 4.14653 ppm
+[11:35] Top 70% mass accuracy: 3.83639 ppm
+[11:35] Top 70% mass accuracy without correction: 7.61 ppm
+[11:35] Top 70% MS1 mass accuracy: 1.1807 ppm
+[11:35] Top 70% MS1 mass accuracy without correction: 1.17314ppm
+[11:35] No MS1 mass correction required
+[11:35] Recommended MS1 mass accuracy setting: 6 ppm
+[11:35] Using mass accuracy 2e-05, 8e-06 (MS2, MS1)
+[11:35] Processing batch #1 out of 200 
+[11:35] Precursor search
+[11:35] Optimising weights
+Averages: 
+[#0]: 0.103387, 0.229301, 0.126056, 0.109793, 0.129373, 0.788707, 0.872182, 0.0630456, 
+Weights: 
+[#0]: 0.1716, 0.0480997, 0.385522, 0.477399, 0.28473, 0, 0, 1, 
+[11:35] Calculating q-values
+[11:35] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 209, 93, 61, 52
+[11:35] Calibrating retention times
+[11:35] 112 precursors used for iRT estimation.
+[11:35] Processing batch #2 out of 200 
+[11:35] Precursor search
+[11:35] Optimising weights
+Averages: 
+[#0]: 0.104205, 0.145926, 0.102847, 0.113512, 0.143853, 0.815957, 0.903832, 0.0709712, 
+Weights: 
+[#0]: 0.0698224, 0.00316878, 0.284284, 0.426965, 0.308789, 0, 0, 1, 
+[11:35] Calculating q-values
+[11:35] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 440, 183, 133, 105
+[11:35] Calibrating retention times
+[11:35] 162 precursors used for iRT estimation.
+[11:35] Processing batch #3 out of 200 
+[11:35] Precursor search
+[11:36] Optimising weights
+Averages: 
+[#0]: 0.103619, 0.131188, 0.100368, 0.109425, 0.126839, 0.819125, 0.909533, 0.0702925, 
+Weights: 
+[#0]: 0.211075, 0.00178659, 0.227042, 0.244473, 0.186571, 0, 0, 1, 
+[11:36] Calculating q-values
+[11:36] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 589, 267, 200, 161
+[11:36] Calibrating retention times
+[11:36] 243 precursors used for iRT estimation.
+[11:36] Processing batch #4 out of 200 
+[11:36] Precursor search
+[11:36] Optimising weights
+Averages: 
+[#0]: 0.101163, 0.139828, 0.0975434, 0.105975, 0.124185, 0.810368, 0.896614, 0.0680242, 
+Weights: 
+[#0]: 0.338206, 0.00530776, 0.229776, 0.204957, 0.206344, 0, 0, 1, 
+[11:36] Calculating q-values
+[11:36] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 749, 326, 243, 183
+[11:36] Calibrating retention times
+[11:36] 312 precursors used for iRT estimation.
+[11:36] Processing batch #5 out of 200 
+[11:36] Precursor search
+[11:36] Optimising weights
+Averages: 
+[#0]: 0.10122, 0.145914, 0.100698, 0.1019, 0.1231, 0.811635, 0.893429, 0.0662356, 
+Weights: 
+[#0]: 0.659043, 0.00922937, 0.238306, 0.0851713, 0.245339, 0, 0, 1, 
+[11:36] Calculating q-values
+[11:36] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 956, 404, 274, 120
+[11:36] Calibrating retention times
+[11:36] 380 precursors used for iRT estimation.
+[11:36] Processing batches #6-7 out of 200 
+[11:36] Precursor search
+[11:36] Optimising weights
+Averages: 
+[#0]: 0.101448, 0.135024, 0.107169, 0.105186, 0.126691, 0.801531, 0.887353, 0.0654548, 
+Weights: 
+[#0]: 0.683137, 0, 0.315035, 0.255236, 0.315005, 0, 0, 1, 
+[11:36] Calculating q-values
+[11:36] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 1377, 574, 410, 175
+[11:36] Calibrating retention times
+[11:36] 527 precursors used for iRT estimation.
+[11:36] Processing batches #8-9 out of 200 
+[11:36] Precursor search
+[11:37] Optimising weights
+Averages: 
+[#0]: 0.100288, 0.143113, 0.103504, 0.105483, 0.123998, 0.788237, 0.872461, 0.0653754, 
+Weights: 
+[#0]: 0.589194, 0, 0.307719, 0.319976, 0.284788, 0, 0, 1, 
+[11:37] Calculating q-values
+[11:37] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 1813, 698, 508, 224
+[11:37] Calibrating retention times
+[11:37] 653 precursors used for iRT estimation.
+[11:37] Processing batches #10-11 out of 200 
+[11:37] Precursor search
+[11:37] Optimising weights
+Averages: 
+[#0]: 0.0988667, 0.14201, 0.102873, 0.100373, 0.118883, 0.780001, 0.864799, 0.0641564, 
+Weights: 
+[#0]: 0.709757, 0, 0.277808, 0.149741, 0.251624, 0, 0, 1, 
+[11:37] Calculating q-values
+[11:37] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 2197, 856, 574, 274
+[11:37] Calibrating retention times
+[11:37] 734 precursors used for iRT estimation.
+[11:37] Processing batches #12-14 out of 200 
+[11:37] Precursor search
+[11:38] Optimising weights
+Averages: 
+[#0]: 0.112204, 0.187963, 0.129048, 0.117779, 0.138159, 0.869424, 0.989812, 0.0708374, 
+Weights: 
+[#0]: 0.363867, 0.00399807, 0.36481, 0.307109, 0.294756, 0, 0, 1, 
+[11:38] Calculating q-values
+[11:38] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 2755, 1113, 728, 329
+[11:38] Calibrating retention times
+[11:38] 975 precursors used for iRT estimation.
+[11:38] Processing batches #15-17 out of 200 
+[11:38] Precursor search
+[11:38] Optimising weights
+Averages: 
+[#0]: 0.131065, 0.224118, 0.145335, 0.13759, 0.160898, 1.0375, 1.19097, 0.0817109, 
+Weights: 
+[#0]: 0.337466, 0.00161447, 0.3979, 0.370324, 0.349811, 0, 0, 1, 
+[11:39] Calculating q-values
+[11:39] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 3340, 1367, 930, 395
+[11:39] Calibrating retention times
+[11:39] 1216 precursors used for iRT estimation.
+[11:39] Processing batches #18-21 out of 200 
+[11:39] Precursor search
+[11:39] Optimising weights
+Averages: 
+[#0]: 0.149335, 0.269369, 0.166173, 0.158981, 0.186234, 1.18574, 1.35718, 0.0920053, 
+Weights: 
+[#0]: 0.0789997, 0.00719085, 0.430281, 0.476266, 0.401494, 0, 0, 1, 
+[11:39] Calculating q-values
+[11:39] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 4011, 1704, 1188, 462
+[11:39] Calibrating retention times
+[11:39] 1472 precursors used for iRT estimation.
+[11:39] Processing batches #22-26 out of 200 
+[11:39] Precursor search
+[11:40] Optimising weights
+Averages: 
+[#0]: 0.151187, 0.276532, 0.167149, 0.161746, 0.186629, 1.20706, 1.37918, 0.0931811, 
+Weights: 
+[#0]: 1.11872e-07, 0.00928466, 0.45699, 0.596915, 0.396382, 0, 0, 1, 
+[11:40] Calculating q-values
+[11:40] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 5057, 2088, 1483, 593
+[11:40] Calibrating retention times
+[11:40] 1803 precursors used for iRT estimation.
+[11:40] Precursor search
+[11:40] Optimising weights
+Averages: 
+[#0]: 0.152963, 0.280895, 0.174427, 0.160929, 0.187384, 1.21528, 1.38727, 0.0930043, 0, 0.123892, [#10]: 0.883684, 0.22974, 0.110704, 0.113725, 1.40199, 0.142671, 0.512145, 0.110558, 0.0859051, 0.122325, [#20]: 0.121762, 0.727043, 0.123464, 0, 0, 0.174258, 0.171682, 0.0339087, 0.130446, 0.121378, [#30]: 0.0288978, 0.0238383, 0.00749833, 0.105219, 0.204978, 0.984896, 0.790758, 6.34273, 0.0900739, 0.576108, [#40]: 0.119395, 0.115984, 0.110086, 0.100642, 0.153083, 0.207985, 0.428225, 0.443462, 0.351233, 0.269244, [#50]: 0.281343, -0.403231, -0.773335, -0.942495, -0.996929, 0, 0, 0, 0, 
+Weights: 
+[#0]: 3.75892e-08, 0.000884052, 0, 0.114079, 0.0961106, 0, 0, 0.00852121, 0, 1, [#10]: 0.00951957, 0.0158903, 0, 0, 0.00913704, 0.326594, 0, 0, 0.0915056, 0.0608095, [#20]: 0, 0, 0, 0, 0, 0.0916288, 0, 0.0235043, 0.108987, 0, [#30]: 0.0112127, 0, 0, 0, 0, 0, 0, 0, 0, 0.00527986, [#40]: 0, 0, 0, 0, 0, 0.122034, 0.0199361, 0.00956949, 0.0103872, 0.0657531, [#50]: 0.0729937, -0.0136712, -0.00338238, 0, 0, 0, 0, 0, 0, 
+[11:41] Calculating q-values
+[11:41] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 5252, 2021, 1358, 744
+[11:41] Precursor search
+[11:45] Optimising weights
+Averages: 
+[#0]: 0.151386, 0.301644, 0.182477, 0.168187, 0.194752, 1.18429, 1.37275, 0.0929179, 0, 0.120973, [#10]: 0.886765, 0.222104, 0.113029, 0.10894, 1.3896, 0.139804, 0.508867, 0.116662, 0.0854718, 0.118021, [#20]: 0.121142, 0.762276, 0.126218, 0, 0, 0.18033, 0.176447, 0.0324737, 0.131833, 0.123792, [#30]: 0.0292728, 0.0238789, 0.00790018, 0.103959, 0.191795, 0.971236, 0.678749, 6.05176, 0.0913594, 0.580971, [#40]: 0.117324, 0.114361, 0.108968, 0.100007, 0.160796, 0.212112, 0.439663, 0.453389, 0.359887, 0.275277, [#50]: 0.280369, -0.45704, -0.859136, -1.04658, -1.1084, 0, 0, 0, 0, 
+Weights: 
+[#0]: 4.13802e-08, 0.00577833, 0, 0.165857, 0.114526, 0, 0, 0.0929292, 0, 1, [#10]: 0.00415464, 0.00143705, 0, 0, 0.00217284, 0.446945, 0, 0.00784671, 0.0855605, 0.0328507, [#20]: 0, 0.00233498, 0, 0, 0, 0.0582405, 0, 0.021121, 0.118242, 0, [#30]: 0.0174109, 0.00644107, 0, 0, 0, 0, 0, 0, 0, 0.00947957, [#40]: 0, 0, 0, 0, 0, 0.13417, 0.031002, 0.000136093, 0.0196406, 0.100931, [#50]: 0.0554619, -0.0315921, 0, 0, 0, 0, 0, 0, 0, 
+[11:45] Calculating q-values
+[11:46] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 5250, 2002, 1407, 759
+[11:46] Precursor search
+[11:46] Optimising weights
+Averages: 
+[#0]: 0.151033, 0.296968, 0.166157, 0.154914, 0.175024, 1.21916, 1.37713, 0.0908973, 0, 0.12334, [#10]: 0.87064, 0.216442, 0.108403, 0.1138, 1.37835, 0.141492, 0.501894, 0.100519, 0.084047, 0.116368, [#20]: 0.121148, 0.705753, 0.120829, 0, 0, 0.166461, 0.157318, 0.0350324, 0.128518, 0.119404, [#30]: 0.0284931, 0.0228329, 0.00742789, 0.104496, 0.235704, 0.964875, 0.991794, 6.05523, 0.105594, 0.56619, [#40]: 0.11882, 0.115354, 0.109381, 0.0998833, 0.146305, 0.193767, 0.414904, 0.428872, 0.34202, 0.259863, [#50]: 0.270703, -0.425724, -0.80341, -0.981659, -1.04144, 0, 0, 0, 0, 
+Weights: 
+[#0]: 4.42962e-08, 0.00318269, 0, 0.130804, 0.119054, 0, 0, 0.0718162, 0, 1, [#10]: 0.0189782, 0.00947114, 0, 0, 0.0127578, 0.402316, 0, 0, 0.107945, 0.0520505, [#20]: 0, 0, 0, 0, 0, 0.124606, 0, 0.0209863, 0.136287, 0, [#30]: 0.0449769, 0, 0, 0, 0.00148216, 0, 0, 0, 0, 0.0063521, [#40]: 0, 0, 0, 0, 0.0220651, 0.115753, 0.0240175, 0, 0.0213212, 0.0706687, [#50]: 0.0675689, -0.0178425, -0.00429016, 0, 0, 0, 0, 0, 0, 
+[11:46] Calculating q-values
+[11:46] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 5291, 2039, 1378, 724
+[11:46] Calibrating retention times
+[11:46] 1699 precursors used for iRT estimation.
+[11:46] M/z SD: 4.03848 ppm
+[11:46] Top 70% mass accuracy: 4.31927 ppm
+[11:46] Top 70% mass accuracy without correction: 7.98319 ppm
+[11:46] Top 70% MS1 mass accuracy: 1.16659 ppm
+[11:46] Top 70% MS1 mass accuracy without correction: 1.17281ppm
+[11:47] Main search
+[11:47] Precursor search
+[12:21] Optimising weights
+Averages: 
+[#0]: 0.15047, 0.210257, 0.0940845, 0.166736, 0.177227, 1.35452, 1.50607, 0.0984011, 0, 0.134789, [#10]: 0.925781, 0.230456, 0.11867, 0.125373, 1.51444, 0.139345, 0.565624, 0.104867, 0.082451, 0.116788, [#20]: 0.126416, 0.769037, 0.133163, 0, 0, 0.0916625, 0.105982, 0.0134764, 0.139377, 0.129363, [#30]: 0.0306723, 0.0328391, 0.0119227, 0.115077, 0.25428, 1.07124, 1.29346, 6.88576, 0.0951573, 0.525303, [#40]: 0.13035, 0.126342, 0.119223, 0.107982, 0.0706628, 0.111763, 0.336781, 0.364678, 0.289498, 0.192087, [#50]: 0.208786, -0.467712, -0.862805, -1.03506, -1.08763, 0, 0, 0, 0, 
+Weights: 
+[#0]: 1.66845e-07, 0, 0.0730248, 0.61657, 0.505636, 0, 0, 0.619056, 0, 0, [#10]: 0.02497, 0, 0, 0.658896, 0.0918005, 0, 0, 0, 0, 0.0757691, [#20]: 0, 0, 0, 0, 0, 0.105468, 0, 0, 1, 0, [#30]: 0.109827, 0.0744731, 0, 0, 0, 0, 0, 0, 0, 0, [#40]: 0, 0, 0, 0, 0, 0.20984, 0.00654652, 0.0679595, 0, 0.17014, [#50]: 0.0948078, -0.108469, -0.0267735, 0, 0, 0, 0, 0, 0, 
+[12:22] Calculating q-values
+[12:23] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 45321, 19139, 15634, 11529
+[12:23] Removing low confidence identifications
+[12:24] Calibrating retention times
+[12:24] 17764 precursors used for iRT estimation.
+[12:24] M/z SD: 4.29322 ppm
+[12:24] Top 70% mass accuracy: 4.99888 ppm
+[12:24] Top 70% mass accuracy without correction: 8.1727 ppm
+[12:24] Top 70% MS1 mass accuracy: 1.27906 ppm
+[12:25] Top 70% MS1 mass accuracy without correction: 1.27937ppm
+[12:26] Calculating q-values
+[12:26] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 45245, 19098, 15809, 11880
+[12:26] Removing interfering precursors
+[12:27] Calculating q-values
+[12:27] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 39574, 18738, 15648, 11844
+[12:27] Optimising weights
+Averages: 
+[#0]: 0.166455, 0.226417, 0.105063, 0.184776, 0.191401, 1.50456, 1.67028, 0.107404, 0, 0.148944, [#10]: 1.01728, 0.249303, 0.128442, 0.13879, 1.68942, 0.154452, 0.602815, 0.111866, 0.0905282, 0.128896, [#20]: 0.140122, 0.839461, 0.146056, 0, 0, 0.103368, 0.117567, 0.0138007, 0.150919, 0.14049, [#30]: 0.0345368, 0.0345606, 0.0128849, 0.126992, 0.280463, 1.19358, 1.45101, 7.87549, 0.102293, 0.586798, [#40]: 0.143727, 0.139082, 0.130937, 0.118211, 0.0792937, 0.129115, 0.370217, 0.402025, 0.321891, 0.211112, [#50]: 0.228303, -0.505185, -0.948125, -1.14313, -1.20206, 0, 0, 0, 0, 
+Weights: 
+[#0]: 1.20195e-07, 0, 0.087078, 0.434427, 0.387381, 0, 0, 0.407518, 0, 0, [#10]: 0.0149332, 0, 0, 1, 0.0650231, 0, 0, 0, 0, 0.130342, [#20]: 0, 0, 0, 0, 0, 0.104529, 0, 0, 0.808825, 0, [#30]: 0.156225, 0, 0, 0, 0, 0, 0, 0, 0, 0, [#40]: 0, 0, 0, 0, 0, 0.161161, 0, 0.0464266, 0, 0.176799, [#50]: 0.055508, -0.111297, -0.0152356, 0, 0, 0, 0, 0, 0, 
+[12:28] Training neural networks on 37378 target and 25496 decoy PSMs
+[12:41] Calculating q-values
+[12:41] Number of IDs at 50%, 5%, 1%, 0.1% FDR: 41567, 21857, 19102, 15661
+[12:41] Calibrating retention times
+[12:42] 15065 precursors used for iRT estimation.
+[12:42] Number of IDs at 0.01 FDR: 19489
+[12:42] Calculating protein q-values
+[12:42] Number of genes identified at 1% FDR: 1995 (precursor-level), 1916 (protein-level) (inference performed using proteotypic peptides only)
+[12:42] Quantification
+[12:43] Quantification information saved to /home/lerost/DIA_tools_manuscript/search_results/tmp/_home_lerost_DIA_tools_manuscript_input_files_PXD026600_RD139_Wide_UPS1_1fmol_inj3_mzML.quant
+
+[12:43] Cross-run analysis
+[12:43] Reading quantification information: 6 files
+[12:46] Quantifying peptides
+[13:22] Quantification parameters: 0.249933, 0.00325748, 0.00104196, 0.0117935, 0.012714, 0.0128819, 0.0785901, 0.0541793, 0.073082, 0.0131024, 0.0467483, 0.0308445, 0.254358, 0.0504563, 0.0584909, 0.0125587
+[13:26] Assembling protein groups
+[13:26] Quantifying proteins
+[13:26] Calculating q-values for protein and gene groups
+[13:28] Calculating global q-values for protein and gene groups
+[13:28] Protein groups with global q-value <= 0.01: 1969
+[13:29] Compressed report saved to ./search_results/diann231_ups_ecoli_triqler/10fmol_vs_1fmol/report.parquet. Use R 'arrow' or Python 'PyArrow' package to process
+[13:29] Saving precursor levels matrix
+[13:29] Precursor levels matrix (1% precursor and protein group FDR) saved to ./search_results/diann231_ups_ecoli_triqler/10fmol_vs_1fmol/report.pr_matrix.tsv.
+[13:29] Saving protein group levels matrix
+[13:29] Protein groups matrix saved to ./search_results/diann231_ups_ecoli_triqler/10fmol_vs_1fmol/report.pg_matrix.tsv.
+[13:29] Saving gene group levels matrix
+[13:29] Gene groups matrix saved to ./search_results/diann231_ups_ecoli_triqler/10fmol_vs_1fmol/report.gg_matrix.tsv.
+[13:29] Saving unique genes levels matrix
+[13:29] Unique genes matrix saved to ./search_results/diann231_ups_ecoli_triqler/10fmol_vs_1fmol/report.unique_genes_matrix.tsv.
+[13:29] Manifest saved to ./search_results/diann231_ups_ecoli_triqler/10fmol_vs_1fmol/report.manifest.txt
+[13:29] Stats report saved to ./search_results/diann231_ups_ecoli_triqler/10fmol_vs_1fmol/report.stats.tsv
+

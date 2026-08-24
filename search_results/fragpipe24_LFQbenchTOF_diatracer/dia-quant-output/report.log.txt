@@ -1,0 +1,318 @@
+DIA-NN 1.8.2 beta 8 (Data-Independent Acquisition by Neural Networks)
+Compiled on Dec  1 2022 14:47:06
+Current date and time: Wed Jul 15 15:20:06 2026
+Logical CPU cores: 256
+/home/lerost/tools/fragpipe-24.0/tools/diann/1.8.2_beta_8/linux/diann-1.8.1.8 --lib library.tsv --threads 30 --verbose 1 --out dia-quant-output/report.tsv --qvalue 0.01 --matrix-qvalue 0.01 --matrices --no-prot-inf --smart-profiling --no-quant-files --peak-center --no-ifs-removal --report-lib-info --cfg /home/lerost/DIA_tools_manuscript/search_results/fragpipe24_LFQbenchTOF_diatracer/filelist_diann.txt-- 
+
+Thread number set to 30
+Output will be filtered at 0.01 FDR
+Precursor/protein x sample matrices will be filtered at 0.01 precursor & protein-level FDR
+Precursor/protein x samples expression level matrices will be saved along with the main report
+Protein inference will not be performed
+When generating a spectral library, in silico predicted spectra will be retained if deemed more reliable than experimental ones
+.quant files will not be saved to the disk
+Fixed-width center of each elution peak will be used for quantification
+Interference removal from fragment elution curves disabled
+WARNING: unrecognised option [--]
+DIA-NN will optimise the mass accuracy automatically using the first run in the experiment. This is useful primarily for quick initial analyses, when it is not yet known which mass accuracy setting works best for a particular acquisition scheme.
+
+18 files will be processed
+[0:00] Loading spectral library library.tsv
+[0:03] Spectral library loaded: 10461 protein isoforms, 10461 protein groups and 91632 precursors in 76960 elution groups.
+[0:03] Initialising library
+[0:03] Saving the library to library.tsv.speclib
+
+[0:03] File #1/18
+[0:03] Loading run /home/lerost/DIA_tools_manuscript/input_files/LFQbench_timsTOF/LFQ_timsTOFPro_diaPASEF_Condition_A_Sample_Gamma_01.d
+For most diaPASEF datasets it is better to manually fix both the MS1 and MS2 mass accuracies to values in the range 10-15 ppm.
+[0:57] 91628 library precursors are potentially detectable
+[0:57] Processing...
+[1:08] RT window set to 3.38134
+[1:08] Ion mobility window set to 0.0166875
+[1:08] Peak width: 8.236
+[1:08] Scan window radius set to 18
+[1:08] Recommended MS1 mass accuracy setting: 17.073 ppm
+[1:20] Optimised mass accuracy: 10.8646 ppm
+[1:47] Removing low confidence identifications
+[1:47] Removing interfering precursors
+[1:52] Training neural networks: 89237 targets, 87098 decoys
+[1:55] Number of IDs at 0.01 FDR: 85776
+[1:57] Calculating protein q-values
+[1:57] Number of protein isoforms identified at 1% FDR: 10111 (precursor-level), 10032 (protein-level) (inference performed using proteotypic peptides only)
+[1:57] Quantification
+
+[2:03] File #2/18
+[2:03] Loading run /home/lerost/DIA_tools_manuscript/input_files/LFQbench_timsTOF/LFQ_timsTOFPro_diaPASEF_Condition_A_Sample_Beta_01.d
+[3:13] 91628 library precursors are potentially detectable
+[3:13] Processing...
+[3:18] RT window set to 2.58814
+[3:18] Ion mobility window set to 0.0165651
+[3:18] Recommended MS1 mass accuracy setting: 17.2653 ppm
+[3:35] Removing low confidence identifications
+[3:35] Removing interfering precursors
+[3:40] Training neural networks: 89170 targets, 85771 decoys
+[3:44] Number of IDs at 0.01 FDR: 85741
+[3:45] Calculating protein q-values
+[3:45] Number of protein isoforms identified at 1% FDR: 10111 (precursor-level), 10040 (protein-level) (inference performed using proteotypic peptides only)
+[3:45] Quantification
+
+[3:52] File #3/18
+[3:52] Loading run /home/lerost/DIA_tools_manuscript/input_files/LFQbench_timsTOF/LFQ_timsTOFPro_diaPASEF_Condition_A_Sample_Gamma_02.d
+[4:46] 91628 library precursors are potentially detectable
+[4:46] Processing...
+[4:50] RT window set to 2.59147
+[4:50] Ion mobility window set to 0.0167812
+[4:50] Recommended MS1 mass accuracy setting: 18.4742 ppm
+[5:11] Removing low confidence identifications
+[5:11] Removing interfering precursors
+[5:16] Training neural networks: 89278 targets, 85320 decoys
+[5:20] Number of IDs at 0.01 FDR: 85174
+[5:22] Calculating protein q-values
+[5:22] Number of protein isoforms identified at 1% FDR: 10093 (precursor-level), 10012 (protein-level) (inference performed using proteotypic peptides only)
+[5:22] Quantification
+
+[5:27] File #4/18
+[5:27] Loading run /home/lerost/DIA_tools_manuscript/input_files/LFQbench_timsTOF/LFQ_timsTOFPro_diaPASEF_Condition_A_Sample_Beta_02.d
+[6:25] 91628 library precursors are potentially detectable
+[6:25] Processing...
+[6:29] RT window set to 2.58501
+[6:29] Ion mobility window set to 0.0166042
+[6:29] Recommended MS1 mass accuracy setting: 18.2519 ppm
+[6:48] Removing low confidence identifications
+[6:48] Removing interfering precursors
+[6:53] Training neural networks: 89256 targets, 85495 decoys
+[6:57] Number of IDs at 0.01 FDR: 85774
+[6:58] Calculating protein q-values
+[6:58] Number of protein isoforms identified at 1% FDR: 10105 (precursor-level), 10026 (protein-level) (inference performed using proteotypic peptides only)
+[6:58] Quantification
+
+[7:04] File #5/18
+[7:04] Loading run /home/lerost/DIA_tools_manuscript/input_files/LFQbench_timsTOF/LFQ_timsTOFPro_diaPASEF_Condition_A_Sample_Beta_03.d
+[7:59] 91628 library precursors are potentially detectable
+[7:59] Processing...
+[8:03] RT window set to 2.59085
+[8:03] Ion mobility window set to 0.0166667
+[8:03] Recommended MS1 mass accuracy setting: 16.5832 ppm
+[8:24] Removing low confidence identifications
+[8:24] Removing interfering precursors
+[8:29] Training neural networks: 89163 targets, 85291 decoys
+[8:33] Number of IDs at 0.01 FDR: 85014
+[8:35] Calculating protein q-values
+[8:35] Number of protein isoforms identified at 1% FDR: 10080 (precursor-level), 10008 (protein-level) (inference performed using proteotypic peptides only)
+[8:35] Quantification
+
+[8:40] File #6/18
+[8:40] Loading run /home/lerost/DIA_tools_manuscript/input_files/LFQbench_timsTOF/LFQ_timsTOFPro_diaPASEF_Condition_A_Sample_Gamma_03.d
+[9:34] 91628 library precursors are potentially detectable
+[9:34] Processing...
+[9:38] RT window set to 2.58101
+[9:38] Ion mobility window set to 0.0168229
+[9:38] Recommended MS1 mass accuracy setting: 17.3161 ppm
+[9:57] Removing low confidence identifications
+[9:57] Removing interfering precursors
+[10:02] Training neural networks: 89143 targets, 85317 decoys
+[10:06] Number of IDs at 0.01 FDR: 84835
+[10:08] Calculating protein q-values
+[10:08] Number of protein isoforms identified at 1% FDR: 10094 (precursor-level), 10018 (protein-level) (inference performed using proteotypic peptides only)
+[10:08] Quantification
+
+[10:13] File #7/18
+[10:13] Loading run /home/lerost/DIA_tools_manuscript/input_files/LFQbench_timsTOF/LFQ_timsTOFPro_diaPASEF_Condition_B_Sample_Beta_03.d
+[11:05] 91628 library precursors are potentially detectable
+[11:05] Processing...
+[11:09] RT window set to 2.58329
+[11:09] Ion mobility window set to 0.0168698
+[11:09] Recommended MS1 mass accuracy setting: 16.5745 ppm
+[11:28] Removing low confidence identifications
+[11:28] Removing interfering precursors
+[11:33] Training neural networks: 89078 targets, 85381 decoys
+[11:36] Number of IDs at 0.01 FDR: 85487
+[11:38] Calculating protein q-values
+[11:38] Number of protein isoforms identified at 1% FDR: 10139 (precursor-level), 10087 (protein-level) (inference performed using proteotypic peptides only)
+[11:38] Quantification
+
+[11:44] File #8/18
+[11:44] Loading run /home/lerost/DIA_tools_manuscript/input_files/LFQbench_timsTOF/LFQ_timsTOFPro_diaPASEF_Condition_B_Sample_Alpha_01.d
+[12:36] 91628 library precursors are potentially detectable
+[12:36] Processing...
+[12:40] RT window set to 2.58862
+[12:40] Ion mobility window set to 0.0165781
+[12:40] Recommended MS1 mass accuracy setting: 18.2374 ppm
+[12:59] Removing low confidence identifications
+[12:59] Removing interfering precursors
+[13:04] Training neural networks: 89214 targets, 85567 decoys
+[13:08] Number of IDs at 0.01 FDR: 86245
+[13:10] Calculating protein q-values
+[13:10] Number of protein isoforms identified at 1% FDR: 10135 (precursor-level), 10082 (protein-level) (inference performed using proteotypic peptides only)
+[13:10] Quantification
+
+[13:15] File #9/18
+[13:15] Loading run /home/lerost/DIA_tools_manuscript/input_files/LFQbench_timsTOF/LFQ_timsTOFPro_diaPASEF_Condition_B_Sample_Alpha_02.d
+[14:08] 91628 library precursors are potentially detectable
+[14:08] Processing...
+[14:13] RT window set to 2.58279
+[14:13] Ion mobility window set to 0.016612
+[14:13] Recommended MS1 mass accuracy setting: 17.0997 ppm
+[14:33] Removing low confidence identifications
+[14:33] Removing interfering precursors
+[14:38] Training neural networks: 89326 targets, 85424 decoys
+[14:41] Number of IDs at 0.01 FDR: 86370
+[14:43] Calculating protein q-values
+[14:43] Number of protein isoforms identified at 1% FDR: 10158 (precursor-level), 10102 (protein-level) (inference performed using proteotypic peptides only)
+[14:43] Quantification
+
+[14:49] File #10/18
+[14:49] Loading run /home/lerost/DIA_tools_manuscript/input_files/LFQbench_timsTOF/LFQ_timsTOFPro_diaPASEF_Condition_A_Sample_Alpha_01.d
+[16:03] 91628 library precursors are potentially detectable
+[16:03] Processing...
+[16:07] RT window set to 2.58598
+[16:07] Ion mobility window set to 0.0164714
+[16:07] Recommended MS1 mass accuracy setting: 18.4099 ppm
+[16:25] Removing low confidence identifications
+[16:25] Removing interfering precursors
+[16:30] Training neural networks: 89126 targets, 85342 decoys
+[16:33] Number of IDs at 0.01 FDR: 85715
+[16:35] Calculating protein q-values
+[16:35] Number of protein isoforms identified at 1% FDR: 10107 (precursor-level), 10044 (protein-level) (inference performed using proteotypic peptides only)
+[16:35] Quantification
+
+[16:41] File #11/18
+[16:41] Loading run /home/lerost/DIA_tools_manuscript/input_files/LFQbench_timsTOF/LFQ_timsTOFPro_diaPASEF_Condition_B_Sample_Alpha_03.d
+[17:33] 91628 library precursors are potentially detectable
+[17:33] Processing...
+[17:38] RT window set to 2.58445
+[17:38] Ion mobility window set to 0.0166676
+[17:38] Recommended MS1 mass accuracy setting: 17.3455 ppm
+[17:56] Removing low confidence identifications
+[17:56] Removing interfering precursors
+[18:01] Training neural networks: 89248 targets, 85245 decoys
+[18:05] Number of IDs at 0.01 FDR: 85882
+[18:07] Calculating protein q-values
+[18:07] Number of protein isoforms identified at 1% FDR: 10127 (precursor-level), 10055 (protein-level) (inference performed using proteotypic peptides only)
+[18:07] Quantification
+
+[18:12] File #12/18
+[18:12] Loading run /home/lerost/DIA_tools_manuscript/input_files/LFQbench_timsTOF/LFQ_timsTOFPro_diaPASEF_Condition_A_Sample_Alpha_02.d
+[19:27] 91628 library precursors are potentially detectable
+[19:27] Processing...
+[19:31] RT window set to 2.58001
+[19:31] Ion mobility window set to 0.0165781
+[19:31] Recommended MS1 mass accuracy setting: 18.1595 ppm
+[19:49] Removing low confidence identifications
+[19:49] Removing interfering precursors
+[19:53] Training neural networks: 89306 targets, 85395 decoys
+[19:57] Number of IDs at 0.01 FDR: 86084
+[19:59] Calculating protein q-values
+[19:59] Number of protein isoforms identified at 1% FDR: 10123 (precursor-level), 10047 (protein-level) (inference performed using proteotypic peptides only)
+[19:59] Quantification
+
+[20:04] File #13/18
+[20:04] Loading run /home/lerost/DIA_tools_manuscript/input_files/LFQbench_timsTOF/LFQ_timsTOFPro_diaPASEF_Condition_A_Sample_Alpha_03.d
+[21:18] 91628 library precursors are potentially detectable
+[21:18] Processing...
+[21:22] RT window set to 2.58751
+[21:22] Ion mobility window set to 0.0167578
+[21:22] Recommended MS1 mass accuracy setting: 17.2228 ppm
+[21:40] Removing low confidence identifications
+[21:40] Removing interfering precursors
+[21:45] Training neural networks: 89201 targets, 85173 decoys
+[21:48] Number of IDs at 0.01 FDR: 85318
+[21:50] Calculating protein q-values
+[21:50] Number of protein isoforms identified at 1% FDR: 10090 (precursor-level), 10015 (protein-level) (inference performed using proteotypic peptides only)
+[21:50] Quantification
+
+[21:56] File #14/18
+[21:56] Loading run /home/lerost/DIA_tools_manuscript/input_files/LFQbench_timsTOF/LFQ_timsTOFPro_diaPASEF_Condition_B_Sample_Gamma_03.d
+[22:48] 91628 library precursors are potentially detectable
+[22:48] Processing...
+[22:52] RT window set to 2.57082
+[22:52] Ion mobility window set to 0.016763
+[22:52] Recommended MS1 mass accuracy setting: 17.6317 ppm
+[23:11] Removing low confidence identifications
+[23:11] Removing interfering precursors
+[23:16] Training neural networks: 89150 targets, 85363 decoys
+[23:20] Number of IDs at 0.01 FDR: 85711
+[23:22] Calculating protein q-values
+[23:22] Number of protein isoforms identified at 1% FDR: 10151 (precursor-level), 10066 (protein-level) (inference performed using proteotypic peptides only)
+[23:22] Quantification
+
+[23:27] File #15/18
+[23:27] Loading run /home/lerost/DIA_tools_manuscript/input_files/LFQbench_timsTOF/LFQ_timsTOFPro_diaPASEF_Condition_B_Sample_Beta_02.d
+[24:19] 91628 library precursors are potentially detectable
+[24:19] Processing...
+[24:23] RT window set to 2.56755
+[24:23] Ion mobility window set to 0.0167708
+[24:23] Recommended MS1 mass accuracy setting: 17.3968 ppm
+[24:42] Removing low confidence identifications
+[24:42] Removing interfering precursors
+[24:47] Training neural networks: 89275 targets, 85435 decoys
+[24:51] Number of IDs at 0.01 FDR: 86223
+[24:53] Calculating protein q-values
+[24:53] Number of protein isoforms identified at 1% FDR: 10141 (precursor-level), 10092 (protein-level) (inference performed using proteotypic peptides only)
+[24:53] Quantification
+
+[24:58] File #16/18
+[24:58] Loading run /home/lerost/DIA_tools_manuscript/input_files/LFQbench_timsTOF/LFQ_timsTOFPro_diaPASEF_Condition_B_Sample_Gamma_01.d
+[25:49] 91628 library precursors are potentially detectable
+[25:49] Processing...
+[25:53] RT window set to 2.57795
+[25:53] Ion mobility window set to 0.0165391
+[25:53] Recommended MS1 mass accuracy setting: 17.0884 ppm
+[26:12] Removing low confidence identifications
+[26:12] Removing interfering precursors
+[26:18] Training neural networks: 89304 targets, 85392 decoys
+[26:21] Number of IDs at 0.01 FDR: 86504
+[26:23] Calculating protein q-values
+[26:23] Number of protein isoforms identified at 1% FDR: 10172 (precursor-level), 10099 (protein-level) (inference performed using proteotypic peptides only)
+[26:23] Quantification
+
+[26:29] File #17/18
+[26:29] Loading run /home/lerost/DIA_tools_manuscript/input_files/LFQbench_timsTOF/LFQ_timsTOFPro_diaPASEF_Condition_B_Sample_Beta_01.d
+[27:20] 91628 library precursors are potentially detectable
+[27:20] Processing...
+[27:25] RT window set to 2.55848
+[27:25] Ion mobility window set to 0.0165156
+[27:25] Recommended MS1 mass accuracy setting: 16.9178 ppm
+[27:44] Removing low confidence identifications
+[27:44] Removing interfering precursors
+[27:49] Training neural networks: 89137 targets, 85518 decoys
+[27:52] Number of IDs at 0.01 FDR: 86127
+[27:54] Calculating protein q-values
+[27:54] Number of protein isoforms identified at 1% FDR: 10156 (precursor-level), 10087 (protein-level) (inference performed using proteotypic peptides only)
+[27:54] Quantification
+
+[27:59] File #18/18
+[27:59] Loading run /home/lerost/DIA_tools_manuscript/input_files/LFQbench_timsTOF/LFQ_timsTOFPro_diaPASEF_Condition_B_Sample_Gamma_02.d
+[28:51] 91628 library precursors are potentially detectable
+[28:51] Processing...
+[28:55] RT window set to 2.57263
+[28:55] Ion mobility window set to 0.0165573
+[28:55] Recommended MS1 mass accuracy setting: 16.766 ppm
+[29:16] Removing low confidence identifications
+[29:16] Removing interfering precursors
+[29:21] Training neural networks: 89227 targets, 85165 decoys
+[29:24] Number of IDs at 0.01 FDR: 86065
+[29:26] Calculating protein q-values
+[29:26] Number of protein isoforms identified at 1% FDR: 10157 (precursor-level), 10084 (protein-level) (inference performed using proteotypic peptides only)
+[29:26] Quantification
+
+[29:32] Cross-run analysis
+[29:32] Reading quantification information: 18 files
+[29:33] Quantifying peptides
+[29:52] Quantifying proteins
+[29:52] Calculating q-values for protein and gene groups
+[29:53] Calculating global q-values for protein and gene groups
+[29:53] Writing report
+[30:49] Report saved to dia-quant-output/report.tsv.
+[30:49] Saving precursor levels matrix
+[30:50] Precursor levels matrix (1% precursor and protein group FDR) saved to dia-quant-output/report.pr_matrix.tsv.
+[30:50] Saving protein group levels matrix
+[30:50] Protein group levels matrix (1% precursor FDR and protein group FDR) saved to dia-quant-output/report.pg_matrix.tsv.
+[30:50] Saving gene group levels matrix
+[30:50] Gene groups levels matrix (1% precursor FDR and protein group FDR) saved to dia-quant-output/report.gg_matrix.tsv.
+[30:50] Saving unique genes levels matrix
+[30:50] Unique genes levels matrix (1% precursor FDR and protein group FDR) saved to dia-quant-output/report.unique_genes_matrix.tsv.
+[30:50] Stats report saved to dia-quant-output/report.stats.tsv
+
+Finished
+

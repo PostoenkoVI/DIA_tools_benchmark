@@ -1,0 +1,131 @@
+DIA-NN 1.8.2 beta 8 (Data-Independent Acquisition by Neural Networks)
+Compiled on Dec  1 2022 14:47:06
+Current date and time: Fri Jul 17 18:11:32 2026
+Logical CPU cores: 256
+/home/lerost/tools/fragpipe-24.0/tools/diann/1.8.2_beta_8/linux/diann-1.8.1.8 --lib library.tsv --threads 30 --verbose 1 --out dia-quant-output/report.tsv --qvalue 0.01 --matrix-qvalue 0.01 --matrices --no-prot-inf --smart-profiling --no-quant-files --peak-center --no-ifs-removal --report-lib-info --cfg /home/lerost/DIA_tools_manuscript/search_results/fragpipe24_ups_ecoli_msfragger/50fmol_vs_1fmol/filelist_diann.txt-- 
+
+Thread number set to 30
+Output will be filtered at 0.01 FDR
+Precursor/protein x sample matrices will be filtered at 0.01 precursor & protein-level FDR
+Precursor/protein x samples expression level matrices will be saved along with the main report
+Protein inference will not be performed
+When generating a spectral library, in silico predicted spectra will be retained if deemed more reliable than experimental ones
+.quant files will not be saved to the disk
+Fixed-width center of each elution peak will be used for quantification
+Interference removal from fragment elution curves disabled
+WARNING: unrecognised option [--]
+DIA-NN will optimise the mass accuracy automatically using the first run in the experiment. This is useful primarily for quick initial analyses, when it is not yet known which mass accuracy setting works best for a particular acquisition scheme.
+
+6 files will be processed
+[0:00] Loading spectral library library.tsv
+[0:00] Spectral library loaded: 1933 protein isoforms, 1933 protein groups and 20011 precursors in 15913 elution groups.
+[0:00] Initialising library
+[0:00] Saving the library to library.tsv.speclib
+
+[0:00] File #1/6
+[0:00] Loading run /home/lerost/DIA_tools_manuscript/input_files/PXD026600/RD139_Wide_UPS1_1fmol_inj3.mzML
+[0:22] 20011 library precursors are potentially detectable
+[0:22] Processing...
+[0:23] RT window set to 1.89574
+[0:23] Peak width: 3.864
+[0:23] Scan window radius set to 8
+[0:23] Recommended MS1 mass accuracy setting: 5.51263 ppm
+[0:24] Optimised mass accuracy: 21.6816 ppm
+[0:25] Removing low confidence identifications
+[0:25] Removing interfering precursors
+[0:26] Training neural networks: 19296 targets, 13705 decoys
+[0:26] Number of IDs at 0.01 FDR: 18731
+[0:27] Calculating protein q-values
+[0:27] Number of protein isoforms identified at 1% FDR: 1905 (precursor-level), 1895 (protein-level) (inference performed using proteotypic peptides only)
+[0:27] Quantification
+
+[0:27] File #2/6
+[0:27] Loading run /home/lerost/DIA_tools_manuscript/input_files/PXD026600/RD139_Wide_UPS1_1fmol_inj2.mzML
+[0:49] 20011 library precursors are potentially detectable
+[0:49] Processing...
+[0:50] RT window set to 1.86575
+[0:50] Recommended MS1 mass accuracy setting: 5.55781 ppm
+[0:50] Removing low confidence identifications
+[0:50] Removing interfering precursors
+[0:51] Training neural networks: 19247 targets, 13670 decoys
+[0:52] Number of IDs at 0.01 FDR: 18679
+[0:52] Calculating protein q-values
+[0:52] Number of protein isoforms identified at 1% FDR: 1901 (precursor-level), 1897 (protein-level) (inference performed using proteotypic peptides only)
+[0:52] Quantification
+
+[0:52] File #3/6
+[0:52] Loading run /home/lerost/DIA_tools_manuscript/input_files/PXD026600/RD139_Wide_UPS1_50fmol_inj1.mzML
+[1:14] 20011 library precursors are potentially detectable
+[1:14] Processing...
+[1:14] RT window set to 1.95791
+[1:14] Recommended MS1 mass accuracy setting: 5.80231 ppm
+[1:15] Removing low confidence identifications
+[1:15] Removing interfering precursors
+[1:15] Training neural networks: 19500 targets, 13473 decoys
+[1:16] Number of IDs at 0.01 FDR: 19235
+[1:16] Calculating protein q-values
+[1:16] Number of protein isoforms identified at 1% FDR: 1916 (precursor-level), 1910 (protein-level) (inference performed using proteotypic peptides only)
+[1:16] Quantification
+
+[1:16] File #4/6
+[1:16] Loading run /home/lerost/DIA_tools_manuscript/input_files/PXD026600/RD139_Wide_UPS1_50fmol_inj2.mzML
+[1:39] 20011 library precursors are potentially detectable
+[1:39] Processing...
+[1:39] RT window set to 1.94907
+[1:39] Recommended MS1 mass accuracy setting: 5.49729 ppm
+[1:40] Removing low confidence identifications
+[1:40] Removing interfering precursors
+[1:41] Training neural networks: 19439 targets, 13455 decoys
+[1:42] Number of IDs at 0.01 FDR: 19166
+[1:42] Calculating protein q-values
+[1:42] Number of protein isoforms identified at 1% FDR: 1910 (precursor-level), 1896 (protein-level) (inference performed using proteotypic peptides only)
+[1:42] Quantification
+
+[1:42] File #5/6
+[1:42] Loading run /home/lerost/DIA_tools_manuscript/input_files/PXD026600/RD139_Wide_UPS1_1fmol_inj1.mzML
+[2:08] 20011 library precursors are potentially detectable
+[2:08] Processing...
+[2:09] RT window set to 1.94379
+[2:09] Recommended MS1 mass accuracy setting: 6.5187 ppm
+[2:10] Removing low confidence identifications
+[2:10] Removing interfering precursors
+[2:10] Training neural networks: 19269 targets, 13553 decoys
+[2:11] Number of IDs at 0.01 FDR: 18650
+[2:11] Calculating protein q-values
+[2:11] Number of protein isoforms identified at 1% FDR: 1902 (precursor-level), 1892 (protein-level) (inference performed using proteotypic peptides only)
+[2:11] Quantification
+
+[2:11] File #6/6
+[2:11] Loading run /home/lerost/DIA_tools_manuscript/input_files/PXD026600/RD139_Wide_UPS1_50fmol_inj3.mzML
+[2:34] 20011 library precursors are potentially detectable
+[2:34] Processing...
+[2:35] RT window set to 1.94221
+[2:35] Recommended MS1 mass accuracy setting: 5.79934 ppm
+[2:36] Removing low confidence identifications
+[2:36] Removing interfering precursors
+[2:37] Training neural networks: 19458 targets, 13294 decoys
+[2:37] Number of IDs at 0.01 FDR: 19095
+[2:37] Calculating protein q-values
+[2:37] Number of protein isoforms identified at 1% FDR: 1915 (precursor-level), 1909 (protein-level) (inference performed using proteotypic peptides only)
+[2:37] Quantification
+
+[2:38] Cross-run analysis
+[2:38] Reading quantification information: 6 files
+[2:38] Quantifying peptides
+[2:40] Quantifying proteins
+[2:40] Calculating q-values for protein and gene groups
+[2:40] Calculating global q-values for protein and gene groups
+[2:40] Writing report
+[2:44] Report saved to dia-quant-output/report.tsv.
+[2:44] Saving precursor levels matrix
+[2:44] Precursor levels matrix (1% precursor and protein group FDR) saved to dia-quant-output/report.pr_matrix.tsv.
+[2:44] Saving protein group levels matrix
+[2:44] Protein group levels matrix (1% precursor FDR and protein group FDR) saved to dia-quant-output/report.pg_matrix.tsv.
+[2:44] Saving gene group levels matrix
+[2:44] Gene groups levels matrix (1% precursor FDR and protein group FDR) saved to dia-quant-output/report.gg_matrix.tsv.
+[2:44] Saving unique genes levels matrix
+[2:44] Unique genes levels matrix (1% precursor FDR and protein group FDR) saved to dia-quant-output/report.unique_genes_matrix.tsv.
+[2:44] Stats report saved to dia-quant-output/report.stats.tsv
+
+Finished
+
