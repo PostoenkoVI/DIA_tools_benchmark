@@ -9,7 +9,7 @@ In brief, two major platforms for DIA protein search - DIA-NN and FragPipe (with
 
 This project contains five folders:
   - `fasta` - contains all protein sequence databases.
-  - `figures` - all the figures generated throught the research.
+  - `figures` - folder for all the figures to be generated in throught `figures.ipynb`.
   - `input_files` - contains directory structure with filelists.txt files containing lists of the expected files (.mzML or .d format) to be placed in said folder for proper relative paths work. All the files are publicly available in the ProteomeXchange repository with the identifiers of PXD028735 for LFQbench dataset and PXD026600 for UPS-E.coli dataset. ThermoRawFileParser were used to convert .raw files to .mzML format. Bruker .d format was only unzipped and not converted further.
   - `quantitation` - contains all quantitation tables of differentially expressed proteins with fold change, p-values, etc. Are used in `figures.ipynb`.
   - `search_results` - contains parameters files, log files, and `report.pg_matrix.tsv` for each search. For example, `fragpipe-files.fp-manifest` and `fragpipe.workflow` files sufficient for reproducing the search of the Orbitrap part of the LFQ benchmark dataset using FragPipe with MSFragger-DIA workflow, and `report.pg_matrix.tsv` result of that search are located in `search_results/fragpipe24_LFQbench_msfragger`.
