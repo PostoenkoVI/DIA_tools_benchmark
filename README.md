@@ -5,8 +5,6 @@ This repository contains all the code, metadata (database and parameters files),
 
 In brief, two major platforms for DIA protein search - DIA-NN and FragPipe (with DIA-Umpire, MSFragger-DIA, and diaTracer based workflows) - were used in pairs with programms for quantitative analysis (directLFQ, AlphaPeptStats, Triqler) to better understand technical compatibilities, araising possibilities and limitations provided in each workflow.
 
-![Alt text](figures/TOC_figure.png)
-
 ## Setup and Usage
 
 This project contains five folders:
